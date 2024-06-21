@@ -1,8 +1,7 @@
 // PAGE ELEMENTS
 const popup = document.querySelector(".popup-overlay");
 const closeBtn = document.querySelector(".close-btn");
-const gridWrapper = document.getElementById("grid-wrapper")
-const sidebarContainer = document.querySelector(".sidebar-container");
+const sidebar = document.querySelector("sidebar-container");
 const sidebarContent = document.querySelector(".sidebar-content");
 
 async function loadPlaceInfo() {
@@ -13,7 +12,6 @@ async function loadPlaceInfo() {
 // Click Handler
 function getInfo(info) {
   clear()
-  sidepanel("open")
   const Header = document.createElement("h3");
   Header.innerHTML = info.place;
   sidebarContent.appendChild(Header);
@@ -29,44 +27,20 @@ function getInfo(info) {
   sidebarContent.appendChild(Content);
 }
 
-// Info sidepanel
-let isSidepanelClosed = true;
-
+// Clears sidebar
 function clear() {
   sidebarContent.innerHTML = "";
 }
 
+// Event listeners
 closeBtn.addEventListener("click", () => {
-  if (isSidepanelClosed) {
-    sidepanel("open")
-  } else {
-    sidepanel("close")
-  }
+  clear();
+  const placeholder = document.createElement("p");
+  placeholder.innerHTML =
+    "<em>Click a place on the map to begin exploring Morthia!</em>";
+  placeholder.classList.add("placeholder");
+  sidebarContent.appendChild(placeholder);
 });
-
-function sidepanel(action) {
-  if (action === "open") {
-    if (!isSidepanelClosed) {
-      return
-    }
-    closeBtn.textContent = ">"
-    closeBtn.style.transform = "translateX(-48px)"
-    gridWrapper.style.gridTemplateColumns = "1fr 350px"
-    sidebarContainer.style.padding = "48px 24px"
-    isSidepanelClosed = false
-  }
-  else if (action === "close") {
-    if (isSidepanelClosed) {
-      return
-    }
-    closeBtn.textContent = "<"
-    closeBtn.style.transform = "translateX(-24px)"
-    gridWrapper.style.gridTemplateColumns = "1fr 0px"
-    sidebarContainer.style.padding = "48px 0"
-    isSidepanelClosed = true
-  }
-  return
-}
 
 // leaflet
 async function renderMap(imgPath, mapHeight, mapWidth) {
@@ -74,8 +48,8 @@ async function renderMap(imgPath, mapHeight, mapWidth) {
 
   var map = L.map("map", {
     crs: L.CRS.Simple,
-    minZoom: -4,
-    maxZoom: 0,
+    minZoom: -5,
+    maxZoom: 0.5,
     zoomSnap: 0.5,
     attributionControl: false,
   });
@@ -86,7 +60,7 @@ async function renderMap(imgPath, mapHeight, mapWidth) {
   ];
   var image = L.imageOverlay(imgPath, bounds).addTo(map);
   map.fitBounds(bounds);
-  image.getElement().style.border = "4px double white";
+  //image.getElement().style.border = "4px double white";
   image.getElement().style.boxSizing = "border-box";
 
 

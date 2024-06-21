@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <link rel="icon" type="image/png" href="./images/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Overlock&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <link rel="icon" type="image/png" href="./images/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
 
-    <title>Welcome to Pyre</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Metamorphous&family=Overlock&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <main id="select-world-container">
-      <h2 id="choose-world">Choose a world to explore...</h2>
-      <div id="select-world">
-        <div class="map-select-container">
-          <a href="./shanai/index.html">
-            <div class="select-nameplate">Shanai</div>
-          </a>
-          <img src="./images/shanai/shanai_geography_small.png" alt="shanai" />
-        </div>
-        <div class="map-select-container">
-          <a href="./pyre/index.html">
-            <div class="select-nameplate">Pyre</div>
-          </a>
-          <img src="./images/WorldMapDark_Places_empty_small.png" alt="pyre" />
-        </div>
+  <title>Welcome to Morthia</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <!-- <h1 class="title"><a href="index.html">P<u>yr</u>e</a></h1> -->
+      <h2>Choose a region to explore...</h2>
+    </div>
+  </header>
+
+  <main id="select-world-container">
+    <div id="select-world">
+      <div class="map-select-container">
+        <a href="./Morthia/index.html">
+          <div class="select-nameplate">Morthia</div>
+        </a>
+        <img src="./images/Morthia-min.jpg" alt="Morthia" />
       </div>
-    </main>
-    <script src="app.js"></script>
-    <!-- Scaling map library -->
-    <script src="imageMapResizer.min.js"></script>
-    <script>
-      imageMapResize();
-    </script>
-  </body>
+
+    </div>
+  </main>
+  <script src="app.js"></script>
+  <!-- Scaling map library -->
+  <script src="imageMapResizer.min.js"></script>
+  <script>
+    imageMapResize();
+  </script>
+</body>
+
 </html>
