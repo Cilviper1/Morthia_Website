@@ -44,7 +44,11 @@
       </div>
 
       <div class="form-panel">
-        <div class="form-section-title">Region Shape</div>
+        <div class="form-section-title">Region Shape
+          <button class="btn btn-secondary" id="redrawBtn" style="flex:1; font-size:0.72rem;">
+            ✏ Redraw Shape
+          </button> 
+        </div>
 
         <div class="polygon-status no-polygon" id="polygonStatus">
           No polygon drawn yet — use the draw tool on the map.
@@ -126,6 +130,7 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
 <script>
+  
   const MAP_HEIGHT = 6144;
   const MAP_WIDTH  = 8192;
   //const IMG_PATH = 'https://picsum.photos/2000/1500';
@@ -135,6 +140,7 @@
   let editingKey   = null;
   let drawnPolygon = null;
   let allLayers    = {};
+  let redrawMode = false;
 
   const map = L.map('map', {
     crs: L.CRS.Simple,
@@ -215,6 +221,25 @@
     reader.readAsText(file);
     e.target.value = '';
   });
+
+  document.getElementById('redrawBtn').addEventListener('click', () => {
+  if (!editingKey) {
+    toast('Select a place first', 'error');
+    return;
+  }
+
+  redrawMode = true;
+
+  // Remove existing polygon from editor
+  if (drawnPolygon) {
+    drawnItems.removeLayer(drawnPolygon);
+    drawnPolygon = null;
+  }
+
+  updatePolygonStatus();
+  setModeIndicator(true);
+  toast('Draw a new shape on the map', 'success');
+});
 
   function renderAllLayers() {
     Object.values(allLayers).forEach(l => map.removeLayer(l));
