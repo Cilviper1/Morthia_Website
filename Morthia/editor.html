@@ -422,6 +422,28 @@ if (!editingKey && placesData[name]) {
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => { el.className = `toast ${type}`; }, 2500);
   }
+  
+window.addEventListener('DOMContentLoaded', loadDefaultPlaces);
+
+function loadDefaultPlaces() {
+  fetch('../places.json')
+    .then(res => {
+      if (!res.ok) throw new Error('places.json not found');
+      return res.json();
+    })
+    .then(data => {
+      placesData = data;
+      renderAllLayers();
+      renderPlacesList();
+      populateRegionList();
+      toast(`Loaded ${Object.keys(placesData).length} places`, 'success');
+    })
+    .catch(err => {
+      console.warn('Auto-load failed:', err.message);
+      toast('No default places.json found', 'error');
+    });
+}
+  
 </script>
 </body>
 </html>
