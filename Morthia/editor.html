@@ -181,6 +181,23 @@
     updatePolygonStatus();
   });
 
+map.on(L.Draw.Event.CREATED, (e) => {
+  setModeIndicator(false);
+
+  drawnPolygon = e.layer;
+  drawnItems.addLayer(drawnPolygon);
+
+  updatePolygonStatus();
+  activateTab('edit');
+
+  if (redrawMode) {
+    toast('New shape ready — click Save to update.', 'success');
+    redrawMode = false;
+  } else {
+    toast('Shape drawn — fill in details and save.', 'success');
+  }
+});
+  
   map.on(L.Draw.Event.CREATED, (e) => {
     setModeIndicator(false);
     drawnPolygon = e.layer;
