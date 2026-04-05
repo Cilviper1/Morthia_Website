@@ -67,7 +67,7 @@ async function renderMap(imgPath, mapHeight, mapWidth) {
   for (const placeInfo of Object.values(placesInfo)) {
     // draw rect from coords
     if (placeInfo.coords) {
-      L.rectangle(placeInfo.coords, { color: 'transparent' })
+        L.polygon(placeInfo.coords, { color: 'transparent', fillOpacity: 0 })
         .on('click', () => getInfo(placeInfo))
         .on('hover', () => console.log('hover'))
         .addTo(map)
