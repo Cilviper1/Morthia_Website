@@ -70,6 +70,7 @@ h2 {
 }
 
 /* end landing */
+
 .wrapper-home {
   height: 100%;
   display: grid;
@@ -235,8 +236,7 @@ footer {
 }
 
 @media only screen and (min-width: 1520px) {
-  .wrapper-home {
-    flex-direction: column;
+  .wrapper-home.sidebar-open {
     grid-template-columns: 1fr 500px;
   }
 }
@@ -360,17 +360,4 @@ footer {
   background-color: rgb(76, 113, 118);
   height: 100%;
   width: 100%;
-}
-
-/* Sidebar collapse */
-.sidebar-container {
-  transition: width 300ms ease, padding 300ms ease, opacity 300ms ease;
-  overflow: hidden;
-}
-
-.sidebar-container.collapsed {
-  width: 0;
-  padding: 0;
-  opacity: 0;
-  pointer-events: none;
 }
