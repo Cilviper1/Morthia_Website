@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morthia — Map Editor</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Metamorphous&family=Overlock&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+
+  <style>
+    :root {
+      --bg:        #1a1f1a;
+      --surface:   #222922;
+      --surface2:  #2a322a;
+      --border:    #3a4a3a;
+      --gold:      #b67c00;
+      --gold-light:#d4a030;
+      --text:      #e8e0d0;
+      --text-dim:  #8a9a8a;
+      --danger:    #8b3030;
+      --danger-light: #c04040;
+      --success:   #2a6a3a;
+      --success-light: #4a9a5a;
+      --map-bg:    rgb(76, 113, 118);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Overlock', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 60px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+      gap: 16px;
+    }
+
+    .header-title {
+      font-family: 'IM Fell English', serif;
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--gold-light);
+      white-space: nowrap;
+    }
+
+    .header-title span {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+      font-style: normal;
+      font-family: 'Overlock', sans-serif;
+      margin-left: 8px;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .mode-indicator {
+      font-family: 'Metamorphous', cursive;
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 2px;
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      background: var(--bg);
+    }
+
+    .mode-indicator.drawing {
+      border-color: var(--gold);
+      color: var(--gold-light);
+      background: rgba(182, 124, 0, 0.1);
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      font-family: 'Metamorphous', cursive;
+      font-size: 0.78rem;
+      padding: 7px 16px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 150ms ease;
+      letter-spacing: 0.03em;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: #111;
+      border-color: var(--gold);
+    }
+    .btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-dim);
+    }
+    .btn-secondary:hover { color: var(--text); border-color: var(--text-dim); }
+
+    .btn-danger {
+      background: transparent;
+      color: var(--danger-light);
+      border-color: var(--danger);
+    }
+    .btn-danger:hover { background: var(--danger); color: var(--text); }
+
+    .btn-success {
+      background: var(--success);
+      color: var(--text);
+      border-color: var(--success-light);
+    }
+    .btn-success:hover { background: var(--success-light); }
+
+    .btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    /* ── Layout ── */
+    .workspace {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .sidebar-tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 10px;
+      font-family: 'Metamorphous', cursive;
+      font-size: 0.72rem;
+      text-align: center;
+      cursor: pointer;
+      color: var(--text-dim);
+      border-bottom: 2px solid transparent;
+      transition: all 150ms;
+      background: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      letter-spacing: 0.05em;
+    }
+    .tab.active {
+      color: var(--gold-light);
+      border-bottom-color: var(--gold);
+    }
+    .tab:hover:not(.active) { color: var(--text); }
+
+    .tab-panel { display: none; flex-direction: column; flex: 1; overflow: hidden; }
+    .tab-panel.active { display: flex; }
+
+    /* ── Form Panel ── */
+    .form-panel {
+      padding: 16px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .form-section-title {
+      font-family: 'Metamorphous', cursive;
+      font-size: 0.7rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-bottom: 4px;
+      font-family: 'Metamorphous', cursive;
+      letter-spacing: 0.04em;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 7px 10px;
+      font-family: 'Overlock', sans-serif;
+      font-size: 0.88rem;
+      border-radius: 2px;
+      transition: border-color 150ms;
+      outline: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--gold);
+    }
+    select option { background: var(--surface2); }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+      line-height: 1.5;
+    }
+
+    .polygon-status {
+      margin-bottom: 12px;
+      padding: 10px 12px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      font-size: 0.8rem;
+    }
+
+    .polygon-status.has-polygon {
+      border-color: var(--success-light);
+      color: var(--success-light);
+    }
+
+    .polygon-status.no-polygon {
+      color: var(--text-dim);
+    }
+
+    .polygon-status.drawing-active {
+      border-color: var(--gold);
+      color: var(--gold-light);
+      animation: pulse-border 1.5s ease infinite;
+    }
+
+    @keyframes pulse-border {
+      0%, 100% { border-color: var(--gold); }
+      50% { border-color: var(--gold-light); }
+    }
+
+    .form-actions {
+      padding: 12px 16px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .draw-hint {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      padding: 8px 16px;
+      background: rgba(182,124,0,0.05);
+      border-bottom: 1px solid var(--border);
+      line-height: 1.5;
+      flex-shrink: 0;
+    }
+
+    .draw-hint strong { color: var(--gold-light); }
+
+    /* ── Places List Panel ── */
+    .places-list {
+      overflow-y: auto;
+      flex: 1;
+      padding: 8px;
+    }
+
+    .place-item {
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      margin-bottom: 6px;
+      cursor: pointer;
+      transition: all 150ms;
+      background: var(--bg);
+    }
+
+    .place-item:hover {
+      border-color: var(--gold);
+      background: var(--surface2);
+    }
+
+    .place-item.selected {
+      border-color: var(--gold);
+      background: rgba(182,124,0,0.1);
+    }
+
+    .place-item-name {
+      font-family: 'Metamorphous', cursive;
+      font-size: 0.8rem;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .place-item-meta {
+      font-size: 0.7rem;
+      color: var(--text-dim);
+    }
+
+    .place-item-actions {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .btn-tiny {
+      font-family: 'Metamorphous', cursive;
+      font-size: 0.65rem;
+      padding: 3px 8px;
+      border-radius: 2px;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-dim);
+      transition: all 150ms;
+    }
+    .btn-tiny:hover { color: var(--text); border-color: var(--text-dim); }
+    .btn-tiny.danger { color: var(--danger-light); border-color: var(--danger); }
+    .btn-tiny.danger:hover { background: var(--danger); color: var(--text); }
+
+    .search-box {
+      padding: 8px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .search-box input {
+      font-size: 0.82rem;
+    }
+
+    .list-count {
+      padding: 6px 10px;
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    /* ── Map ── */
+    #map {
+      width: 100%;
+      height: 100%;
+      background: var(--map-bg);
+    }
+
+    /* ── Toast ── */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 20px;
+      border-radius: 2px;
+      font-family: 'Metamorphous', cursive;
+      font-size: 0.8rem;
+      transition: transform 300ms ease;
+      z-index: 9999;
+      pointer-events: none;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); }
+    .toast.success { border-color: var(--success-light); color: var(--success-light); }
+    .toast.error { border-color: var(--danger-light); color: var(--danger-light); }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
+
+    /* Leaflet draw overrides */
+    .leaflet-draw-toolbar a {
+      background-color: var(--surface) !important;
+      border-color: var(--border) !important;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="display:flex; align-items:center; gap:12px;">
+    <div class="header-title">
+      Morthia <span>/ Map Editor</span>
+    </div>
+    <div class="mode-indicator" id="modeIndicator">VIEW MODE</div>
+  </div>
+  <div class="header-actions">
+    <button class="btn btn-secondary" id="loadJsonBtn">Load places.json</button>
+    <input type="file" id="fileInput" accept=".json" style="display:none" />
+    <button class="btn btn-success" id="exportBtn">⬇ Export places.json</button>
+  </div>
+</header>
+
+<div class="workspace">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-tabs">
+      <button class="tab active" data-tab="edit">✏ Edit / Add</button>
+      <button class="tab" data-tab="list">☰ All Places</button>
+    </div>
+
+    <!-- Edit Tab -->
+    <div class="tab-panel active" id="tab-edit">
+      <div class="draw-hint">
+        <strong>1.</strong> Draw a polygon on the map using the toolbar (top-left).<br>
+        <strong>2.</strong> Fill in the details below and click Save.
+      </div>
+
+      <div class="form-panel">
+        <div class="form-section-title">Region Shape</div>
+
+        <div class="polygon-status no-polygon" id="polygonStatus">
+          No polygon drawn yet — use the draw tool on the map.
+        </div>
+
+        <div style="display:flex; gap:8px; margin-bottom:16px;">
+          <button class="btn btn-secondary" id="clearPolygonBtn" style="flex:1; font-size:0.72rem;">✕ Clear Shape</button>
+        </div>
+
+        <div class="form-section-title">Place Details</div>
+
+        <div class="form-group">
+          <label>Name *</label>
+          <input type="text" id="fieldName" placeholder="e.g. Korthal Forest" />
+        </div>
+
+        <div class="form-group">
+          <label>Type</label>
+          <select id="fieldType">
+            <option value="">— Select —</option>
+            <option>City/Settlement</option>
+            <option>Forest</option>
+            <option>Mountain</option>
+            <option>Lake</option>
+            <option>Ocean/Water</option>
+            <option>Shores/Coasts</option>
+            <option>Point of Interest</option>
+            <option>Mine</option>
+            <option>Waterfall</option>
+            <option>Desert</option>
+            <option>Region</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Kingdom / Region</label>
+          <input type="text" id="fieldRegion" placeholder="e.g. Morheim" list="regionList" />
+          <datalist id="regionList"></datalist>
+        </div>
+
+        <div class="form-group">
+          <label>Leader</label>
+          <input type="text" id="fieldLeader" placeholder="e.g. King Ferguson, 59" />
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <textarea id="fieldDescription" placeholder="Describe this location..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Alias (optional)</label>
+          <input type="text" id="fieldAlias" placeholder="Alternative name" />
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" id="saveBtn" style="flex:1;">Save Place</button>
+        <button class="btn btn-secondary" id="clearFormBtn">Clear</button>
+      </div>
+    </div>
+
+    <!-- List Tab -->
+    <div class="tab-panel" id="tab-list">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search places..." />
+      </div>
+      <div class="list-count" id="listCount">Load a places.json to begin</div>
+      <div class="places-list" id="placesList"></div>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div id="map"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+<script>
+  const MAP_HEIGHT = 6144;
+  const MAP_WIDTH  = 8192;
+  const IMG_PATH   = './images/Morthia-Web-Official.jpg';
+
+  // ── State ──
+  let placesData   = {};
+  let editingKey   = null;
+  let drawnPolygon = null;  // the current drawn shape layer
+  let allLayers    = {};    // key → leaflet layer
+
+  // ── Map setup ──
+  const map = L.map('map', {
+    crs: L.CRS.Simple,
+    minZoom: -5,
+    maxZoom: 1,
+    zoomSnap: 0.5,
+    attributionControl: false,
+  });
+
+  const bounds = [[0,0],[MAP_HEIGHT, MAP_WIDTH]];
+  const image = L.imageOverlay(IMG_PATH, bounds).addTo(map);
+  map.fitBounds(bounds);
+  image.getElement().style.boxSizing = 'border-box';
+
+  // ── Draw controls ──
+  const drawnItems = new L.FeatureGroup().addTo(map);
+
+  const drawControl = new L.Control.Draw({
+    edit: { featureGroup: drawnItems, edit: false, remove: false },
+    draw: {
+      polygon: {
+        shapeOptions: { color: '#b67c00', fillColor: '#b67c00', fillOpacity: 0.2, weight: 2 },
+        showArea: false,
+      },
+      rectangle: {
+        shapeOptions: { color: '#b67c00', fillColor: '#b67c00', fillOpacity: 0.2, weight: 2 },
+      },
+      polyline: false,
+      circle: false,
+      circlemarker: false,
+      marker: false,
+    }
+  });
+  map.addControl(drawControl);
+
+  // ── Draw events ──
+  map.on(L.Draw.Event.DRAWSTART, () => {
+    setModeIndicator(true);
+    // Clear any previous drawn shape
+    if (drawnPolygon) { drawnItems.removeLayer(drawnPolygon); drawnPolygon = null; }
+    updatePolygonStatus();
+  });
+
+  map.on(L.Draw.Event.CREATED, (e) => {
+    setModeIndicator(false);
+    drawnPolygon = e.layer;
+    drawnItems.addLayer(drawnPolygon);
+    updatePolygonStatus();
+    // Switch to edit tab if not already
+    activateTab('edit');
+    toast('Shape drawn — fill in details and save.', 'success');
+  });
+
+  // ── Tab switching ──
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => activateTab(tab.dataset.tab));
+  });
+
+  function activateTab(name) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === `tab-${name}`));
+  }
+
+  // ── Load JSON ──
+  document.getElementById('loadJsonBtn').addEventListener('click', () => {
+    document.getElementById('fileInput').click();
+  });
+
+  document.getElementById('fileInput').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        placesData = JSON.parse(ev.target.result);
+        renderAllLayers();
+        renderPlacesList();
+        populateRegionList();
+        toast(`Loaded ${Object.keys(placesData).length} places`, 'success');
+      } catch {
+        toast('Invalid JSON file', 'error');
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  });
+
+  // ── Render all existing polygons on the map ──
+  function renderAllLayers() {
+    // Clear old layers
+    Object.values(allLayers).forEach(l => map.removeLayer(l));
+    allLayers = {};
+
+    for (const [key, info] of Object.entries(placesData)) {
+      if (!info.coords) continue;
+      const layer = L.polygon(info.coords, {
+        color: '#b67c00',
+        fillColor: '#b67c00',
+        fillOpacity: 0.08,
+        weight: 1,
+        opacity: 0.5,
+      });
+      layer.bindTooltip(info.place || key, { sticky: true, className: 'leaflet-tooltip' });
+      layer.on('click', () => loadPlaceForEditing(key));
+      layer.addTo(map);
+      allLayers[key] = layer;
+    }
+  }
+
+  // ── Render places list ──
+  function renderPlacesList(filter = '') {
+    const list = document.getElementById('placesList');
+    const count = document.getElementById('listCount');
+    list.innerHTML = '';
+
+    const keys = Object.keys(placesData).filter(k =>
+      !filter || k.toLowerCase().includes(filter.toLowerCase()) ||
+      (placesData[k].region || '').toLowerCase().includes(filter.toLowerCase())
+    );
+
+    count.textContent = `${keys.length} of ${Object.keys(placesData).length} places`;
+
+    if (keys.length === 0) {
+      list.innerHTML = '<div style="padding:16px;color:var(--text-dim);font-size:0.8rem;">No places found.</div>';
+      return;
+    }
+
+    keys.sort().forEach(key => {
+      const info = placesData[key];
+      const div = document.createElement('div');
+      div.className = 'place-item' + (key === editingKey ? ' selected' : '');
+      div.innerHTML = `
+        <div class="place-item-name">${info.place || key}</div>
+        <div class="place-item-meta">${[info.type, info.region].filter(Boolean).join(' · ') || '—'}</div>
+        <div class="place-item-actions">
+          <button class="btn-tiny" data-key="${key}" data-action="edit">Edit</button>
+          <button class="btn-tiny" data-key="${key}" data-action="fly">Fly to</button>
+          <button class="btn-tiny danger" data-key="${key}" data-action="delete">Delete</button>
+        </div>
+      `;
+      list.appendChild(div);
+    });
+
+    list.querySelectorAll('[data-action]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const key = btn.dataset.key;
+        const action = btn.dataset.action;
+        if (action === 'edit') { loadPlaceForEditing(key); activateTab('edit'); }
+        else if (action === 'fly') { flyToPlace(key); }
+        else if (action === 'delete') { deletePlace(key); }
+      });
+    });
+  }
+
+  document.getElementById('searchInput').addEventListener('input', (e) => {
+    renderPlacesList(e.target.value);
+  });
+
+  // ── Load a place into the edit form ──
+  function loadPlaceForEditing(key) {
+    editingKey = key;
+    const info = placesData[key];
+
+    document.getElementById('fieldName').value        = info.place || key;
+    document.getElementById('fieldType').value        = info.type || '';
+    document.getElementById('fieldRegion').value      = info.region || '';
+    document.getElementById('fieldLeader').value      = info.leader || '';
+    document.getElementById('fieldDescription').value = info.description || '';
+    document.getElementById('fieldAlias').value       = info.alias || '';
+
+    // Clear drawn shape and show existing coords
+    if (drawnPolygon) { drawnItems.removeLayer(drawnPolygon); drawnPolygon = null; }
+    if (info.coords) {
+      drawnPolygon = L.polygon(info.coords, {
+        color: '#d4a030', fillColor: '#d4a030', fillOpacity: 0.25, weight: 2,
+      });
+      drawnItems.addLayer(drawnPolygon);
+    }
+    updatePolygonStatus();
+    flyToPlace(key);
+    activateTab('edit');
+    renderPlacesList(document.getElementById('searchInput').value);
+  }
+
+  // ── Fly to a place ──
+  function flyToPlace(key) {
+    const layer = allLayers[key];
+    if (layer) map.flyToBounds(layer.getBounds(), { padding: [40, 40], duration: 0.8 });
+  }
+
+  // ── Save ──
+  document.getElementById('saveBtn').addEventListener('click', () => {
+    const name = document.getElementById('fieldName').value.trim();
+    if (!name) { toast('Name is required', 'error'); return; }
+    if (!drawnPolygon) { toast('Please draw a shape on the map first', 'error'); return; }
+
+    const coords = drawnPolygon.getLatLngs()[0].map(ll => [ll.lat, ll.lng]);
+
+    const key = editingKey || name;
+    const entry = {
+      place:       name,
+      coords,
+    };
+
+    const type   = document.getElementById('fieldType').value.trim();
+    const region = document.getElementById('fieldRegion').value.trim();
+    const leader = document.getElementById('fieldLeader').value.trim();
+    const desc   = document.getElementById('fieldDescription').value.trim();
+    const alias  = document.getElementById('fieldAlias').value.trim();
+
+    if (type)   entry.type        = type;
+    if (region) entry.region      = region;
+    if (leader) entry.leader      = leader;
+    if (desc)   entry.description = desc;
+    if (alias)  entry.alias       = alias;
+
+    // If name changed, remove old key
+    if (editingKey && editingKey !== name) {
+      delete placesData[editingKey];
+      if (allLayers[editingKey]) { map.removeLayer(allLayers[editingKey]); delete allLayers[editingKey]; }
+    }
+
+    placesData[key] = entry;
+    editingKey = key;
+
+    // Update map layer
+    if (allLayers[key]) { map.removeLayer(allLayers[key]); }
+    const newLayer = L.polygon(coords, {
+      color: '#b67c00', fillColor: '#b67c00', fillOpacity: 0.08, weight: 1, opacity: 0.5,
+    });
+    newLayer.bindTooltip(name, { sticky: true });
+    newLayer.on('click', () => loadPlaceForEditing(key));
+    newLayer.addTo(map);
+    allLayers[key] = newLayer;
+
+    renderPlacesList(document.getElementById('searchInput').value);
+    populateRegionList();
+    toast(`"${name}" saved!`, 'success');
+  });
+
+  // ── Clear form ──
+  document.getElementById('clearFormBtn').addEventListener('click', clearForm);
+  function clearForm() {
+    editingKey = null;
+    ['fieldName','fieldType','fieldRegion','fieldLeader','fieldDescription','fieldAlias']
+      .forEach(id => { document.getElementById(id).value = ''; });
+    if (drawnPolygon) { drawnItems.removeLayer(drawnPolygon); drawnPolygon = null; }
+    updatePolygonStatus();
+    renderPlacesList(document.getElementById('searchInput').value);
+  }
+
+  // ── Clear polygon ──
+  document.getElementById('clearPolygonBtn').addEventListener('click', () => {
+    if (drawnPolygon) { drawnItems.removeLayer(drawnPolygon); drawnPolygon = null; }
+    updatePolygonStatus();
+  });
+
+  // ── Delete ──
+  function deletePlace(key) {
+    if (!confirm(`Delete "${placesData[key]?.place || key}"? This cannot be undone.`)) return;
+    delete placesData[key];
+    if (allLayers[key]) { map.removeLayer(allLayers[key]); delete allLayers[key]; }
+    if (editingKey === key) clearForm();
+    renderPlacesList(document.getElementById('searchInput').value);
+    toast(`Deleted "${key}"`, 'success');
+  }
+
+  // ── Export ──
+  document.getElementById('exportBtn').addEventListener('click', () => {
+    const json = JSON.stringify(placesData, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href = url; a.download = 'places.json';
+    a.click();
+    URL.revokeObjectURL(url);
+    toast('places.json exported!', 'success');
+  });
+
+  // ── Populate region datalist ──
+  function populateRegionList() {
+    const regions = [...new Set(Object.values(placesData).map(p => p.region).filter(Boolean))].sort();
+    const dl = document.getElementById('regionList');
+    dl.innerHTML = regions.map(r => `<option value="${r}">`).join('');
+  }
+
+  // ── UI helpers ──
+  function updatePolygonStatus() {
+    const el = document.getElementById('polygonStatus');
+    if (drawnPolygon) {
+      const pts = drawnPolygon.getLatLngs()[0].length;
+      el.textContent = `✓ Shape ready — ${pts} points`;
+      el.className = 'polygon-status has-polygon';
+    } else {
+      el.textContent = 'No polygon drawn yet — use the draw tool on the map.';
+      el.className = 'polygon-status no-polygon';
+    }
+  }
+
+  function setModeIndicator(drawing) {
+    const el = document.getElementById('modeIndicator');
+    el.textContent = drawing ? 'DRAWING' : 'VIEW MODE';
+    el.className = 'mode-indicator' + (drawing ? ' drawing' : '');
+  }
+
+  let toastTimer;
+  function toast(msg, type = '') {
+    const el = document.getElementById('toast');
+    el.textContent = msg;
+    el.className = `toast ${type} show`;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { el.className = `toast ${type}`; }, 2500);
+  }
+</script>
+</body>
+</html>
