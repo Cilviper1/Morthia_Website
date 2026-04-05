@@ -369,9 +369,12 @@ for place, info in places_dict.items():
     y1 = MAP_HEIGHT - int(y1)
     y2 = MAP_HEIGHT - int(y2)
 
-    # leaflet latlng wants y first
-    coords = [[y1, int(x1)], [y2, int(x2)]]
-    places_dict[place]["coords"] = coords
+ # leaflet latlng wants y first
+    top_left     = [y1, int(x1)]
+    top_right    = [y1, int(x2)]
+    bottom_right = [y2, int(x2)]
+    bottom_left  = [y2, int(x1)]
+    places_dict[place]["coords"] = [top_left, top_right, bottom_right, bottom_left]
 
 content_file = open(path.parent / "places.json", "w")
 json.dump(places_dict, content_file)
