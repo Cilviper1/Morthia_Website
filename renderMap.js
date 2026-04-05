@@ -2,6 +2,7 @@
 const closeBtn = document.querySelector(".close-btn");
 const sidebarContainer = document.querySelector(".sidebar-container");
 const sidebarContent = document.querySelector(".sidebar-content");
+const wrapper = document.querySelector(".wrapper-home");
 
 async function loadPlaceInfo() {
   const res = await fetch('./places.json')
@@ -9,6 +10,7 @@ async function loadPlaceInfo() {
 }
 
 // Opens sidebar and populates it with place info
+
 function getInfo(info) {
   sidebarContent.innerHTML = "";
 
@@ -28,13 +30,13 @@ function getInfo(info) {
     sidebarContent.appendChild(Content);
   }
 
-  // Expand the sidebar
   sidebarContainer.classList.remove("collapsed");
+  wrapper.classList.add("sidebar-open");
 }
 
-// Collapses the sidebar
 function collapseSidebar() {
   sidebarContainer.classList.add("collapsed");
+  wrapper.classList.remove("sidebar-open");
 }
 
 // Close button collapses instead of clearing
