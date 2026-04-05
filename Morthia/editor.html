@@ -315,8 +315,10 @@
     if (!drawnPolygon){ toast('Please draw a shape on the map first', 'error'); return; }
 
     const coords = drawnPolygon.getLatLngs()[0].map(ll => [ll.lat, ll.lng]);
-    const key    = editingKey || name;
-    const entry  = { place: name, coords };
+if (!editingKey && placesData[name]) {
+  toast('A place with this name already exists', 'error');
+  return;
+}    const entry  = { place: name, coords };
 
     const type   = document.getElementById('fieldType').value.trim();
     const region = document.getElementById('fieldRegion').value.trim();
