@@ -348,3 +348,16 @@ footer {
   height: 100%;
   width: 100%;
 }
+
+/* Sidebar collapse */
+.sidebar-container {
+  transition: width 300ms ease, padding 300ms ease, opacity 300ms ease;
+  overflow: hidden;
+}
+
+.sidebar-container.collapsed {
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
