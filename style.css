@@ -70,12 +70,16 @@ h2 {
 }
 
 /* end landing */
-
 .wrapper-home {
   height: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 0;
   justify-content: center;
+  transition: grid-template-columns 300ms ease;
+}
+
+.wrapper-home.sidebar-open {
+  grid-template-columns: 2fr 1fr;
 }
 
 header {
