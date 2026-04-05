@@ -29,29 +29,28 @@
 </header>
 
 <div class="workspace">
-  <!-- Sidebar -->
   <div class="sidebar">
     <div class="sidebar-tabs">
       <button class="tab active" data-tab="edit">✏ Edit / Add</button>
       <button class="tab" data-tab="list">☰ All Places</button>
     </div>
 
-    <!-- Edit Tab -->
     <div class="tab-panel active" id="tab-edit">
       <div class="draw-hint">
-        <strong>1.</strong> Draw a polygon on the map using the toolbar (top-left).<br>
-        <strong>2.</strong> Fill in the details below and click Save.
+        <strong>1.</strong> Draw a polygon on the map.<br>
+        <strong>2.</strong> Fill details and save.
       </div>
 
       <div class="form-panel">
-        <div class="form-section-title">Region Shape
-          <button class="btn btn-secondary" id="redrawBtn" style="flex:1; font-size:0.72rem;">
+        <div class="form-section-title">
+          Region Shape
+          <button class="btn btn-secondary" id="redrawBtn" style="font-size:0.72rem;">
             ✏ Redraw Shape
           </button> 
         </div>
 
         <div class="polygon-status no-polygon" id="polygonStatus">
-          No polygon drawn yet — use the draw tool on the map.
+          No polygon drawn yet — use the draw tool.
         </div>
 
         <div style="display:flex; gap:8px; margin-bottom:16px;">
@@ -62,7 +61,7 @@
 
         <div class="form-group">
           <label>Name *</label>
-          <input type="text" id="fieldName" placeholder="e.g. Korthal Forest" />
+          <input type="text" id="fieldName" />
         </div>
 
         <div class="form-group">
@@ -85,43 +84,39 @@
 
         <div class="form-group">
           <label>Kingdom / Region</label>
-          <input type="text" id="fieldRegion" placeholder="e.g. Morheim" list="regionList" />
+          <input type="text" id="fieldRegion" list="regionList" />
           <datalist id="regionList"></datalist>
         </div>
 
         <div class="form-group">
           <label>Leader</label>
-          <input type="text" id="fieldLeader" placeholder="e.g. King Ferguson, 59" />
+          <input type="text" id="fieldLeader" />
         </div>
 
         <div class="form-group">
           <label>Description</label>
-          <textarea id="fieldDescription" placeholder="Describe this location..."></textarea>
+          <textarea id="fieldDescription"></textarea>
         </div>
 
         <div class="form-group">
-          <label>Alias (optional)</label>
-          <input type="text" id="fieldAlias" placeholder="Alternative name" />
+          <label>Alias</label>
+          <input type="text" id="fieldAlias" />
         </div>
       </div>
 
       <div class="form-actions">
-        <button class="btn btn-primary" id="saveBtn" style="flex:1;">Save Place</button>
+        <button class="btn btn-primary" id="saveBtn">Save Place</button>
         <button class="btn btn-secondary" id="clearFormBtn">Clear</button>
       </div>
     </div>
 
-    <!-- List Tab -->
     <div class="tab-panel" id="tab-list">
-      <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Search places..." />
-      </div>
-      <div class="list-count" id="listCount">Load a places.json to begin</div>
-      <div class="places-list" id="placesList"></div>
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <div id="listCount"></div>
+      <div id="placesList"></div>
     </div>
   </div>
 
-  <!-- Map -->
   <div id="map"></div>
 </div>
 
@@ -129,367 +124,110 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
 <script>
-  
-  const MAP_HEIGHT = 6144;
-  const MAP_WIDTH  = 8192;
-  const IMG_PATH   = '../images/Morthia-Web-Official.jpg';
+const MAP_HEIGHT = 6144;
+const MAP_WIDTH  = 8192;
+const IMG_PATH   = '../images/Morthia-Web-Official.jpg';
 
-  let placesData   = {};
-  let editingKey   = null;
-  let drawnPolygon = null;
-  let allLayers    = {};
-  let redrawMode = false;
+let placesData = {};
+let editingKey = null;
+let drawnPolygon = null;
+let allLayers = {};
+let redrawMode = false;
+let startPointMarker = null;
 
-  const map = L.map('map', {
-    crs: L.CRS.Simple,
-    minZoom: -5,
-    maxZoom: 1,
-    zoomSnap: 0.5,
-    attributionControl: false,
-  });
+const map = L.map('map', { crs: L.CRS.Simple });
+const bounds = [[0,0],[MAP_HEIGHT, MAP_WIDTH]];
+L.imageOverlay(IMG_PATH, bounds).addTo(map);
+map.fitBounds(bounds);
 
-  const bounds = [[0,0],[MAP_HEIGHT, MAP_WIDTH]];
-  const image = L.imageOverlay(IMG_PATH, bounds).addTo(map);
-  map.fitBounds(bounds);
-  image.getElement().style.boxSizing = 'border-box';
+const drawnItems = new L.FeatureGroup().addTo(map);
 
-  const drawnItems = new L.FeatureGroup().addTo(map);
+map.addControl(new L.Control.Draw({
+  edit: { featureGroup: drawnItems },
+  draw: { polygon: true, rectangle: true, marker: false, polyline:false, circle:false }
+}));
 
-  const drawControl = new L.Control.Draw({
-    edit: { featureGroup: drawnItems, edit: false, remove: false },
-    draw: {
-      polygon: {
-        shapeOptions: { color: '#b67c00', fillColor: '#b67c00', fillOpacity: 0.2, weight: 2 },
-        showArea: false,
-      },
-      rectangle: {
-        shapeOptions: { color: '#b67c00', fillColor: '#b67c00', fillOpacity: 0.2, weight: 2 },
-      },
-      polyline: false,
-      circle: false,
-      circlemarker: false,
-      marker: false,
-    }
-  });
-  map.addControl(drawControl);
+// ⭐ START POINT MARKER
+function updateStartPointMarker(latlng) {
+  if (startPointMarker) map.removeLayer(startPointMarker);
+  if (!latlng) return;
 
-  map.on(L.Draw.Event.DRAWSTART, () => {
-    setModeIndicator(true);
-    if (drawnPolygon) { drawnItems.removeLayer(drawnPolygon); drawnPolygon = null; }
-    updatePolygonStatus();
-  });
+  startPointMarker = L.circleMarker(latlng, {
+    radius: 6,
+    color: '#00e5ff',
+    fillColor: '#00e5ff',
+    fillOpacity: 1
+  }).addTo(map).bindTooltip('Start', { permanent:true, offset:[0,-10] });
+}
 
+// ⭐ LIVE DRAW TRACKING
+map.on('draw:drawvertex', (e) => {
+  const layers = e.layers.getLayers();
+  if (!layers.length) return;
+
+  const latlngs = layers[0].getLatLngs();
+  if (latlngs.length) updateStartPointMarker(latlngs[0]);
+});
+
+// ⭐ DRAW COMPLETE
 map.on(L.Draw.Event.CREATED, (e) => {
-  setModeIndicator(false);
-
   drawnPolygon = e.layer;
   drawnItems.addLayer(drawnPolygon);
 
-  updatePolygonStatus();
-  activateTab('edit');
+  const pts = drawnPolygon.getLatLngs()[0];
+  if (pts.length) updateStartPointMarker(pts[0]);
 
-  if (redrawMode) {
-    toast('New shape ready — click Save to update.', 'success');
-    redrawMode = false;
-  } else {
-    toast('Shape drawn — fill in details and save.', 'success');
-  }
+  redrawMode = false;
 });
-  
-  map.on(L.Draw.Event.CREATED, (e) => {
-    setModeIndicator(false);
-    drawnPolygon = e.layer;
-    drawnItems.addLayer(drawnPolygon);
-    updatePolygonStatus();
-    activateTab('edit');
-    toast('Shape drawn — fill in details and save.', 'success');
-  });
 
-  document.querySelectorAll('.tab').forEach(tab => {
-    tab.addEventListener('click', () => activateTab(tab.dataset.tab));
-  });
-
-  function activateTab(name) {
-    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
-    document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === `tab-${name}`));
-  }
-
-  document.getElementById('loadJsonBtn').addEventListener('click', () => {
-    document.getElementById('fileInput').click();
-  });
-
-  document.getElementById('fileInput').addEventListener('change', (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      try {
-        placesData = JSON.parse(ev.target.result);
-        renderAllLayers();
-        renderPlacesList();
-        populateRegionList();
-        toast(`Loaded ${Object.keys(placesData).length} places`, 'success');
-      } catch {
-        toast('Invalid JSON file', 'error');
-      }
-    };
-    reader.readAsText(file);
-    e.target.value = '';
-  });
-
-  document.getElementById('redrawBtn').addEventListener('click', () => {
-  if (!editingKey) {
-    toast('Select a place first', 'error');
-    return;
-  }
-
+// ⭐ REDRAW BUTTON
+document.getElementById('redrawBtn').onclick = () => {
+  if (!editingKey) return alert('Select a place first');
   redrawMode = true;
+  if (drawnPolygon) drawnItems.removeLayer(drawnPolygon);
+  drawnPolygon = null;
+  if (startPointMarker) map.removeLayer(startPointMarker);
+};
 
-  // Remove existing polygon from editor
-  if (drawnPolygon) {
-    drawnItems.removeLayer(drawnPolygon);
-    drawnPolygon = null;
+// ⭐ LOAD PLACE
+function loadPlaceForEditing(key){
+  editingKey = key;
+  const info = placesData[key];
+
+  if (drawnPolygon) drawnItems.removeLayer(drawnPolygon);
+
+  drawnPolygon = L.polygon(info.coords).addTo(drawnItems);
+
+  if (info.coords.length){
+    updateStartPointMarker(L.latLng(info.coords[0][0], info.coords[0][1]));
   }
+}
 
-  updatePolygonStatus();
-  setModeIndicator(true);
-  toast('Draw a new shape on the map', 'success');
+// ⭐ SAVE
+document.getElementById('saveBtn').onclick = () => {
+  const name = fieldName.value.trim();
+  if (!name || !drawnPolygon) return alert('Missing data');
+
+  const coords = drawnPolygon.getLatLngs()[0].map(p=>[p.lat,p.lng]);
+
+  const key = editingKey || name;
+  placesData[key] = { place:name, coords };
+
+  alert('Saved!');
+};
+
+// ⭐ AUTO LOAD
+fetch('../places.json')
+.then(r=>r.json())
+.then(data=>{
+  placesData = data;
+  Object.entries(data).forEach(([k,v])=>{
+    const layer = L.polygon(v.coords).addTo(map);
+    layer.on('click', ()=>loadPlaceForEditing(k));
+  });
 });
-
-  function renderAllLayers() {
-    Object.values(allLayers).forEach(l => map.removeLayer(l));
-    allLayers = {};
-
-    for (const [key, info] of Object.entries(placesData)) {
-      if (!info.coords) continue;
-      const layer = L.polygon(info.coords, {
-        color: '#b67c00', fillColor: '#b67c00', fillOpacity: 0.08, weight: 1, opacity: 0.5,
-      });
-      layer.bindTooltip(info.place || key, { sticky: true });
-      layer.on('click', () => loadPlaceForEditing(key));
-      layer.addTo(map);
-      allLayers[key] = layer;
-    }
-  }
-
-  function renderPlacesList(filter = '') {
-    const list  = document.getElementById('placesList');
-    const count = document.getElementById('listCount');
-    list.innerHTML = '';
-
-    const keys = Object.keys(placesData).filter(k =>
-      !filter || k.toLowerCase().includes(filter.toLowerCase()) ||
-      (placesData[k].region || '').toLowerCase().includes(filter.toLowerCase())
-    );
-
-    count.textContent = `${keys.length} of ${Object.keys(placesData).length} places`;
-
-    if (keys.length === 0) {
-      list.innerHTML = '<div style="padding:16px;color:var(--text-dim);font-size:0.8rem;">No places found.</div>';
-      return;
-    }
-
-    keys.sort().forEach(key => {
-      const info = placesData[key];
-      const div  = document.createElement('div');
-      div.className = 'place-item' + (key === editingKey ? ' selected' : '');
-      div.innerHTML = `
-        <div class="place-item-name">${info.place || key}</div>
-        <div class="place-item-meta">${[info.type, info.region].filter(Boolean).join(' · ') || '—'}</div>
-        <div class="place-item-actions">
-          <button class="btn-tiny" data-key="${key}" data-action="edit">Edit</button>
-          <button class="btn-tiny" data-key="${key}" data-action="fly">Fly to</button>
-          <button class="btn-tiny danger" data-key="${key}" data-action="delete">Delete</button>
-        </div>
-      `;
-      list.appendChild(div);
-    });
-
-    list.querySelectorAll('[data-action]').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const key    = btn.dataset.key;
-        const action = btn.dataset.action;
-        if (action === 'edit')        { loadPlaceForEditing(key); activateTab('edit'); }
-        else if (action === 'fly')    { flyToPlace(key); }
-        else if (action === 'delete') { deletePlace(key); }
-      });
-    });
-  }
-
-  document.getElementById('searchInput').addEventListener('input', (e) => {
-    renderPlacesList(e.target.value);
-  });
-
-  function loadPlaceForEditing(key) {
-    editingKey = key;
-    const info = placesData[key];
-
-    document.getElementById('fieldName').value        = info.place || key;
-    document.getElementById('fieldType').value        = info.type || '';
-    document.getElementById('fieldRegion').value      = info.region || '';
-    document.getElementById('fieldLeader').value      = info.leader || '';
-    document.getElementById('fieldDescription').value = info.description || '';
-    document.getElementById('fieldAlias').value       = info.alias || '';
-
-    if (drawnPolygon) { drawnItems.removeLayer(drawnPolygon); drawnPolygon = null; }
-    if (info.coords) {
-      drawnPolygon = L.polygon(info.coords, {
-        color: '#d4a030', fillColor: '#d4a030', fillOpacity: 0.25, weight: 2,
-      });
-      drawnItems.addLayer(drawnPolygon);
-    }
-    updatePolygonStatus();
-    flyToPlace(key);
-    activateTab('edit');
-    renderPlacesList(document.getElementById('searchInput').value);
-  }
-
-  function flyToPlace(key) {
-    const layer = allLayers[key];
-    if (layer) map.flyToBounds(layer.getBounds(), { padding: [40, 40], duration: 0.8 });
-  }
-
-  document.getElementById('saveBtn').addEventListener('click', () => {
-    const name = document.getElementById('fieldName').value.trim();
-    if (!name)        { toast('Name is required', 'error'); return; }
-    if (!drawnPolygon){ toast('Please draw a shape on the map first', 'error'); return; }
-
-    const coords = drawnPolygon.getLatLngs()[0].map(ll => [ll.lat, ll.lng]);
-let key;
-
-if (redrawMode && editingKey) {
-  key = editingKey; // force overwrite
-} else {
-  key = editingKey || name;
-}
-    
-    const entry  = { place: name, coords };
-
-    const type   = document.getElementById('fieldType').value.trim();
-    const region = document.getElementById('fieldRegion').value.trim();
-    const leader = document.getElementById('fieldLeader').value.trim();
-    const desc   = document.getElementById('fieldDescription').value.trim();
-    const alias  = document.getElementById('fieldAlias').value.trim();
-
-    if (type)   entry.type        = type;
-    if (region) entry.region      = region;
-    if (leader) entry.leader      = leader;
-    if (desc)   entry.description = desc;
-    if (alias)  entry.alias       = alias;
-
-    if (editingKey && editingKey !== name) {
-      delete placesData[editingKey];
-      if (allLayers[editingKey]) { map.removeLayer(allLayers[editingKey]); delete allLayers[editingKey]; }
-    }
-
-    placesData[key] = entry;
-    editingKey = key;
-
-    if (allLayers[key]) { map.removeLayer(allLayers[key]); }
-    const newLayer = L.polygon(coords, {
-      color: '#b67c00', fillColor: '#b67c00', fillOpacity: 0.08, weight: 1, opacity: 0.5,
-    });
-    newLayer.bindTooltip(name, { sticky: true });
-    newLayer.on('click', () => loadPlaceForEditing(key));
-    newLayer.addTo(map);
-    allLayers[key] = newLayer;
-
-    renderPlacesList(document.getElementById('searchInput').value);
-    populateRegionList();
-    toast(`"${name}" saved!`, 'success');
-  });
-
-  document.getElementById('clearFormBtn').addEventListener('click', clearForm);
-  function clearForm() {
-    editingKey = null;
-    ['fieldName','fieldType','fieldRegion','fieldLeader','fieldDescription','fieldAlias']
-      .forEach(id => { document.getElementById(id).value = ''; });
-    if (drawnPolygon) { drawnItems.removeLayer(drawnPolygon); drawnPolygon = null; }
-    updatePolygonStatus();
-    renderPlacesList(document.getElementById('searchInput').value);
-  }
-
-  document.getElementById('clearPolygonBtn').addEventListener('click', () => {
-    if (drawnPolygon) { drawnItems.removeLayer(drawnPolygon); drawnPolygon = null; }
-    updatePolygonStatus();
-  });
-
-  function deletePlace(key) {
-    if (!confirm(`Delete "${placesData[key]?.place || key}"? This cannot be undone.`)) return;
-    delete placesData[key];
-    if (allLayers[key]) { map.removeLayer(allLayers[key]); delete allLayers[key]; }
-    if (editingKey === key) clearForm();
-    renderPlacesList(document.getElementById('searchInput').value);
-    toast(`Deleted "${key}"`, 'success');
-  }
-
-  document.getElementById('exportBtn').addEventListener('click', () => {
-    const json = JSON.stringify(placesData, null, 2);
-    const blob = new Blob([json], { type: 'application/json' });
-    const url  = URL.createObjectURL(blob);
-    const a    = document.createElement('a');
-    a.href = url; a.download = 'places.json';
-    a.click();
-    URL.revokeObjectURL(url);
-    toast('places.json exported!', 'success');
-  });
-
-  function populateRegionList() {
-    const regions = [...new Set(Object.values(placesData).map(p => p.region).filter(Boolean))].sort();
-    const dl = document.getElementById('regionList');
-    dl.innerHTML = regions.map(r => `<option value="${r}">`).join('');
-  }
-
-  function updatePolygonStatus() {
-    const el = document.getElementById('polygonStatus');
-    if (drawnPolygon) {
-      const pts = drawnPolygon.getLatLngs()[0].length;
-      el.textContent = `✓ Shape ready — ${pts} points`;
-      el.className = 'polygon-status has-polygon';
-    } else {
-      el.textContent = 'No polygon drawn yet — use the draw tool on the map.';
-      el.className = 'polygon-status no-polygon';
-    }
-  }
-
-  function setModeIndicator(drawing) {
-    const el = document.getElementById('modeIndicator');
-    el.textContent = drawing ? 'DRAWING' : 'VIEW MODE';
-    el.className = 'mode-indicator' + (drawing ? ' drawing' : '');
-  }
-
-  let toastTimer;
-  function toast(msg, type = '') {
-    const el = document.getElementById('toast');
-    el.textContent = msg;
-    el.className = `toast ${type} show`;
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => { el.className = `toast ${type}`; }, 2500);
-  }
-  
-window.addEventListener('DOMContentLoaded', loadDefaultPlaces);
-
-function loadDefaultPlaces() {
-  fetch('../places.json')
-    .then(res => {
-      if (!res.ok) throw new Error('places.json not found');
-      return res.json();
-    })
-    .then(data => {
-      placesData = data;
-      renderAllLayers();
-      renderPlacesList();
-      populateRegionList();
-      toast(`Loaded ${Object.keys(placesData).length} places`, 'success');
-    })
-    .catch(err => {
-      console.warn('Auto-load failed:', err.message);
-      toast('No default places.json found', 'error');
-    });
-}
-  
 </script>
 </body>
 </html>
