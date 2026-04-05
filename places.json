@@ -1,4112 +1,6444 @@
 {
-    "Anchorage Vista": {
-        "place": "Anchorage Vista",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2625,
-                2875
-            ],
-            [
-                2595,
-                2905
-            ]
-        ]
-    },
-    "Ardesia": {
-        "place": "Ardesia",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2319,
-                1724
-            ],
-            [
-                2289,
-                1754
-            ]
-        ]
-    },
-    "Claw Harbour": {
-        "place": "Claw Harbour",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2088,
-                2493
-            ],
-            [
-                2058,
-                2523
-            ]
-        ]
-    },
-    "Cochrane River": {
-        "place": "Cochrane River",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2613,
-                1762
-            ],
-            [
-                2583,
-                1792
-            ]
-        ]
-    },
-    "Mithril Lake": {
-        "place": "Mithril Lake",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2996,
-                2207
-            ],
-            [
-                2966,
-                2237
-            ]
-        ]
-    },
-    "Montistum": {
-        "place": "Montistum",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2836,
-                1646
-            ],
-            [
-                2806,
-                1676
-            ]
-        ]
-    },
-    "Rasa": {
-        "place": "Rasa",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2994,
-                2569
-            ],
-            [
-                2964,
-                2599
-            ]
-        ]
-    },
-    "Sabul Pass": {
-        "place": "Sabul Pass",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2689,
-                2639
-            ],
-            [
-                2659,
-                2669
-            ]
-        ]
-    },
-    "Tarsal Desert": {
-        "place": "Tarsal Desert",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3172,
-                2338
-            ],
-            [
-                2724,
-                2774
-            ]
-        ]
-    },
-    "The Hold": {
-        "place": "The Hold",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2407,
-                2377
-            ],
-            [
-                2357,
-                2427
-            ]
-        ]
-    },
-    "Vermillis": {
-        "place": "Vermillis",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3272,
-                2559
-            ],
-            [
-                3242,
-                2589
-            ]
-        ]
-    },
-    "WillowGlade": {
-        "place": "WillowGlade",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2337,
-                2064
-            ],
-            [
-                2307,
-                2094
-            ]
-        ]
-    },
-    "Aztarok": {
-        "place": "Aztarok",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5302,
-                5112
-            ],
-            [
-                5272,
-                5142
-            ]
-        ]
-    },
-    "Gaj Gedad": {
-        "place": "Gaj Gedad",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4537,
-                5050
-            ],
-            [
-                4507,
-                5080
-            ]
-        ]
-    },
-    "Gedad": {
-        "place": "Gedad",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4780,
-                5350
-            ],
-            [
-                4750,
-                5380
-            ]
-        ]
-    },
-    "Jusomaas": {
-        "place": "Jusomaas",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4598,
-                6000
-            ],
-            [
-                4548,
-                6050
-            ]
-        ]
-    },
-    "Od-Nenga": {
-        "place": "Od-Nenga",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4817,
-                5935
-            ],
-            [
-                4787,
-                5965
-            ]
-        ]
-    },
-    "Zut'Kitot": {
-        "place": "Zut'Kitot",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4366,
-                4125
-            ],
-            [
-                4336,
-                4155
-            ]
-        ]
-    },
-    "Aerduluk": {
-        "place": "Aerduluk",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3210,
-                1880
-            ],
-            [
-                3160,
-                2011
-            ]
-        ]
-    },
-    "Anduril": {
-        "place": "Anduril",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3722,
-                1975
-            ],
-            [
-                3674,
-                2061
-            ]
-        ]
-    },
-    "Barlenghir": {
-        "place": "Barlenghir",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3895,
-                1954
-            ],
-            [
-                3839,
-                2082
-            ]
-        ]
-    },
-    "Kadrehl": {
-        "place": "Kadrehl",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3852,
-                1669
-            ],
-            [
-                3803,
-                1761
-            ]
-        ]
-    },
-    "Korhelihr": {
-        "place": "Korhelihr",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2971,
-                1688
-            ],
-            [
-                2920,
-                1785
-            ]
-        ]
-    },
-    "Lordakihr": {
-        "place": "Lordakihr",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3130,
-                2094
-            ],
-            [
-                3081,
-                2216
-            ]
-        ]
-    },
-    "Torruhn": {
-        "place": "Torruhn",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3723,
-                1312
-            ],
-            [
-                3770,
-                1420
-            ]
-        ]
-    },
-    "Varkuhldir": {
-        "place": "Varkuhldir",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3372,
-                2073
-            ],
-            [
-                3322,
-                2200
-            ]
-        ]
-    },
-    "Vel-Gendar": {
-        "place": "Vel-Gendar",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3499,
-                2296
-            ],
-            [
-                3392,
-                2491
-            ]
-        ]
-    },
-    "Ironscar Hill": {
-        "place": "Ironscar Hill",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1990,
-                6683
-            ],
-            [
-                1960,
-                6713
-            ]
-        ]
-    },
-    "Neverport": {
-        "place": "Neverport",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1620,
-                6619
-            ],
-            [
-                1590,
-                6649
-            ]
-        ]
-    },
-    "Repository of Records": {
-        "place": "Repository of Records",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2239,
-                6551
-            ],
-            [
-                2189,
-                6601
-            ]
-        ]
-    },
-    "Rockfort Ridge": {
-        "place": "Rockfort Ridge",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2532,
-                5859
-            ],
-            [
-                2479,
-                5949
-            ]
-        ]
-    },
-    "Slag's Reach": {
-        "place": "Slag's Reach",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2063,
-                6180
-            ],
-            [
-                2033,
-                6210
-            ]
-        ]
-    },
-    "Soratin": {
-        "place": "Soratin",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2422,
-                5868
-            ],
-            [
-                2392,
-                5898
-            ]
-        ]
-    },
-    "Tabrise": {
-        "place": "Tabrise",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1823,
-                6322
-            ],
-            [
-                1793,
-                6352
-            ]
-        ]
-    },
-    "Trigg's Landing": {
-        "place": "Trigg's Landing",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2267,
-                5929
-            ],
-            [
-                2237,
-                5959
-            ]
-        ]
-    },
-    "Borderton": {
-        "place": "Borderton",
-        "leader": "Lord Ernard, 98",
-        "description": "A small city built along the path of the Great Stone Road, near the eastern border of the Morheim Kingdom. Borderton houses an arcane messaging system directly to Korthal. Borderton is the closest city by land to the OAR. It sees often travel and trade, and has since made a name for itself.",
-        "coords": [
-            [
-                3504,
-                4996
-            ],
-            [
-                3474,
-                5026
-            ]
-        ]
-    },
-    "Boscus Pass": {
-        "place": "Boscus Pass",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3508,
-                4283
-            ],
-            [
-                3458,
-                4313
-            ]
-        ]
-    },
-    "Bright Stone": {
-        "place": "Bright Stone",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3955,
-                2846
-            ],
-            [
-                3925,
-                2876
-            ]
-        ]
-    },
-    "Coval": {
-        "place": "Coval",
-        "leader": "Lord Trop Gnek, 46",
-        "description": "Tucked down a separate trail from the Great Stone Road, Coval acts as a place of refuge for weary travellers. Their small population specializes in collection of natural resources, and is the second closest village to the river that runs through the forest. They use ancient pathways to access prime fishing and hunting locations. Additionally is their reputation for a lineage of a Medically trained familly with a tragic past..",
-        "coords": [
-            [
-                3540,
-                4672
-            ],
-            [
-                3510,
-                4702
-            ]
-        ]
-    },
-    "Elder Point": {
-        "place": "Elder Point",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4002,
-                3142
-            ],
-            [
-                3972,
-                3172
-            ]
-        ]
-    },
-    "Elvene": {
-        "place": "Elvene",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3764,
-                2981
-            ],
-            [
-                3734,
-                3011
-            ]
-        ]
-    },
-    "Fernn": {
-        "place": "Fernn",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2600,
-                3742
-            ],
-            [
-                2570,
-                3772
-            ]
-        ]
-    },
-    "Fort Arteron": {
-        "place": "Fort Arteron",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3555,
-                2640
-            ],
-            [
-                3525,
-                2670
-            ]
-        ]
-    },
-    "Groggwood": {
-        "place": "Groggwood",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3967,
-                4845
-            ],
-            [
-                3937,
-                4875
-            ]
-        ]
-    },
-    "Korthal": {
-        "place": "Korthal",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4017,
-                3248
-            ],
-            [
-                3967,
-                3298
-            ]
-        ]
-    },
-    "Lunalem": {
-        "place": "Lunalem",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3701,
-                3719
-            ],
-            [
-                3671,
-                3749
-            ]
-        ]
-    },
-    "Lyric": {
-        "place": "Lyric",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3285,
-                2903
-            ],
-            [
-                3255,
-                2933
-            ]
-        ]
-    },
-    "Mattermont": {
-        "place": "Mattermont",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3419,
-                3184
-            ],
-            [
-                3389,
-                3214
-            ]
-        ]
-    },
-    "Riverhold": {
-        "place": "Riverhold",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2938,
-                3580
-            ],
-            [
-                2908,
-                3610
-            ]
-        ]
-    },
-    "Starguard": {
-        "place": "Starguard",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3955,
-                3616
-            ],
-            [
-                3925,
-                3646
-            ]
-        ]
-    },
-    "WakeField": {
-        "place": "WakeField",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3747,
-                2648
-            ],
-            [
-                3717,
-                2678
-            ]
-        ]
-    },
-    "Yellow Ridge": {
-        "place": "Yellow Ridge",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3237,
-                4294
-            ],
-            [
-                3207,
-                4324
-            ]
-        ]
-    },
-    "Royal Mines of Morheim": {
-        "place": "Royal Mines of Morheim",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4097,
-                3695
-            ],
-            [
-                3992,
-                3923
-            ]
-        ]
-    },
-    "University": {
-        "place": "University",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3042,
-                2906
-            ],
-            [
-                2970,
-                3040
-            ]
-        ]
-    },
-    "Angelfer Island": {
-        "place": "Angelfer Island",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2668,
-                6680
-            ],
-            [
-                2638,
-                6710
-            ]
-        ]
-    },
-    "Aquatas": {
-        "place": "Aquatas",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3034,
-                6763
-            ],
-            [
-                2914,
-                6883
-            ]
-        ]
-    },
-    "Ardenport": {
-        "place": "Ardenport",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3648,
-                5568
-            ],
-            [
-                3618,
-                5598
-            ]
-        ]
-    },
-    "Carran": {
-        "place": "Carran",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2630,
-                6087
-            ],
-            [
-                2600,
-                6117
-            ]
-        ]
-    },
-    "Cindergulch": {
-        "place": "Cindergulch",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2437,
-                6995
-            ],
-            [
-                2407,
-                7025
-            ]
-        ]
-    },
-    "Drymoor": {
-        "place": "Drymoor",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2366,
-                6331
-            ],
-            [
-                2336,
-                6361
-            ]
-        ]
-    },
-    "Far Water": {
-        "place": "Far Water",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2607,
-                6297
-            ],
-            [
-                2577,
-                6327
-            ]
-        ]
-    },
-    "Flurham": {
-        "place": "Flurham",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4025,
-                5691
-            ],
-            [
-                3995,
-                5721
-            ]
-        ]
-    },
-    "Meera": {
-        "place": "Meera",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2984,
-                5704
-            ],
-            [
-                2934,
-                5754
-            ]
-        ]
-    },
-    "MesaPort": {
-        "place": "MesaPort",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2472,
-                6514
-            ],
-            [
-                2442,
-                6544
-            ]
-        ]
-    },
-    "Nightshale": {
-        "place": "Nightshale",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3993,
-                6065
-            ],
-            [
-                3963,
-                6095
-            ]
-        ]
-    },
-    "Pikecliff": {
-        "place": "Pikecliff",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3060,
-                5428
-            ],
-            [
-                3030,
-                5458
-            ]
-        ]
-    },
-    "Pikeville": {
-        "place": "Pikeville",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3028,
-                5316
-            ],
-            [
-                2998,
-                5346
-            ]
-        ]
-    },
-    "Pirates Sanctum": {
-        "place": "Pirates Sanctum",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3476,
-                6936
-            ],
-            [
-                3446,
-                6966
-            ]
-        ]
-    },
-    "Port Mid": {
-        "place": "Port Mid",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3807,
-                6374
-            ],
-            [
-                3777,
-                6404
-            ]
-        ]
-    },
-    "Port Passer": {
-        "place": "Port Passer",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2597,
-                5817
-            ],
-            [
-                2567,
-                5847
-            ]
-        ]
-    },
-    "Port Sheerstone": {
-        "place": "Port Sheerstone",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3859,
-                6648
-            ],
-            [
-                3829,
-                6678
-            ]
-        ]
-    },
-    "Retria": {
-        "place": "Retria",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3695,
-                6343
-            ],
-            [
-                3665,
-                6373
-            ]
-        ]
-    },
-    "Ruslet": {
-        "place": "Ruslet",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3490,
-                6405
-            ],
-            [
-                3460,
-                6435
-            ]
-        ]
-    },
-    "Sheerstone Island": {
-        "place": "Sheerstone Island",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3811,
-                6731
-            ],
-            [
-                3781,
-                6761
-            ]
-        ]
-    },
-    "Smit": {
-        "place": "Smit",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3379,
-                5614
-            ],
-            [
-                3349,
-                5644
-            ]
-        ]
-    },
-    "Smuggler's Cove": {
-        "place": "Smuggler's Cove",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4001,
-                5446
-            ],
-            [
-                3971,
-                5476
-            ]
-        ]
-    },
-    "Tebiton": {
-        "place": "Tebiton",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2668,
-                7078
-            ],
-            [
-                2638,
-                7108
-            ]
-        ]
-    },
-    "Usterduum": {
-        "place": "Usterduum",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3244,
-                5992
-            ],
-            [
-                3214,
-                6022
-            ]
-        ]
-    },
-    "Uadir": {
-        "place": "Uadir",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                858,
-                5876
-            ],
-            [
-                828,
-                5906
-            ]
-        ]
-    },
-    "Aphachaigia Isl.": {
-        "place": "Aphachaigia Isl.",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                982,
-                4932
-            ],
-            [
-                823,
-                5174
-            ]
-        ]
-    },
-    "Azureinn Isl.": {
-        "place": "Azureinn Isl.",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1114,
-                4437
-            ],
-            [
-                877,
-                4663
-            ]
-        ]
-    },
-    "Broken Earth Isl.": {
-        "place": "Broken Earth Isl.",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                639,
-                5119
-            ],
-            [
-                544,
-                5357
-            ]
-        ]
-    },
-    "Ichor Landing": {
-        "place": "Ichor Landing",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                650,
-                5625
-            ],
-            [
-                577,
-                5776
-            ]
-        ]
-    },
-    "Laogai": {
-        "place": "Laogai",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1134,
-                5373
-            ],
-            [
-                945,
-                5608
-            ]
-        ]
-    },
-    "Mytra": {
-        "place": "Mytra",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1181,
-                5815
-            ],
-            [
-                1201,
-                5835
-            ]
-        ]
-    },
-    "Oman": {
-        "place": "Oman",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1358,
-                5825
-            ],
-            [
-                1378,
-                5805
-            ]
-        ]
-    },
-    "Frostling Stronghold": {
-        "place": "Frostling Stronghold",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3882,
-                839
-            ],
-            [
-                3852,
-                869
-            ]
-        ]
-    },
-    "Elantis": {
-        "place": "Elantis",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4725,
-                2053
-            ],
-            [
-                4675,
-                2103
-            ]
-        ]
-    },
-    "Rea Xandor": {
-        "place": "Rea Xandor",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4410,
-                2273
-            ],
-            [
-                4360,
-                2323
-            ]
-        ]
-    },
-    "Rhun": {
-        "place": "Rhun",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4851,
-                6585
-            ],
-            [
-                4801,
-                6635
-            ]
-        ]
-    },
-    "Ty Rythel": {
-        "place": "Ty Rythel",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4719,
-                875
-            ],
-            [
-                4689,
-                905
-            ]
-        ]
-    },
-    "Val'Alora": {
-        "place": "Val'Alora",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4498,
-                2941
-            ],
-            [
-                4468,
-                2971
-            ]
-        ]
-    },
-    "The Watch House": {
-        "place": "The Watch House",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4148,
-                528
-            ],
-            [
-                4097,
-                625
-            ]
-        ]
-    },
-    "Andale Port": {
-        "place": "Andale Port",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3360,
-                738
-            ],
-            [
-                3330,
-                768
-            ]
-        ]
-    },
-    "Cindere": {
-        "place": "Cindere",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2947,
-                1094
-            ],
-            [
-                2917,
-                1124
-            ]
-        ]
-    },
-    "Druin": {
-        "place": "Druin",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2979,
-                944
-            ],
-            [
-                2949,
-                974
-            ]
-        ]
-    },
-    "Elafi Field": {
-        "place": "Elafi Field",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3101,
-                820
-            ],
-            [
-                3071,
-                850
-            ]
-        ]
-    },
-    "Esperia": {
-        "place": "Esperia",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2725,
-                1285
-            ],
-            [
-                2695,
-                1315
-            ]
-        ]
-    },
-    "Far Point": {
-        "place": "Far Point",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1566,
-                1200
-            ],
-            [
-                1536,
-                1230
-            ]
-        ]
-    },
-    "Freeton": {
-        "place": "Freeton",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1958,
-                1246
-            ],
-            [
-                1928,
-                1276
-            ]
-        ]
-    },
-    "Hearth": {
-        "place": "Hearth",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2352,
-                1255
-            ],
-            [
-                2322,
-                1285
-            ]
-        ]
-    },
-    "KingsPort": {
-        "place": "KingsPort",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2659,
-                685
-            ],
-            [
-                2629,
-                715
-            ]
-        ]
-    },
-    "Mistvalley Keep": {
-        "place": "Mistvalley Keep",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2750,
-                1019
-            ],
-            [
-                2700,
-                1069
-            ]
-        ]
-    },
-    "Oberon Ports": {
-        "place": "Oberon Ports",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2027,
-                684
-            ],
-            [
-                1997,
-                714
-            ]
-        ]
-    },
-    "Red Rock": {
-        "place": "Red Rock",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3082,
-                1318
-            ],
-            [
-                3052,
-                1348
-            ]
-        ]
-    },
-    "Revari": {
-        "place": "Revari",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2917,
-                1510
-            ],
-            [
-                2887,
-                1540
-            ]
-        ]
-    },
-    "Sledge": {
-        "place": "Sledge",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3793,
-                1144
-            ],
-            [
-                3763,
-                1174
-            ]
-        ]
-    },
-    "Somarden": {
-        "place": "Somarden",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2584,
-                1004
-            ],
-            [
-                2554,
-                1034
-            ]
-        ]
-    },
-    "Stillcreek": {
-        "place": "Stillcreek",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2585,
-                1500
-            ],
-            [
-                2555,
-                1530
-            ]
-        ]
-    },
-    "Usuall": {
-        "place": "Usuall",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3206,
-                1251
-            ],
-            [
-                3176,
-                1281
-            ]
-        ]
-    },
-    "West Warden": {
-        "place": "West Warden",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2405,
-                379
-            ],
-            [
-                2375,
-                409
-            ]
-        ]
-    },
-    "Zirconia": {
-        "place": "Zirconia",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1700,
-                896
-            ],
-            [
-                1670,
-                926
-            ]
-        ]
-    },
-    "Hold of Civilization": {
-        "place": "Hold of Civilization",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2067,
-                3731
-            ],
-            [
-                2017,
-                3781
-            ]
-        ]
-    },
-    "Sutherland Keep": {
-        "place": "Sutherland Keep",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1715,
-                3622
-            ],
-            [
-                1665,
-                3672
-            ]
-        ]
-    },
-    "Underdark Guard Post": {
-        "place": "Underdark Guard Post",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2564,
-                4133
-            ],
-            [
-                2534,
-                4163
-            ]
-        ]
-    },
-    "Barsellaq": {
-        "place": "Barsellaq",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1938,
-                4298
-            ],
-            [
-                1908,
-                4328
-            ]
-        ]
-    },
-    "Fallmoer": {
-        "place": "Fallmoer",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2262,
-                4778
-            ],
-            [
-                2232,
-                4808
-            ]
-        ]
-    },
-    "Katsu-Tal": {
-        "place": "Katsu-Tal",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2321,
-                4036
-            ],
-            [
-                2291,
-                4066
-            ]
-        ]
-    },
-    "Mire'Seil": {
-        "place": "Mire'Seil",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2756,
-                5060
-            ],
-            [
-                2706,
-                5110
-            ]
-        ]
-    },
-    "Ousoul-Droth": {
-        "place": "Ousoul-Droth",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2155,
-                4413
-            ],
-            [
-                2125,
-                4443
-            ]
-        ]
-    },
-    "Tineihm": {
-        "place": "Tineihm",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2510,
-                4933
-            ],
-            [
-                2480,
-                4963
-            ]
-        ]
-    },
-    "Vassalqar": {
-        "place": "Vassalqar",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2361,
-                4534
-            ],
-            [
-                2331,
-                4564
-            ]
-        ]
-    },
-    "Yuntas": {
-        "place": "Yuntas",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1834,
-                4146
-            ],
-            [
-                1784,
-                4196
-            ]
-        ]
-    },
-    "The Dead Lake": {
-        "place": "The Dead Lake",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2204,
-                3901
-            ],
-            [
-                2164,
-                3941
-            ]
-        ]
-    },
-    "Lake Vari": {
-        "place": "Lake Vari",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2898,
-                1562
-            ],
-            [
-                2868,
-                1592
-            ]
-        ]
-    },
-    "Lake Harmony": {
-        "place": "Lake Harmony",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3622,
-                1435
-            ],
-            [
-                3622,
-                1435
-            ]
-        ]
-    },
-    "Loch Redwater": {
-        "place": "Loch Redwater",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3152,
-                1310
-            ],
-            [
-                3112,
-                1350
-            ]
-        ]
-    },
-    "The Great Mountain Lake": {
-        "place": "The Great Mountain Lake",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3507,
-                1594
-            ],
-            [
-                3207,
-                1894
-            ]
-        ]
-    },
-    "Lake Mithril": {
-        "place": "Lake Mithril",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3070,
-                2202
-            ],
-            [
-                2993,
-                2310
-            ]
-        ]
-    },
-    "Lake Arcane": {
-        "place": "Lake Arcane",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3275,
-                2992
-            ],
-            [
-                3075,
-                3192
-            ]
-        ]
-    },
-    "Lake Ene": {
-        "place": "Lake Ene",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3637,
-                2116
-            ],
-            [
-                3537,
-                2216
-            ]
-        ]
-    },
-    "Tortle Lake": {
-        "place": "Tortle Lake",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3402,
-                3933
-            ],
-            [
-                3122,
-                4213
-            ]
-        ]
-    },
-    "Lake Centhe": {
-        "place": "Lake Centhe",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3909,
-                5852
-            ],
-            [
-                3819,
-                5942
-            ]
-        ]
-    },
-    "Orc Hunt Waters": {
-        "place": "Orc Hunt Waters",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4320,
-                6359
-            ],
-            [
-                4230,
-                6449
-            ]
-        ]
-    },
-    "Patola Lake": {
-        "place": "Patola Lake",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4301,
-                5282
-            ],
-            [
-                4194,
-                5400
-            ]
-        ]
-    },
-    "Firbolg Shallows": {
-        "place": "Firbolg Shallows",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4988,
-                5735
-            ],
-            [
-                4929,
-                5836
-            ]
-        ]
-    },
-    "Atlashire Cove": {
-        "place": "Atlashire Cove",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4886,
-                4733
-            ],
-            [
-                4832,
-                4835
-            ]
-        ]
-    },
-    "Casrath Lagoon": {
-        "place": "Casrath Lagoon",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5278,
-                4906
-            ],
-            [
-                5218,
-                5029
-            ]
-        ]
-    },
-    "Tribal Depths": {
-        "place": "Tribal Depths",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4729,
-                5457
-            ],
-            [
-                4680,
-                5582
-            ]
-        ]
-    },
-    "Carato Marshlands": {
-        "place": "Carato Marshlands",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5178,
-                5490
-            ],
-            [
-                4998,
-                5771
-            ]
-        ]
-    },
-    "Willow Basin": {
-        "place": "Willow Basin",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2587,
-                2060
-            ],
-            [
-                2524,
-                2153
-            ]
-        ]
-    },
-    "Lake Shimmer": {
-        "place": "Lake Shimmer",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5471,
-                3049
-            ],
-            [
-                5421,
-                3282
-            ]
-        ]
-    },
-    "Lurker's Vale": {
-        "place": "Lurker's Vale",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5537,
-                2509
-            ],
-            [
-                5511,
-                2729
-            ]
-        ]
-    },
-    "Domain of the Gods": {
-        "place": "Domain of the Gods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5665,
-                4951
-            ],
-            [
-                5425,
-                5345
-            ]
-        ]
-    },
-    "Hand of The Gods": {
-        "place": "Hand of The Gods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5339,
-                5544
-            ],
-            [
-                5234,
-                5803
-            ]
-        ]
-    },
-    "Carato Mountains": {
-        "place": "Carato Mountains",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5242,
-                5151
-            ],
-            [
-                5115,
-                5317
-            ]
-        ]
-    },
-    "Ekhis Hills": {
-        "place": "Ekhis Hills",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5106,
-                4719
-            ],
-            [
-                4994,
-                4874
-            ]
-        ]
-    },
-    "Border Stones": {
-        "place": "Border Stones",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4818,
-                5625
-            ],
-            [
-                4780,
-                5837
-            ]
-        ]
-    },
-    "Mt. Mer'Ehl": {
-        "place": "Mt. Mer'Ehl",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4873,
-                6070
-            ],
-            [
-                4822,
-                6220
-            ]
-        ]
-    },
-    "The Lonely Peak": {
-        "place": "The Lonely Peak",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4642,
-                5328
-            ],
-            [
-                4593,
-                5446
-            ]
-        ]
-    },
-    "Jusomaas Border Hills": {
-        "place": "Jusomaas Border Hills",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4559,
-                6105
-            ],
-            [
-                4306,
-                6161
-            ]
-        ]
-    },
-    "Mt. Hellion": {
-        "place": "Mt. Hellion",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4490,
-                5212
-            ],
-            [
-                4420,
-                5345
-            ]
-        ]
-    },
-    "Twillight Gates": {
-        "place": "Twillight Gates",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4237,
-                6125
-            ],
-            [
-                4161,
-                6392
-            ]
-        ]
-    },
-    "Guardian Mountains": {
-        "place": "Guardian Mountains",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4119,
-                5636
-            ],
-            [
-                4067,
-                5957
-            ]
-        ]
-    },
-    "Patola Mountain Range": {
-        "place": "Patola Mountain Range",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4239,
-                4895
-            ],
-            [
-                4185,
-                5185
-            ]
-        ]
-    },
-    "Stormcrest Mountains": {
-        "place": "Stormcrest Mountains",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3774,
-                5957
-            ],
-            [
-                3517,
-                6145
-            ]
-        ]
-    },
-    "Mt. Blackfuse": {
-        "place": "Mt. Blackfuse",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4252,
-                3687
-            ],
-            [
-                4171,
-                3845
-            ]
-        ]
-    },
-    "Morheim Border Hills": {
-        "place": "Morheim Border Hills",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4144,
-                4180
-            ],
-            [
-                3988,
-                4557
-            ]
-        ]
-    },
-    "Capital Mountain Range": {
-        "place": "Capital Mountain Range",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4162,
-                2981
-            ],
-            [
-                4061,
-                3512
-            ]
-        ]
-    },
-    "Attium Hills": {
-        "place": "Attium Hills",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2762,
-                3948
-            ],
-            [
-                2698,
-                4116
-            ]
-        ]
-    },
-    "Auril Peak": {
-        "place": "Auril Peak",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4862,
-                2262
-            ],
-            [
-                4697,
-                2366
-            ]
-        ]
-    },
-    "Elantis Faehills": {
-        "place": "Elantis Faehills",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4647,
-                1995
-            ],
-            [
-                4464,
-                2180
-            ]
-        ]
-    },
-    "Xandor Faehills": {
-        "place": "Xandor Faehills",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4505,
-                2431
-            ],
-            [
-                4479,
-                2687
-            ]
-        ]
-    },
-    "Hyrsasm Peaks": {
-        "place": "Hyrsasm Peaks",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4340,
-                1808
-            ],
-            [
-                4262,
-                1908
-            ]
-        ]
-    },
-    "Omega Peak": {
-        "place": "Omega Peak",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3724,
-                1727
-            ],
-            [
-                3631,
-                1849
-            ]
-        ]
-    },
-    "Smoulder Mountains": {
-        "place": "Smoulder Mountains",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3569,
-                2302
-            ],
-            [
-                3539,
-                2592
-            ]
-        ]
-    },
-    "Mt. Feyr": {
-        "place": "Mt. Feyr",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4126,
-                2456
-            ],
-            [
-                3981,
-                2608
-            ]
-        ]
-    },
-    "Blunder hills": {
-        "place": "Blunder hills",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3459,
-                1036
-            ],
-            [
-                3377,
-                1146
-            ]
-        ]
-    },
-    "Mourning Walls": {
-        "place": "Mourning Walls",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4302,
-                540
-            ],
-            [
-                4252,
-                828
-            ]
-        ]
-    },
-    "Mourning Mountains": {
-        "place": "Mourning Mountains",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4103,
-                1064
-            ],
-            [
-                3852,
-                1315
-            ]
-        ]
-    },
-    "Mt. Harmony": {
-        "place": "Mt. Harmony",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3712,
-                1394
-            ],
-            [
-                3642,
-                1502
-            ]
-        ]
-    },
-    "Mt. Winvern": {
-        "place": "Mt. Winvern",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2664,
-                1079
-            ],
-            [
-                2615,
-                1146
-            ]
-        ]
-    },
-    "Mt. Esper": {
-        "place": "Mt. Esper",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2455,
-                1190
-            ],
-            [
-                2410,
-                1340
-            ]
-        ]
-    },
-    "Rage Mountain": {
-        "place": "Rage Mountain",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2232,
-                1761
-            ],
-            [
-                2162,
-                1870
-            ]
-        ]
-    },
-    "Claw of the World": {
-        "place": "Claw of the World",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2128,
-                2003
-            ],
-            [
-                1961,
-                2413
-            ]
-        ]
-    },
-    "Dagger Peaks": {
-        "place": "Dagger Peaks",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2308,
-                1138
-            ],
-            [
-                2161,
-                1312
-            ]
-        ]
-    },
-    "Onyx Mountain": {
-        "place": "Onyx Mountain",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1769,
-                1896
-            ],
-            [
-                1688,
-                1984
-            ]
-        ]
-    },
-    "Sickle Mountains": {
-        "place": "Sickle Mountains",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1974,
-                3821
-            ],
-            [
-                1877,
-                4001
-            ]
-        ]
-    },
-    "The Shard Mountains": {
-        "place": "The Shard Mountains",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1894,
-                3573
-            ],
-            [
-                1759,
-                3978
-            ]
-        ]
-    },
-    "The Wildland Cliffs": {
-        "place": "The Wildland Cliffs",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1347,
-                6414
-            ],
-            [
-                1242,
-                6621
-            ]
-        ]
-    },
-    "Arcarath Mountains": {
-        "place": "Arcarath Mountains",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2159,
-                6710
-            ],
-            [
-                1673,
-                6879
-            ]
-        ]
-    },
-    "Adon's Rest": {
-        "place": "Adon's Rest",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3878,
-                2352
-            ],
-            [
-                3838,
-                2551
-            ]
-        ]
-    },
-    "The Anvil of Stone": {
-        "place": "The Anvil of Stone",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3925,
-                5279
-            ],
-            [
-                3866,
-                5395
-            ]
-        ]
-    },
-    "The Great Stone Road": {
-        "place": "The Great Stone Road",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3547,
-                3778
-            ],
-            [
-                3498,
-                3990
-            ]
-        ]
-    },
-    "The Great Stone Road1": {
-        "place": "The Great Stone Road",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3507,
-                4549
-            ],
-            [
-                3467,
-                4760
-            ]
-        ]
-    },
-    "The Great Stone Road2": {
-        "place": "The Great Stone Road",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3476,
-                5185
-            ],
-            [
-                3420,
-                5390
-            ]
-        ]
-    },
-    "The Twin Hills (GreatGaunt + Arden)": {
-        "place": "The Twin Hills (GreatGaunt + Arden)",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3745,
-                5203
-            ],
-            [
-                3495,
-                5453
-            ]
-        ]
-    },
-    "The Trail of Bridges": {
-        "place": "The Trail of Bridges",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2774,
-                1482
-            ],
-            [
-                2658,
-                1533
-            ]
-        ]
-    },
-    "Korthal Forest": {
-        "place": "Korthal Forest",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3807,
-                3790
-            ],
-            [
-                3677,
-                3920
-            ]
-        ]
-    },
-    "The Endless Forest": {
-        "place": "The Endless Forest",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3909,
-                4233
-            ],
-            [
-                3609,
-                4533
-            ]
-        ]
-    },
-    "Hellcrawl Forest": {
-        "place": "Hellcrawl Forest",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3444,
-                4820
-            ],
-            [
-                3324,
-                4940
-            ]
-        ]
-    },
-    "Aris Woods": {
-        "place": "Aris Woods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3351,
-                3771
-            ],
-            [
-                3271,
-                3851
-            ]
-        ]
-    },
-    "Astral Woodss": {
-        "place": "Astral Woodss",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3126,
-                3210
-            ],
-            [
-                3056,
-                3280
-            ]
-        ]
-    },
-    "Velvin Thicket": {
-        "place": "Velvin Thicket",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2984,
-                3045
-            ],
-            [
-                2814,
-                3215
-            ]
-        ]
-    },
-    "Rage Hollow": {
-        "place": "Rage Hollow",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3053,
-                4685
-            ],
-            [
-                2913,
-                4825
-            ]
-        ]
-    },
-    "Arteron Woods": {
-        "place": "Arteron Woods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3724,
-                2740
-            ],
-            [
-                3464,
-                3000
-            ]
-        ]
-    },
-    "Feyrian Woods": {
-        "place": "Feyrian Woods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4187,
-                1681
-            ],
-            [
-                4079,
-                2054
-            ]
-        ]
-    },
-    "Ancient Woodlands of Xandor": {
-        "place": "Ancient Woodlands of Xandor",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4377,
-                1964
-            ],
-            [
-                4182,
-                2883
-            ]
-        ]
-    },
-    "The Thicket": {
-        "place": "The Thicket",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2840,
-                1852
-            ],
-            [
-                2549,
-                2033
-            ]
-        ]
-    },
-    "Dire Forest": {
-        "place": "Dire Forest",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2766,
-                2076
-            ],
-            [
-                2648,
-                2282
-            ]
-        ]
-    },
-    "Dreamseap Forests": {
-        "place": "Dreamseap Forests",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2452,
-                2499
-            ],
-            [
-                2289,
-                2603
-            ]
-        ]
-    },
-    "Sycamores Hunt Grounds": {
-        "place": "Sycamores Hunt Grounds",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2216,
-                2454
-            ],
-            [
-                2117,
-                2529
-            ]
-        ]
-    },
-    "Stillwind Forest": {
-        "place": "Stillwind Forest",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2535,
-                1524
-            ],
-            [
-                2247,
-                1641
-            ]
-        ]
-    },
-    "Esperian Woods": {
-        "place": "Esperian Woods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2587,
-                1111
-            ],
-            [
-                2490,
-                1363
-            ]
-        ]
-    },
-    "Old Growth of Elmonn": {
-        "place": "Old Growth of Elmonn",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2443,
-                802
-            ],
-            [
-                2200,
-                951
-            ]
-        ]
-    },
-    "Hammercrag Growth": {
-        "place": "Hammercrag Growth",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2083,
-                813
-            ],
-            [
-                1927,
-                1043
-            ]
-        ]
-    },
-    "Winter Woods": {
-        "place": "Winter Woods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3649,
-                818
-            ],
-            [
-                3437,
-                1049
-            ]
-        ]
-    },
-    "Deadgrowth Forest": {
-        "place": "Deadgrowth Forest",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2435,
-                3761
-            ],
-            [
-                2328,
-                3980
-            ]
-        ]
-    },
-    "Grogwood wilds": {
-        "place": "Grogwood wilds",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4086,
-                4648
-            ],
-            [
-                3989,
-                4844
-            ]
-        ]
-    },
-    "Patola Woods": {
-        "place": "Patola Woods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4106,
-                4991
-            ],
-            [
-                3996,
-                5316
-            ]
-        ]
-    },
-    "Damned Forest": {
-        "place": "Damned Forest",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4580,
-                4898
-            ],
-            [
-                4430,
-                5036
-            ]
-        ]
-    },
-    "Misty Bog": {
-        "place": "Misty Bog",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4515,
-                4593
-            ],
-            [
-                4232,
-                4821
-            ]
-        ]
-    },
-    "The Deep Woodlands": {
-        "place": "The Deep Woodlands",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4602,
-                5486
-            ],
-            [
-                4255,
-                5968
-            ]
-        ]
-    },
-    "Witch King Woodlands": {
-        "place": "Witch King Woodlands",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5247,
-                5350
-            ],
-            [
-                4980,
-                5444
-            ]
-        ]
-    },
-    "Tawere Forest": {
-        "place": "Tawere Forest",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5036,
-                6231
-            ],
-            [
-                4860,
-                6421
-            ]
-        ]
-    },
-    "Tiny Wood": {
-        "place": "Tiny Wood",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4972,
-                5986
-            ],
-            [
-                4929,
-                6178
-            ]
-        ]
-    },
-    "The Covert": {
-        "place": "The Covert",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4551,
-                6231
-            ],
-            [
-                4375,
-                6451
-            ]
-        ]
-    },
-    "Eprerre Woods": {
-        "place": "Eprerre Woods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4498,
-                6614
-            ],
-            [
-                4312,
-                6780
-            ]
-        ]
-    },
-    "Evennfall Woods": {
-        "place": "Evennfall Woods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4175,
-                6519
-            ],
-            [
-                4005,
-                6757
-            ]
-        ]
-    },
-    "Firelight Forest": {
-        "place": "Firelight Forest",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4052,
-                6136
-            ],
-            [
-                3909,
-                6464
-            ]
-        ]
-    },
-    "Angel's Growth": {
-        "place": "Angel's Growth",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2584,
-                7009
-            ],
-            [
-                2434,
-                7224
-            ]
-        ]
-    },
-    "Ikidian Jungle": {
-        "place": "Ikidian Jungle",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2345,
-                6937
-            ],
-            [
-                2016,
-                7271
-            ]
-        ]
-    },
-    "The Wildlands": {
-        "place": "The Wildlands",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1142,
-                6778
-            ],
-            [
-                795,
-                7200
-            ]
-        ]
-    },
-    "Joultou Grove": {
-        "place": "Joultou Grove",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3488,
-                3912
-            ],
-            [
-                3412,
-                4077
-            ]
-        ]
-    },
-    "The Dead Coast": {
-        "place": "The Dead Coast",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2138,
-                5874
-            ],
-            [
-                1873,
-                6126
-            ]
-        ]
-    },
-    "The Guarded Coast": {
-        "place": "The Guarded Coast",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2354,
-                2714
-            ],
-            [
-                2234,
-                2834
-            ]
-        ]
-    },
-    "Serpent's Pass": {
-        "place": "Serpent's Pass",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3557,
-                3369
-            ],
-            [
-                3457,
-                3469
-            ]
-        ]
-    },
-    "Capital Inlet": {
-        "place": "Capital Inlet",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3867,
-                3485
-            ],
-            [
-                3075,
-                3670
-            ]
-        ]
-    },
-    "Citizen's Path": {
-        "place": "Citizen's Path",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3731,
-                3060
-            ],
-            [
-                3591,
-                3200
-            ]
-        ]
-    },
-    "Capital Channel": {
-        "place": "Capital Channel",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2884,
-                4398
-            ],
-            [
-                2774,
-                4692
-            ]
-        ]
-    },
-    "Cemetery of the Forgotten": {
-        "place": "Cemetery of the Forgotten",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3413,
-                6208
-            ],
-            [
-                3213,
-                6408
-            ]
-        ]
-    },
-    "Shimmerian Coast": {
-        "place": "Shimmerian Coast",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3284,
-                5497
-            ],
-            [
-                3192,
-                5810
-            ]
-        ]
-    },
-    "The Andalin Coast": {
-        "place": "The Andalin Coast",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2875,
-                519
-            ],
-            [
-                2715,
-                679
-            ]
-        ]
-    },
-    "The Shores of Zirconia": {
-        "place": "The Shores of Zirconia",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1950,
-                627
-            ],
-            [
-                1670,
-                907
-            ]
-        ]
-    },
-    "The Yuntas Coast": {
-        "place": "The Yuntas Coast",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1895,
-                4259
-            ],
-            [
-                1798,
-                4568
-            ]
-        ]
-    },
-    "The Free Coast": {
-        "place": "The Free Coast",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2634,
-                4970
-            ],
-            [
-                2345,
-                5036
-            ]
-        ]
-    },
-    "The Forgotten Shores": {
-        "place": "The Forgotten Shores",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                878,
-                2223
-            ],
-            [
-                588,
-                2804
-            ]
-        ]
-    },
-    "White Bay": {
-        "place": "White Bay",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2548,
-                3654
-            ],
-            [
-                2458,
-                3744
-            ]
-        ]
-    },
-    "Dreamshard Depths": {
-        "place": "Dreamshard Depths",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2297,
-                2855
-            ],
-            [
-                1675,
-                3371
-            ]
-        ]
-    },
-    "Yuntas Sea": {
-        "place": "Yuntas Sea",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2187,
-                4802
-            ],
-            [
-                1287,
-                5702
-            ]
-        ]
-    },
-    "The Meerilian Ocean": {
-        "place": "The Meerilian Ocean",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3201,
-                6285
-            ],
-            [
-                2801,
-                6685
-            ]
-        ]
-    },
-    "The Meerilian Islands": {
-        "place": "The Meerilian Islands",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3632,
-                7052
-            ],
-            [
-                3052,
-                7632
-            ]
-        ]
-    },
-    "Nancy's Reef": {
-        "place": "Nancy's Reef",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5069,
-                6926
-            ],
-            [
-                4333,
-                7232
-            ]
-        ]
-    },
-    "Reef of Captain Leadhand": {
-        "place": "Reef of Captain Leadhand",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                5836,
-                5691
-            ],
-            [
-                5332,
-                6463
-            ]
-        ]
-    },
-    "Tortlewall Reef": {
-        "place": "Tortlewall Reef",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                812,
-                6244
-            ],
-            [
-                488,
-                6878
-            ]
-        ]
-    },
-    "Realm's Reach (South)": {
-        "place": "Realm's Reach (South)",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                288,
-                63
-            ],
-            [
-                69,
-                8105
-            ]
-        ]
-    },
-    "Spirit Bay": {
-        "place": "Spirit Bay",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4423,
-                1222
-            ],
-            [
-                4109,
-                1705
-            ]
-        ]
-    },
-    "Aurillian Ocean": {
-        "place": "Aurillian Ocean",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                6001,
-                1023
-            ],
-            [
-                4409,
-                1923
-            ]
-        ]
-    },
-    "Oberon Reef": {
-        "place": "Oberon Reef",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1968,
-                437
-            ],
-            [
-                1706,
-                662
-            ]
-        ]
-    },
-    "Domain of the Lurker": {
-        "place": "Domain of the Lurker",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4898,
-                2774
-            ],
-            [
-                4654,
-                3380
-            ]
-        ]
-    },
-    "The Sea of the Gods": {
-        "place": "The Sea of the Gods",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                6056,
-                3977
-            ],
-            [
-                4905,
-                4641
-            ]
-        ]
-    },
-    "Atlashire Inlet (Cove)": {
-        "place": "Atlashire Inlet (Cove)",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4738,
-                4540
-            ],
-            [
-                4600,
-                4683
-            ]
-        ]
-    },
-    "Angel's Route": {
-        "place": "Angel's Route",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2651,
-                6491
-            ],
-            [
-                2615,
-                6670
-            ]
-        ]
-    },
-    "Tremmor Falls": {
-        "place": "Tremmor Falls",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2683,
-                4331
-            ],
-            [
-                2653,
-                4361
-            ]
-        ]
-    },
-    "The Great Falls of Azam": {
-        "place": "The Great Falls of Azam",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4172,
-                5129
-            ],
-            [
-                4132,
-                5169
-            ]
-        ]
-    },
-    "Esper Falls": {
-        "place": "Esper Falls",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2375,
-                1237
-            ],
-            [
-                2355,
-                1257
-            ]
-        ]
-    },
-    "The Everfalls": {
-        "place": "The Everfalls",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3996,
-                5012
-            ],
-            [
-                3976,
-                5032
-            ]
-        ]
-    },
-    "The Tarsal Desert": {
-        "place": "The Tarsal Desert",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3172,
-                2338
-            ],
-            [
-                2724,
-                2774
-            ]
-        ]
-    },
-    "The Azure Fields": {
-        "place": "The Azure Fields",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4126,
-                648
-            ],
-            [
-                3950,
-                920
-            ]
-        ]
-    },
-    "The Fejur Badlands": {
-        "place": "The Fejur Badlands",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4721,
-                3660
-            ],
-            [
-                4271,
-                4130
-            ]
-        ]
-    },
-    "The Scalded Outlands": {
-        "place": "The Scalded Outlands",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2593,
-                3334
-            ],
-            [
-                2313,
-                3614
-            ]
-        ]
-    },
-    "The Hammerstone Wastes": {
-        "place": "The Hammerstone Wastes",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2203,
-                3373
-            ],
-            [
-                1903,
-                3673
-            ]
-        ]
-    },
-    "Atrium Nooklands": {
-        "place": "Atrium Nooklands",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2723,
-                3925
-            ],
-            [
-                2583,
-                4065
-            ]
-        ]
-    },
-    "Selum-Tor Sol": {
-        "place": "Selum-Tor Sol",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2301,
-                5984
-            ],
-            [
-                2110,
-                6257
-            ]
-        ]
-    },
-    "Nir-Uhlin Sol": {
-        "place": "Nir-Uhlin Sol",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1960,
-                6379
-            ],
-            [
-                1668,
-                6707
-            ]
-        ]
-    },
-    "Nehr-Fehlen Er-Losar": {
-        "place": "Nehr-Fehlen Er-Losar",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1438,
-                6210
-            ],
-            [
-                1254,
-                6496
-            ]
-        ]
-    },
-    "Relinquished Holds of Underrun": {
-        "place": "Relinquished Holds of Underrun",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1478,
-                1228
-            ],
-            [
-                1263,
-                2058
-            ]
-        ]
-    },
-    "Silvercourt Valley": {
-        "place": "Silvercourt Valley",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                1963,
-                1602
-            ],
-            [
-                1708,
-                1867
-            ]
-        ]
-    },
-    "Nightstar Fields": {
-        "place": "Nightstar Fields",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2961,
-                737
-            ],
-            [
-                2687,
-                976
-            ]
-        ]
-    },
-    "Direshade Valley": {
-        "place": "Direshade Valley",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3493,
-                1172
-            ],
-            [
-                3369,
-                1488
-            ]
-        ]
-    },
-    "Blunder Slopes": {
-        "place": "Blunder Slopes",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3361,
-                1449
-            ],
-            [
-                3188,
-                1587
-            ]
-        ]
-    },
-    "The Crystal Tundra": {
-        "place": "The Crystal Tundra",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                4644,
-                743
-            ],
-            [
-                4364,
-                889
-            ]
-        ]
-    },
-    "The Sabul Stones": {
-        "place": "The Sabul Stones",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                2887,
-                2674
-            ],
-            [
-                2717,
-                2949
-            ]
-        ]
-    },
-    "Short Hill Valley": {
-        "place": "Short Hill Valley",
-        "leader": "Test",
-        "description": ".",
-        "coords": [
-            [
-                3757,
-                5708
-            ],
-            [
-                3541,
-                5938
-            ]
-        ]
-    }
+  "Anchorage Vista": {
+    "place": "Anchorage Vista",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Alex Mendoza, 88",
+    "description": "Anchorage vista is a medium-sized port town in the Collective- one of only two. Anchorage vista operates as the nearest seaway connector for travel to and from Morheim and the OAR, cutting many days of travel short when compared to the road. But at a high cost. Anchorage Vista enjoys security of invasion from pirates via the Capital Channel, but sits hidden at the northern-most point of the Dreamshard Depths by a handful of islands. Beyond the islands sits a sea riddled with monsters and a “Continent of Death” to the east.",
+    "coords": [
+      [
+        2625,
+        2875
+      ],
+      [
+        2625,
+        2905
+      ],
+      [
+        2595,
+        2905
+      ],
+      [
+        2595,
+        2875
+      ]
+    ]
+  },
+  "Ardesia": {
+    "place": "Ardesia",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Nestée Bruce, 60",
+    "description": "Humanoids Only. The society of Ardesia is deeply xenophobic. Other races are treated as slaves. For half orcs, Ardesia is literally hell on earth. Practicing magic in public is punishable by mutilation or death. All mages are registered and monitored via arcane means. Additionally, money is everything. In Ardesia, everything and everyone has a price. Every mistake bears a cost paid by you or your Blade. People are indebted or indentured.",
+    "coords": [
+      [
+        2319,
+        1724
+      ],
+      [
+        2319,
+        1754
+      ],
+      [
+        2289,
+        1754
+      ],
+      [
+        2289,
+        1724
+      ]
+    ]
+  },
+  "Claw Harbour": {
+    "place": "Claw Harbour",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Brenden Stott, 29",
+    "coords": [
+      [
+        2088,
+        2493
+      ],
+      [
+        2088,
+        2523
+      ],
+      [
+        2058,
+        2523
+      ],
+      [
+        2058,
+        2493
+      ]
+    ]
+  },
+  "Cochrane River": {
+    "place": "Cochrane River",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Melana Finch, 30",
+    "description": "A small-set progressive town on the edge of a forest, Cochrane River is largely the center of crime and criminal organizations in The Collective.",
+    "coords": [
+      [
+        2613,
+        1762
+      ],
+      [
+        2613,
+        1792
+      ],
+      [
+        2583,
+        1792
+      ],
+      [
+        2583,
+        1762
+      ]
+    ]
+  },
+  "Mithril Lake": {
+    "place": "Mithril Lake",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Loren Yu, 103",
+    "coords": [
+      [
+        2996,
+        2207
+      ],
+      [
+        2996,
+        2237
+      ],
+      [
+        2966,
+        2237
+      ],
+      [
+        2966,
+        2207
+      ]
+    ]
+  },
+  "Montistum": {
+    "place": "Montistum",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Leslym Barrett, 104",
+    "description": "Montistum is known for it's History as the old Hold of the Collective. Refurbished in generations past, Montistum holds its grandieur well. Unfortuantely due to recent history, travel and commerce has slowed significantly.",
+    "coords": [
+      [
+        2836,
+        1646
+      ],
+      [
+        2836,
+        1676
+      ],
+      [
+        2806,
+        1676
+      ],
+      [
+        2806,
+        1646
+      ]
+    ]
+  },
+  "Rasa": {
+    "place": "Rasa",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Mitch Stein, 70",
+    "coords": [
+      [
+        2994,
+        2569
+      ],
+      [
+        2994,
+        2599
+      ],
+      [
+        2964,
+        2599
+      ],
+      [
+        2964,
+        2569
+      ]
+    ]
+  },
+  "Sabul Pass": {
+    "place": "Sabul Pass",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Keith Stanton, 34",
+    "coords": [
+      [
+        2689,
+        2639
+      ],
+      [
+        2689,
+        2669
+      ],
+      [
+        2659,
+        2669
+      ],
+      [
+        2659,
+        2639
+      ]
+    ]
+  },
+  "The Hold": {
+    "place": "The Hold",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Vern Gates, 27",
+    "coords": [
+      [
+        2407,
+        2377
+      ],
+      [
+        2407,
+        2427
+      ],
+      [
+        2357,
+        2427
+      ],
+      [
+        2357,
+        2377
+      ]
+    ]
+  },
+  "Vermillis": {
+    "place": "Vermillis",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Sammy Floyd, 116",
+    "coords": [
+      [
+        3272,
+        2559
+      ],
+      [
+        3272,
+        2589
+      ],
+      [
+        3242,
+        2589
+      ],
+      [
+        3242,
+        2559
+      ]
+    ]
+  },
+  "WillowGlade": {
+    "place": "WillowGlade",
+    "type": "City/Settlement",
+    "region": "Collective",
+    "leader": "Merryl Drake, 65",
+    "coords": [
+      [
+        2337,
+        2064
+      ],
+      [
+        2337,
+        2094
+      ],
+      [
+        2307,
+        2094
+      ],
+      [
+        2307,
+        2064
+      ]
+    ]
+  },
+  "Aztarok": {
+    "place": "Aztarok",
+    "type": "City/Settlement",
+    "region": "Creatus",
+    "leader": "Abraror, 65",
+    "coords": [
+      [
+        5302,
+        5112
+      ],
+      [
+        5302,
+        5142
+      ],
+      [
+        5272,
+        5142
+      ],
+      [
+        5272,
+        5112
+      ]
+    ]
+  },
+  "Gaj Gedad": {
+    "place": "Gaj Gedad",
+    "type": "City/Settlement",
+    "region": "Creatus",
+    "leader": "Gallavant Stallam, 72",
+    "coords": [
+      [
+        4537,
+        5050
+      ],
+      [
+        4537,
+        5080
+      ],
+      [
+        4507,
+        5080
+      ],
+      [
+        4507,
+        5050
+      ]
+    ]
+  },
+  "Gedad": {
+    "place": "Gedad",
+    "type": "City/Settlement",
+    "region": "Creatus",
+    "leader": "Kophe, 23",
+    "coords": [
+      [
+        4780,
+        5350
+      ],
+      [
+        4780,
+        5380
+      ],
+      [
+        4750,
+        5380
+      ],
+      [
+        4750,
+        5350
+      ]
+    ]
+  },
+  "Jusomaas": {
+    "place": "Jusomaas",
+    "type": "City/Settlement",
+    "region": "Creatus",
+    "leader": "Ulumpha, 93",
+    "coords": [
+      [
+        4598,
+        6000
+      ],
+      [
+        4598,
+        6050
+      ],
+      [
+        4548,
+        6050
+      ],
+      [
+        4548,
+        6000
+      ]
+    ]
+  },
+  "Od-Nenga": {
+    "place": "Od-Nenga",
+    "type": "City/Settlement",
+    "region": "Creatus",
+    "leader": "Marroc, 82",
+    "coords": [
+      [
+        4817,
+        5935
+      ],
+      [
+        4817,
+        5965
+      ],
+      [
+        4787,
+        5965
+      ],
+      [
+        4787,
+        5935
+      ]
+    ]
+  },
+  "Zut'Kitot": {
+    "place": "Zut'Kitot",
+    "type": "City/Settlement",
+    "region": "Creatus",
+    "leader": "Goddaebelle, 38",
+    "coords": [
+      [
+        4366,
+        4125
+      ],
+      [
+        4366,
+        4155
+      ],
+      [
+        4336,
+        4155
+      ],
+      [
+        4336,
+        4125
+      ]
+    ]
+  },
+  "Aerduluk": {
+    "place": "Aerduluk",
+    "type": "City/Settlement",
+    "region": "Dwarven Kingdom",
+    "leader": "Solomon Aerduluk, 38",
+    "coords": [
+      [
+        4158,
+        1880
+      ],
+      [
+        4158,
+        2931
+      ],
+      [
+        3160,
+        2931
+      ],
+      [
+        3160,
+        1880
+      ]
+    ]
+  },
+  "Anduril": {
+    "place": "Anduril",
+    "type": "City/Settlement",
+    "region": "Dwarven Kingdom",
+    "leader": "Himo Anduril, 26",
+    "coords": [
+      [
+        3722,
+        1975
+      ],
+      [
+        3722,
+        2061
+      ],
+      [
+        3674,
+        2061
+      ],
+      [
+        3674,
+        1975
+      ]
+    ]
+  },
+  "Barlenghir": {
+    "place": "Barlenghir",
+    "type": "City/Settlement",
+    "region": "Dwarven Kingdom",
+    "leader": "Travon Barlenghir, 25",
+    "coords": [
+      [
+        3895,
+        1954
+      ],
+      [
+        3895,
+        2082
+      ],
+      [
+        3839,
+        2082
+      ],
+      [
+        3839,
+        1954
+      ]
+    ]
+  },
+  "Kadrehl": {
+    "place": "Kadrehl",
+    "type": "City/Settlement",
+    "region": "Dwarven Kingdom",
+    "leader": "Aldwulf Kadrehl, 247",
+    "coords": [
+      [
+        3852,
+        1669
+      ],
+      [
+        3852,
+        1761
+      ],
+      [
+        3803,
+        1761
+      ],
+      [
+        3803,
+        1669
+      ]
+    ]
+  },
+  "Korhelihr": {
+    "place": "Korhelihr",
+    "type": "City/Settlement",
+    "region": "Dwarven Kingdom",
+    "leader": "Marl Korhelihr, 33",
+    "coords": [
+      [
+        2971,
+        1688
+      ],
+      [
+        2971,
+        1785
+      ],
+      [
+        2920,
+        1785
+      ],
+      [
+        2920,
+        1688
+      ]
+    ]
+  },
+  "Lordakihr": {
+    "place": "Lordakihr",
+    "type": "City/Settlement",
+    "region": "Dwarven Kingdom",
+    "leader": "Kia Lordakihr, 20",
+    "coords": [
+      [
+        3130,
+        2094
+      ],
+      [
+        3130,
+        2216
+      ],
+      [
+        3081,
+        2216
+      ],
+      [
+        3081,
+        2094
+      ]
+    ]
+  },
+  "Torruhn": {
+    "place": "Torruhn",
+    "type": "City/Settlement",
+    "region": "Dwarven Kingdom",
+    "leader": "Jonelle Torruhn, 39",
+    "coords": [
+      [
+        4732,
+        1312
+      ],
+      [
+        4732,
+        2376
+      ],
+      [
+        3725,
+        2376
+      ],
+      [
+        3725,
+        1312
+      ]
+    ]
+  },
+  "Varkuhldir": {
+    "place": "Varkuhldir",
+    "type": "City/Settlement",
+    "region": "Dwarven Kingdom",
+    "leader": "Rosay Varkuhldir, 41",
+    "coords": [
+      [
+        3372,
+        2073
+      ],
+      [
+        3372,
+        2200
+      ],
+      [
+        3322,
+        2200
+      ],
+      [
+        3322,
+        2073
+      ]
+    ]
+  },
+  "Vel-Gendar": {
+    "place": "Vel-Gendar",
+    "type": "City/Settlement",
+    "region": "Dwarven Kingdom",
+    "leader": "John Vel-Gendar, 30",
+    "coords": [
+      [
+        3499,
+        2296
+      ],
+      [
+        3499,
+        2491
+      ],
+      [
+        3392,
+        2491
+      ],
+      [
+        3392,
+        2296
+      ]
+    ]
+  },
+  "Ironscar Hill": {
+    "place": "Ironscar Hill",
+    "type": "City/Settlement",
+    "region": "Far Lands",
+    "coords": [
+      [
+        1990,
+        6683
+      ],
+      [
+        1990,
+        6713
+      ],
+      [
+        1960,
+        6713
+      ],
+      [
+        1960,
+        6683
+      ]
+    ]
+  },
+  "Neverport": {
+    "place": "Neverport",
+    "type": "City/Settlement",
+    "region": "Far Lands",
+    "leader": "Delvin Frazier, 22",
+    "coords": [
+      [
+        1620,
+        6619
+      ],
+      [
+        1620,
+        6649
+      ],
+      [
+        1590,
+        6649
+      ],
+      [
+        1590,
+        6619
+      ]
+    ]
+  },
+  "Repository of Records": {
+    "place": "Repository of Records",
+    "type": "City/Settlement",
+    "region": "Far Lands",
+    "coords": [
+      [
+        2239,
+        6551
+      ],
+      [
+        2239,
+        6601
+      ],
+      [
+        2189,
+        6601
+      ],
+      [
+        2189,
+        6551
+      ]
+    ]
+  },
+  "Rockfort Ridge": {
+    "place": "Rockfort Ridge",
+    "type": "City/Settlement",
+    "region": "Far Lands",
+    "coords": [
+      [
+        2532,
+        5859
+      ],
+      [
+        2532,
+        5949
+      ],
+      [
+        2479,
+        5949
+      ],
+      [
+        2479,
+        5859
+      ]
+    ]
+  },
+  "Slag's Reach": {
+    "place": "Slag's Reach",
+    "type": "City/Settlement",
+    "region": "Far Lands",
+    "leader": "Stacie  Wegner, 69",
+    "coords": [
+      [
+        2063,
+        6180
+      ],
+      [
+        2063,
+        6210
+      ],
+      [
+        2033,
+        6210
+      ],
+      [
+        2033,
+        6180
+      ]
+    ]
+  },
+  "Soratin": {
+    "place": "Soratin",
+    "type": "City/Settlement",
+    "region": "Far Lands",
+    "coords": [
+      [
+        2422,
+        5868
+      ],
+      [
+        2422,
+        5898
+      ],
+      [
+        2392,
+        5898
+      ],
+      [
+        2392,
+        5868
+      ]
+    ]
+  },
+  "Tabrise": {
+    "place": "Tabrise",
+    "type": "City/Settlement",
+    "region": "Far Lands",
+    "coords": [
+      [
+        1823,
+        6322
+      ],
+      [
+        1823,
+        6352
+      ],
+      [
+        1793,
+        6352
+      ],
+      [
+        1793,
+        6322
+      ]
+    ]
+  },
+  "Trigg's Landing": {
+    "place": "Trigg's Landing",
+    "type": "City/Settlement",
+    "region": "Far Lands",
+    "leader": "Barbara A Riese, 23",
+    "coords": [
+      [
+        2267,
+        5929
+      ],
+      [
+        2267,
+        5959
+      ],
+      [
+        2237,
+        5959
+      ],
+      [
+        2237,
+        5929
+      ]
+    ]
+  },
+  "Borderton": {
+    "place": "Borderton",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Ernard, 98",
+    "coords": [
+      [
+        3504,
+        4996
+      ],
+      [
+        3504,
+        5026
+      ],
+      [
+        3474,
+        5026
+      ],
+      [
+        3474,
+        4996
+      ]
+    ]
+  },
+  "Boscus Pass": {
+    "place": "Boscus Pass",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Springer Kingsly, 62",
+    "coords": [
+      [
+        3538,
+        4283
+      ],
+      [
+        3538,
+        4313
+      ],
+      [
+        3508,
+        4313
+      ],
+      [
+        3508,
+        4283
+      ]
+    ]
+  },
+  "Bright Stone": {
+    "place": "Bright Stone",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Ali Lak, 56",
+    "coords": [
+      [
+        3955,
+        2846
+      ],
+      [
+        3955,
+        2876
+      ],
+      [
+        3925,
+        2876
+      ],
+      [
+        3925,
+        2846
+      ]
+    ]
+  },
+  "Coval": {
+    "place": "Coval",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Tope Gnek, 46",
+    "coords": [
+      [
+        3540,
+        4672
+      ],
+      [
+        3540,
+        4702
+      ],
+      [
+        3510,
+        4702
+      ],
+      [
+        3510,
+        4672
+      ]
+    ]
+  },
+  "Elder Point": {
+    "place": "Elder Point",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "John Frai, 63",
+    "coords": [
+      [
+        4002,
+        3142
+      ],
+      [
+        4002,
+        3172
+      ],
+      [
+        3972,
+        3172
+      ],
+      [
+        3972,
+        3142
+      ]
+    ]
+  },
+  "Elvene": {
+    "place": "Elvene",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Fonda Martz, 64",
+    "coords": [
+      [
+        3764,
+        2981
+      ],
+      [
+        3764,
+        3011
+      ],
+      [
+        3734,
+        3011
+      ],
+      [
+        3734,
+        2981
+      ]
+    ]
+  },
+  "Fernn": {
+    "place": "Fernn",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Marchello Ashwood, 71",
+    "coords": [
+      [
+        2600,
+        3742
+      ],
+      [
+        2600,
+        3772
+      ],
+      [
+        2570,
+        3772
+      ],
+      [
+        2570,
+        3742
+      ]
+    ]
+  },
+  "Fort Arteron": {
+    "place": "Fort Arteron",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Regan Westchesterforth, 73",
+    "coords": [
+      [
+        3555,
+        2640
+      ],
+      [
+        3555,
+        2670
+      ],
+      [
+        3525,
+        2670
+      ],
+      [
+        3525,
+        2640
+      ]
+    ]
+  },
+  "Groggwood": {
+    "place": "Groggwood",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Marry Carelton, 40",
+    "coords": [
+      [
+        3967,
+        4845
+      ],
+      [
+        3967,
+        4875
+      ],
+      [
+        3937,
+        4875
+      ],
+      [
+        3937,
+        4845
+      ]
+    ]
+  },
+  "Korthal": {
+    "place": "Korthal",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "King Ferguson Morhellium, 59",
+    "description": "A bustling metropolis, the Capital city is a center of trade, commerce, and adventure. After a long and rich history, the city’s architecture is ever-changing, unique and timeless.",
+    "coords": [
+      [
+        4017,
+        3248
+      ],
+      [
+        4017,
+        3298
+      ],
+      [
+        3967,
+        3298
+      ],
+      [
+        3967,
+        3248
+      ]
+    ]
+  },
+  "Lunalem": {
+    "place": "Lunalem",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Aero Olathana, 37",
+    "coords": [
+      [
+        3701,
+        3719
+      ],
+      [
+        3701,
+        3749
+      ],
+      [
+        3671,
+        3749
+      ],
+      [
+        3671,
+        3719
+      ]
+    ]
+  },
+  "Lyric": {
+    "place": "Lyric",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Cecile Smither, 62",
+    "coords": [
+      [
+        3285,
+        2903
+      ],
+      [
+        3285,
+        2933
+      ],
+      [
+        3255,
+        2933
+      ],
+      [
+        3255,
+        2903
+      ]
+    ]
+  },
+  "Mattermont": {
+    "place": "Mattermont",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Norman Windchester, 106",
+    "coords": [
+      [
+        3419,
+        3184
+      ],
+      [
+        3419,
+        3214
+      ],
+      [
+        3389,
+        3214
+      ],
+      [
+        3389,
+        3184
+      ]
+    ]
+  },
+  "Riverhold": {
+    "place": "Riverhold",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Kole Blackwood, 88",
+    "coords": [
+      [
+        2938,
+        3580
+      ],
+      [
+        2938,
+        3610
+      ],
+      [
+        2908,
+        3610
+      ],
+      [
+        2908,
+        3580
+      ]
+    ]
+  },
+  "Starguard": {
+    "place": "Starguard",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Brennan Iedeman, 26",
+    "coords": [
+      [
+        3955,
+        3616
+      ],
+      [
+        3955,
+        3646
+      ],
+      [
+        3925,
+        3646
+      ],
+      [
+        3925,
+        3616
+      ]
+    ]
+  },
+  "University": {
+    "place": "University",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "coords": [
+      [
+        3042,
+        2906
+      ],
+      [
+        3042,
+        3040
+      ],
+      [
+        2970,
+        3040
+      ],
+      [
+        2970,
+        2906
+      ]
+    ]
+  },
+  "WakeField": {
+    "place": "WakeField",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "leader": "Elrer Berkeley, 79",
+    "coords": [
+      [
+        3747,
+        2648
+      ],
+      [
+        3747,
+        2678
+      ],
+      [
+        3717,
+        2678
+      ],
+      [
+        3717,
+        2648
+      ]
+    ]
+  },
+  "Yellow Ridge": {
+    "place": "Yellow Ridge",
+    "type": "City/Settlement",
+    "region": "Morheim",
+    "coords": [
+      [
+        3237,
+        4294
+      ],
+      [
+        3237,
+        4324
+      ],
+      [
+        3207,
+        4324
+      ],
+      [
+        3207,
+        4294
+      ]
+    ]
+  },
+  "Angelfer Island": {
+    "place": "Angelfer Island",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Ecin Aveyry, 46",
+    "coords": [
+      [
+        2668,
+        6680
+      ],
+      [
+        2668,
+        6710
+      ],
+      [
+        2638,
+        6710
+      ],
+      [
+        2638,
+        6680
+      ]
+    ]
+  },
+  "Aquatas": {
+    "place": "Aquatas",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Ethed Gelnne, 53",
+    "coords": [
+      [
+        3034,
+        6763
+      ],
+      [
+        3034,
+        6883
+      ],
+      [
+        2914,
+        6883
+      ],
+      [
+        2914,
+        6763
+      ]
+    ]
+  },
+  "Ardenport": {
+    "place": "Ardenport",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Gunthur Eshlemen, 200",
+    "coords": [
+      [
+        3648,
+        5568
+      ],
+      [
+        3648,
+        5598
+      ],
+      [
+        3618,
+        5598
+      ],
+      [
+        3618,
+        5568
+      ]
+    ]
+  },
+  "Carran": {
+    "place": "Carran",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Vyncent Tamrei, 28",
+    "coords": [
+      [
+        2630,
+        6087
+      ],
+      [
+        2630,
+        6117
+      ],
+      [
+        2600,
+        6117
+      ],
+      [
+        2600,
+        6087
+      ]
+    ]
+  },
+  "Cindergulch": {
+    "place": "Cindergulch",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Ethew Ahren, 74",
+    "coords": [
+      [
+        2437,
+        6995
+      ],
+      [
+        2437,
+        7025
+      ],
+      [
+        2407,
+        7025
+      ],
+      [
+        2407,
+        6995
+      ]
+    ]
+  },
+  "Drymoor": {
+    "place": "Drymoor",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Beth Amberdown, 95",
+    "coords": [
+      [
+        2366,
+        6331
+      ],
+      [
+        2366,
+        6361
+      ],
+      [
+        2336,
+        6361
+      ],
+      [
+        2336,
+        6331
+      ]
+    ]
+  },
+  "Far Water": {
+    "place": "Far Water",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Urnath Greek, 100",
+    "coords": [
+      [
+        2607,
+        6297
+      ],
+      [
+        2607,
+        6327
+      ],
+      [
+        2577,
+        6327
+      ],
+      [
+        2577,
+        6297
+      ]
+    ]
+  },
+  "Flurham": {
+    "place": "Flurham",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Kimim Clayton, 26",
+    "coords": [
+      [
+        4025,
+        5691
+      ],
+      [
+        4025,
+        5721
+      ],
+      [
+        3995,
+        5721
+      ],
+      [
+        3995,
+        5691
+      ]
+    ]
+  },
+  "Meera": {
+    "place": "Meera",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Tanver, 61",
+    "coords": [
+      [
+        2984,
+        5704
+      ],
+      [
+        2984,
+        5754
+      ],
+      [
+        2934,
+        5754
+      ],
+      [
+        2934,
+        5704
+      ]
+    ]
+  },
+  "MesaPort": {
+    "place": "MesaPort",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Durwin Bram, 87",
+    "coords": [
+      [
+        2472,
+        6514
+      ],
+      [
+        2472,
+        6544
+      ],
+      [
+        2442,
+        6544
+      ],
+      [
+        2442,
+        6514
+      ]
+    ]
+  },
+  "Nightshale": {
+    "place": "Nightshale",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Lytton Bonsaw, 58",
+    "coords": [
+      [
+        3993,
+        6065
+      ],
+      [
+        3993,
+        6095
+      ],
+      [
+        3963,
+        6095
+      ],
+      [
+        3963,
+        6065
+      ]
+    ]
+  },
+  "Pikecliff": {
+    "place": "Pikecliff",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Dursley Grendal, 65",
+    "coords": [
+      [
+        3060,
+        5428
+      ],
+      [
+        3060,
+        5458
+      ],
+      [
+        3030,
+        5458
+      ],
+      [
+        3030,
+        5428
+      ]
+    ]
+  },
+  "Pikeville": {
+    "place": "Pikeville",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Wetherby Flatwater, 97",
+    "coords": [
+      [
+        3028,
+        5316
+      ],
+      [
+        3028,
+        5346
+      ],
+      [
+        2998,
+        5346
+      ],
+      [
+        2998,
+        5316
+      ]
+    ]
+  },
+  "Pirates Sanctum": {
+    "place": "Pirates Sanctum",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Kott Sonsenz, 22",
+    "coords": [
+      [
+        3476,
+        6936
+      ],
+      [
+        3476,
+        6966
+      ],
+      [
+        3446,
+        6966
+      ],
+      [
+        3446,
+        6936
+      ]
+    ]
+  },
+  "Port Mid": {
+    "place": "Port Mid",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Jalen Ashley, 101",
+    "coords": [
+      [
+        3807,
+        6374
+      ],
+      [
+        3807,
+        6404
+      ],
+      [
+        3777,
+        6404
+      ],
+      [
+        3777,
+        6374
+      ]
+    ]
+  },
+  "Port Passer": {
+    "place": "Port Passer",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Treyari Adlam, 53",
+    "coords": [
+      [
+        2597,
+        5817
+      ],
+      [
+        2597,
+        5847
+      ],
+      [
+        2567,
+        5847
+      ],
+      [
+        2567,
+        5817
+      ]
+    ]
+  },
+  "Port Sheerstone": {
+    "place": "Port Sheerstone",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Jules Deighton, 27",
+    "coords": [
+      [
+        3859,
+        6648
+      ],
+      [
+        3859,
+        6678
+      ],
+      [
+        3829,
+        6678
+      ],
+      [
+        3829,
+        6648
+      ]
+    ]
+  },
+  "Retria": {
+    "place": "Retria",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Osval Poive, 31",
+    "coords": [
+      [
+        3695,
+        6343
+      ],
+      [
+        3695,
+        6373
+      ],
+      [
+        3665,
+        6373
+      ],
+      [
+        3665,
+        6343
+      ]
+    ]
+  },
+  "Ruslet": {
+    "place": "Ruslet",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Roland Burkeley, 108",
+    "coords": [
+      [
+        3490,
+        6405
+      ],
+      [
+        3490,
+        6435
+      ],
+      [
+        3460,
+        6435
+      ],
+      [
+        3460,
+        6405
+      ]
+    ]
+  },
+  "Sheerstone Island": {
+    "place": "Sheerstone Island",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Shermon Slootmaekers, 28",
+    "coords": [
+      [
+        3811,
+        6731
+      ],
+      [
+        3811,
+        6761
+      ],
+      [
+        3781,
+        6761
+      ],
+      [
+        3781,
+        6731
+      ]
+    ]
+  },
+  "Smit": {
+    "place": "Smit",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Cyso Pauwels, 28",
+    "coords": [
+      [
+        3379,
+        5614
+      ],
+      [
+        3379,
+        5644
+      ],
+      [
+        3349,
+        5644
+      ],
+      [
+        3349,
+        5614
+      ]
+    ]
+  },
+  "Smuggler's Cove": {
+    "place": "Smuggler's Cove",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Johnnie Vollan, 25 | Scot Atwig, 116 | Sozen Mountainkin, 64",
+    "description": "Hidden away by powerful magics in the Patola Bay, The Smugglers port is home to all the unsavory business of the North-OAR population. A Large, 400ft high and several-kilometer deep cavern hidden inside the mountainous cliffside. Sailors coming into this port are greeted with two magnificent stone pillars holding the ceiling up in the middle of the water, with ropes and bridges sprawling from it at every height and direction possible, leading elsewhere into the cavern walls or surrounding buildings.",
+    "coords": [
+      [
+        4001,
+        5446
+      ],
+      [
+        4001,
+        5476
+      ],
+      [
+        3971,
+        5476
+      ],
+      [
+        3971,
+        5446
+      ]
+    ]
+  },
+  "Tebiton": {
+    "place": "Tebiton",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Florine Dennel, 24",
+    "coords": [
+      [
+        2668,
+        7078
+      ],
+      [
+        2668,
+        7108
+      ],
+      [
+        2638,
+        7108
+      ],
+      [
+        2638,
+        7078
+      ]
+    ]
+  },
+  "Usterduum": {
+    "place": "Usterduum",
+    "type": "City/Settlement",
+    "region": "OAR",
+    "leader": "Ulysses Deney, 36",
+    "coords": [
+      [
+        3244,
+        5992
+      ],
+      [
+        3244,
+        6022
+      ],
+      [
+        3214,
+        6022
+      ],
+      [
+        3214,
+        5992
+      ]
+    ]
+  },
+  "Aphachaigia Isl.": {
+    "place": "Aphachaigia Isl.",
+    "type": "City/Settlement",
+    "region": "Shattered Isles",
+    "coords": [
+      [
+        982,
+        4932
+      ],
+      [
+        982,
+        5174
+      ],
+      [
+        823,
+        5174
+      ],
+      [
+        823,
+        4932
+      ]
+    ]
+  },
+  "Azureinn Isl.": {
+    "place": "Azureinn Isl.",
+    "type": "City/Settlement",
+    "region": "Shattered Isles",
+    "coords": [
+      [
+        1114,
+        4437
+      ],
+      [
+        1114,
+        4663
+      ],
+      [
+        877,
+        4663
+      ],
+      [
+        877,
+        4437
+      ]
+    ]
+  },
+  "Broken Earth Isl.": {
+    "place": "Broken Earth Isl.",
+    "type": "City/Settlement",
+    "region": "Shattered Isles",
+    "coords": [
+      [
+        639,
+        5119
+      ],
+      [
+        639,
+        5357
+      ],
+      [
+        544,
+        5357
+      ],
+      [
+        544,
+        5119
+      ]
+    ]
+  },
+  "Ichor Landing": {
+    "place": "Ichor Landing",
+    "type": "City/Settlement",
+    "region": "Shattered Isles",
+    "coords": [
+      [
+        650,
+        5625
+      ],
+      [
+        650,
+        5776
+      ],
+      [
+        577,
+        5776
+      ],
+      [
+        577,
+        5625
+      ]
+    ]
+  },
+  "Laogai": {
+    "place": "Laogai",
+    "type": "City/Settlement",
+    "region": "Shattered Isles",
+    "coords": [
+      [
+        1134,
+        5373
+      ],
+      [
+        1134,
+        5608
+      ],
+      [
+        945,
+        5608
+      ],
+      [
+        945,
+        5373
+      ]
+    ]
+  },
+  "Mytra": {
+    "place": "Mytra",
+    "type": "City/Settlement",
+    "region": "Shattered Isles",
+    "coords": [
+      [
+        1191,
+        5825
+      ],
+      [
+        1191,
+        5825
+      ],
+      [
+        1191,
+        5825
+      ],
+      [
+        1191,
+        5825
+      ]
+    ]
+  },
+  "Oman": {
+    "place": "Oman",
+    "type": "City/Settlement",
+    "region": "Shattered Isles",
+    "coords": [
+      [
+        1368,
+        5815
+      ],
+      [
+        1368,
+        5815
+      ],
+      [
+        1368,
+        5815
+      ],
+      [
+        1368,
+        5815
+      ]
+    ]
+  },
+  "Uadir": {
+    "place": "Uadir",
+    "type": "City/Settlement",
+    "region": "Shattered Isles",
+    "coords": [
+      [
+        858,
+        5876
+      ],
+      [
+        858,
+        5906
+      ],
+      [
+        828,
+        5906
+      ],
+      [
+        828,
+        5876
+      ]
+    ]
+  },
+  "Elantis": {
+    "place": "Elantis",
+    "type": "City/Settlement",
+    "region": "Xandor",
+    "leader": "Priestess Jamer Lorenzen, 200",
+    "coords": [
+      [
+        4725,
+        2053
+      ],
+      [
+        4725,
+        2103
+      ],
+      [
+        4675,
+        2103
+      ],
+      [
+        4675,
+        2053
+      ]
+    ]
+  },
+  "Frostling Stronghold": {
+    "place": "Frostling Stronghold",
+    "type": "City/Settlement",
+    "region": "Xandor",
+    "leader": "Estelar, 43",
+    "coords": [
+      [
+        3882,
+        839
+      ],
+      [
+        3882,
+        869
+      ],
+      [
+        3852,
+        869
+      ],
+      [
+        3852,
+        839
+      ]
+    ]
+  },
+  "Rea Xandor": {
+    "place": "Rea Xandor",
+    "type": "City/Settlement",
+    "region": "Xandor",
+    "leader": "Lenon, 43",
+    "coords": [
+      [
+        4410,
+        2273
+      ],
+      [
+        4410,
+        2323
+      ],
+      [
+        4360,
+        2323
+      ],
+      [
+        4360,
+        2273
+      ]
+    ]
+  },
+  "Rhun": {
+    "place": "Rhun",
+    "type": "City/Settlement",
+    "region": "Xandor",
+    "leader": "Krikle Shazorwyn, 79",
+    "coords": [
+      [
+        4851,
+        6585
+      ],
+      [
+        4851,
+        6635
+      ],
+      [
+        4801,
+        6635
+      ],
+      [
+        4801,
+        6585
+      ]
+    ]
+  },
+  "The Watch House": {
+    "place": "The Watch House",
+    "type": "City/Settlement",
+    "region": "Xandor",
+    "coords": [
+      [
+        4148,
+        528
+      ],
+      [
+        4148,
+        625
+      ],
+      [
+        4097,
+        625
+      ],
+      [
+        4097,
+        528
+      ]
+    ]
+  },
+  "Ty Rythel": {
+    "place": "Ty Rythel",
+    "type": "City/Settlement",
+    "region": "Xandor",
+    "leader": "Oggugat Galakir, 66",
+    "coords": [
+      [
+        4719,
+        875
+      ],
+      [
+        4719,
+        905
+      ],
+      [
+        4689,
+        905
+      ],
+      [
+        4689,
+        875
+      ]
+    ]
+  },
+  "Val'Alora": {
+    "place": "Val'Alora",
+    "type": "City/Settlement",
+    "region": "Xandor",
+    "leader": "Gerardo O Lanse, 30",
+    "coords": [
+      [
+        4498,
+        2941
+      ],
+      [
+        4498,
+        2971
+      ],
+      [
+        4468,
+        2971
+      ],
+      [
+        4468,
+        2941
+      ]
+    ]
+  },
+  "Andale Port": {
+    "place": "Andale Port",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Dean Richards, 74",
+    "coords": [
+      [
+        3360,
+        738
+      ],
+      [
+        3360,
+        768
+      ],
+      [
+        3330,
+        768
+      ],
+      [
+        3330,
+        738
+      ]
+    ]
+  },
+  "Cindere": {
+    "place": "Cindere",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Christiana Amundsen, 48",
+    "coords": [
+      [
+        2947,
+        1094
+      ],
+      [
+        2947,
+        1124
+      ],
+      [
+        2917,
+        1124
+      ],
+      [
+        2917,
+        1094
+      ]
+    ]
+  },
+  "Druin": {
+    "place": "Druin",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Burocco Babineaux, 48",
+    "coords": [
+      [
+        2979,
+        944
+      ],
+      [
+        2979,
+        974
+      ],
+      [
+        2949,
+        974
+      ],
+      [
+        2949,
+        944
+      ]
+    ]
+  },
+  "Elafi Field": {
+    "place": "Elafi Field",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Adol Forey, 102",
+    "coords": [
+      [
+        3101,
+        820
+      ],
+      [
+        3101,
+        850
+      ],
+      [
+        3071,
+        850
+      ],
+      [
+        3071,
+        820
+      ]
+    ]
+  },
+  "Esperia": {
+    "place": "Esperia",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Clad Arnuanna, 54",
+    "coords": [
+      [
+        2725,
+        1285
+      ],
+      [
+        2725,
+        1315
+      ],
+      [
+        2695,
+        1315
+      ],
+      [
+        2695,
+        1285
+      ]
+    ]
+  },
+  "Far Point": {
+    "place": "Far Point",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Cher Tron, 133",
+    "coords": [
+      [
+        1566,
+        1200
+      ],
+      [
+        1566,
+        1230
+      ],
+      [
+        1536,
+        1230
+      ],
+      [
+        1536,
+        1200
+      ]
+    ]
+  },
+  "Freeton": {
+    "place": "Freeton",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Dino Berg, 21",
+    "coords": [
+      [
+        1958,
+        1246
+      ],
+      [
+        1958,
+        1276
+      ],
+      [
+        1928,
+        1276
+      ],
+      [
+        1928,
+        1246
+      ]
+    ]
+  },
+  "Hearth": {
+    "place": "Hearth",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Coleman Cote Boyle, 49",
+    "coords": [
+      [
+        2352,
+        1255
+      ],
+      [
+        2352,
+        1285
+      ],
+      [
+        2322,
+        1285
+      ],
+      [
+        2322,
+        1255
+      ]
+    ]
+  },
+  "KingsPort": {
+    "place": "KingsPort",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Sam, 56",
+    "coords": [
+      [
+        2659,
+        685
+      ],
+      [
+        2659,
+        715
+      ],
+      [
+        2629,
+        715
+      ],
+      [
+        2629,
+        685
+      ]
+    ]
+  },
+  "Mistvalley Keep": {
+    "place": "Mistvalley Keep",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Ashly Bonsaw, 83",
+    "coords": [
+      [
+        2750,
+        1019
+      ],
+      [
+        2750,
+        1069
+      ],
+      [
+        2700,
+        1069
+      ],
+      [
+        2700,
+        1019
+      ]
+    ]
+  },
+  "Oberon Ports": {
+    "place": "Oberon Ports",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Ellyn Blunt, 71",
+    "coords": [
+      [
+        2027,
+        684
+      ],
+      [
+        2027,
+        714
+      ],
+      [
+        1997,
+        714
+      ],
+      [
+        1997,
+        684
+      ]
+    ]
+  },
+  "Red Rock": {
+    "place": "Red Rock",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Elix Cabaniss, 37",
+    "coords": [
+      [
+        3082,
+        1318
+      ],
+      [
+        3082,
+        1348
+      ],
+      [
+        3052,
+        1348
+      ],
+      [
+        3052,
+        1318
+      ]
+    ]
+  },
+  "Revari": {
+    "place": "Revari",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Di Dorrance, 93",
+    "coords": [
+      [
+        2917,
+        1510
+      ],
+      [
+        2917,
+        1540
+      ],
+      [
+        2887,
+        1540
+      ],
+      [
+        2887,
+        1510
+      ]
+    ]
+  },
+  "Sledge": {
+    "place": "Sledge",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Abethra Joubert, 69",
+    "coords": [
+      [
+        3793,
+        1144
+      ],
+      [
+        3793,
+        1174
+      ],
+      [
+        3763,
+        1174
+      ],
+      [
+        3763,
+        1144
+      ]
+    ]
+  },
+  "Somarden": {
+    "place": "Somarden",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Janna Asmon, 23",
+    "coords": [
+      [
+        2584,
+        1004
+      ],
+      [
+        2584,
+        1034
+      ],
+      [
+        2554,
+        1034
+      ],
+      [
+        2554,
+        1004
+      ]
+    ]
+  },
+  "Stillcreek": {
+    "place": "Stillcreek",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Mete Fizzlebottom, 48",
+    "coords": [
+      [
+        2585,
+        1500
+      ],
+      [
+        2585,
+        1530
+      ],
+      [
+        2555,
+        1530
+      ],
+      [
+        2555,
+        1500
+      ]
+    ]
+  },
+  "Usuall": {
+    "place": "Usuall",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Kenny, 72",
+    "coords": [
+      [
+        3206,
+        1251
+      ],
+      [
+        3206,
+        1281
+      ],
+      [
+        3176,
+        1281
+      ],
+      [
+        3176,
+        1251
+      ]
+    ]
+  },
+  "West Warden": {
+    "place": "West Warden",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Emorder Matinle, 28",
+    "coords": [
+      [
+        2405,
+        379
+      ],
+      [
+        2405,
+        409
+      ],
+      [
+        2375,
+        409
+      ],
+      [
+        2375,
+        379
+      ]
+    ]
+  },
+  "Zirconia": {
+    "place": "Zirconia",
+    "type": "City/Settlement",
+    "region": "Xecuria",
+    "leader": "Chase Devaul, 73",
+    "coords": [
+      [
+        1700,
+        896
+      ],
+      [
+        1700,
+        926
+      ],
+      [
+        1670,
+        926
+      ],
+      [
+        1670,
+        896
+      ]
+    ]
+  },
+  "Barsellaq": {
+    "place": "Barsellaq",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "leader": "Suzanna Sweet, 47",
+    "coords": [
+      [
+        1938,
+        4298
+      ],
+      [
+        1938,
+        4328
+      ],
+      [
+        1908,
+        4328
+      ],
+      [
+        1908,
+        4298
+      ]
+    ]
+  },
+  "Fallmoer": {
+    "place": "Fallmoer",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "leader": "Mendy Krause, 64",
+    "coords": [
+      [
+        2262,
+        4778
+      ],
+      [
+        2262,
+        4808
+      ],
+      [
+        2232,
+        4808
+      ],
+      [
+        2232,
+        4778
+      ]
+    ]
+  },
+  "Hold of Civilization": {
+    "place": "Hold of Civilization",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "coords": [
+      [
+        2067,
+        3731
+      ],
+      [
+        2067,
+        3781
+      ],
+      [
+        2017,
+        3781
+      ],
+      [
+        2017,
+        3731
+      ]
+    ]
+  },
+  "Katsu-Tal": {
+    "place": "Katsu-Tal",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "leader": "Panicar Poin, 40",
+    "coords": [
+      [
+        2321,
+        4036
+      ],
+      [
+        2321,
+        4066
+      ],
+      [
+        2291,
+        4066
+      ],
+      [
+        2291,
+        4036
+      ]
+    ]
+  },
+  "Mire'Seil": {
+    "place": "Mire'Seil",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "leader": "Devin Stamp, 61",
+    "coords": [
+      [
+        2756,
+        5060
+      ],
+      [
+        2756,
+        5110
+      ],
+      [
+        2706,
+        5110
+      ],
+      [
+        2706,
+        5060
+      ]
+    ]
+  },
+  "Ousoul-Droth": {
+    "place": "Ousoul-Droth",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "leader": "Noma Steadman, 55",
+    "coords": [
+      [
+        2155,
+        4413
+      ],
+      [
+        2155,
+        4443
+      ],
+      [
+        2125,
+        4443
+      ],
+      [
+        2125,
+        4413
+      ]
+    ]
+  },
+  "Sutherland Keep": {
+    "place": "Sutherland Keep",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "leader": "Devin Kramer, 40",
+    "coords": [
+      [
+        1715,
+        3622
+      ],
+      [
+        1715,
+        3672
+      ],
+      [
+        1665,
+        3672
+      ],
+      [
+        1665,
+        3622
+      ]
+    ]
+  },
+  "Tineihm": {
+    "place": "Tineihm",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "leader": "Karol Keeling, 26",
+    "coords": [
+      [
+        2510,
+        4933
+      ],
+      [
+        2510,
+        4963
+      ],
+      [
+        2480,
+        4963
+      ],
+      [
+        2480,
+        4933
+      ]
+    ]
+  },
+  "Underdark Guard Post": {
+    "place": "Underdark Guard Post",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "coords": [
+      [
+        2564,
+        4133
+      ],
+      [
+        2564,
+        4163
+      ],
+      [
+        2534,
+        4163
+      ],
+      [
+        2534,
+        4133
+      ]
+    ]
+  },
+  "Vassalqar": {
+    "place": "Vassalqar",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "leader": "Desiree Chester, 71",
+    "coords": [
+      [
+        2361,
+        4534
+      ],
+      [
+        2361,
+        4564
+      ],
+      [
+        2331,
+        4564
+      ],
+      [
+        2331,
+        4534
+      ]
+    ]
+  },
+  "Yuntas": {
+    "place": "Yuntas",
+    "type": "City/Settlement",
+    "region": "Yuntas-Mire",
+    "leader": "Rosamaria Sweeney, 47",
+    "coords": [
+      [
+        1834,
+        4146
+      ],
+      [
+        1834,
+        4196
+      ],
+      [
+        1784,
+        4196
+      ],
+      [
+        1784,
+        4146
+      ]
+    ]
+  },
+  "Tarsal Desert": {
+    "place": "Tarsal Desert",
+    "type": "Desert",
+    "region": "Collective",
+    "coords": [
+      [
+        3172,
+        2338
+      ],
+      [
+        3172,
+        2774
+      ],
+      [
+        2724,
+        2774
+      ],
+      [
+        2724,
+        2338
+      ]
+    ]
+  },
+  "The Sabul Stones": {
+    "place": "The Sabul Stones",
+    "type": "Desert / Plain",
+    "region": "Collective",
+    "coords": [
+      [
+        2887,
+        2674
+      ],
+      [
+        2887,
+        2949
+      ],
+      [
+        2717,
+        2949
+      ],
+      [
+        2717,
+        2674
+      ]
+    ]
+  },
+  "The Tarsal Desert": {
+    "place": "The Tarsal Desert",
+    "type": "Desert / Plain",
+    "region": "Collective",
+    "coords": [
+      [
+        3172,
+        2338
+      ],
+      [
+        3172,
+        2774
+      ],
+      [
+        2724,
+        2774
+      ],
+      [
+        2724,
+        2338
+      ]
+    ]
+  },
+  "The Fejur Badlands": {
+    "place": "The Fejur Badlands",
+    "type": "Desert / Plain",
+    "region": "Creatus",
+    "coords": [
+      [
+        4721,
+        3660
+      ],
+      [
+        4721,
+        4160
+      ],
+      [
+        4221,
+        4160
+      ],
+      [
+        4221,
+        3660
+      ]
+    ]
+  },
+  "Nehr-Fehlen Er-Losar": {
+    "place": "Nehr-Fehlen Er-Losar",
+    "type": "Desert / Plain",
+    "region": "Far Lands",
+    "coords": [
+      [
+        1438,
+        6210
+      ],
+      [
+        1438,
+        6496
+      ],
+      [
+        1254,
+        6496
+      ],
+      [
+        1254,
+        6210
+      ]
+    ]
+  },
+  "Nir-Uhlin Sol": {
+    "place": "Nir-Uhlin Sol",
+    "type": "Desert / Plain",
+    "region": "Far Lands",
+    "coords": [
+      [
+        1980,
+        6379
+      ],
+      [
+        1980,
+        6747
+      ],
+      [
+        1668,
+        6747
+      ],
+      [
+        1668,
+        6379
+      ]
+    ]
+  },
+  "Selum-Tor Sol": {
+    "place": "Selum-Tor Sol",
+    "type": "Desert / Plain",
+    "region": "Far Lands",
+    "coords": [
+      [
+        2301,
+        5984
+      ],
+      [
+        2301,
+        6257
+      ],
+      [
+        2110,
+        6257
+      ],
+      [
+        2110,
+        5984
+      ]
+    ]
+  },
+  "Atrium Nooklands": {
+    "place": "Atrium Nooklands",
+    "type": "Desert / Plain",
+    "region": "Morheim",
+    "coords": [
+      [
+        2723,
+        3925
+      ],
+      [
+        2723,
+        4065
+      ],
+      [
+        2583,
+        4065
+      ],
+      [
+        2583,
+        3925
+      ]
+    ]
+  },
+  "The Scalded Outlands": {
+    "place": "The Scalded Outlands",
+    "type": "Desert / Plain",
+    "region": "Morheim",
+    "coords": [
+      [
+        2593,
+        3334
+      ],
+      [
+        2593,
+        3614
+      ],
+      [
+        2313,
+        3614
+      ],
+      [
+        2313,
+        3334
+      ]
+    ]
+  },
+  "Relinquished Holds of Underrun": {
+    "place": "Relinquished Holds of Underrun",
+    "type": "Desert / Plain",
+    "region": "Nightgrove",
+    "coords": [
+      [
+        1478,
+        1228
+      ],
+      [
+        1478,
+        2058
+      ],
+      [
+        1263,
+        2058
+      ],
+      [
+        1263,
+        1228
+      ]
+    ]
+  },
+  "Silvercourt Valley": {
+    "place": "Silvercourt Valley",
+    "type": "Desert / Plain",
+    "region": "Nightgrove",
+    "coords": [
+      [
+        1963,
+        1602
+      ],
+      [
+        1963,
+        1867
+      ],
+      [
+        1708,
+        1867
+      ],
+      [
+        1708,
+        1602
+      ]
+    ]
+  },
+  "Saffron Fields": {
+    "place": "Saffron Fields",
+    "type": "Desert / Plain",
+    "region": "OAR",
+    "coords": [
+      [
+        2365,
+        6589
+      ],
+      [
+        2365,
+        6823
+      ],
+      [
+        2309,
+        6823
+      ],
+      [
+        2309,
+        6589
+      ]
+    ]
+  },
+  "Short Hill Valley": {
+    "place": "Short Hill Valley",
+    "type": "Desert / Plain",
+    "region": "OAR",
+    "coords": [
+      [
+        3757,
+        5708
+      ],
+      [
+        3757,
+        5938
+      ],
+      [
+        3541,
+        5938
+      ],
+      [
+        3541,
+        5708
+      ]
+    ]
+  },
+  "The Crystal Tundra": {
+    "place": "The Crystal Tundra",
+    "type": "Desert / Plain",
+    "region": "Xandor",
+    "coords": [
+      [
+        4644,
+        743
+      ],
+      [
+        4644,
+        889
+      ],
+      [
+        4364,
+        889
+      ],
+      [
+        4364,
+        743
+      ]
+    ]
+  },
+  "Blunder Slopes": {
+    "place": "Blunder Slopes",
+    "type": "Desert / Plain",
+    "region": "Xecuria",
+    "coords": [
+      [
+        3361,
+        1449
+      ],
+      [
+        3361,
+        1587
+      ],
+      [
+        3188,
+        1587
+      ],
+      [
+        3188,
+        1449
+      ]
+    ]
+  },
+  "Direshade Valley": {
+    "place": "Direshade Valley",
+    "type": "Desert / Plain",
+    "region": "Xecuria",
+    "coords": [
+      [
+        3493,
+        1172
+      ],
+      [
+        3493,
+        1488
+      ],
+      [
+        3369,
+        1488
+      ],
+      [
+        3369,
+        1172
+      ]
+    ]
+  },
+  "Nightstar Fields": {
+    "place": "Nightstar Fields",
+    "type": "Desert / Plain",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2961,
+        737
+      ],
+      [
+        2961,
+        976
+      ],
+      [
+        2687,
+        976
+      ],
+      [
+        2687,
+        737
+      ]
+    ]
+  },
+  "The Azure Fields": {
+    "place": "The Azure Fields",
+    "type": "Desert / Plain",
+    "region": "Xecuria",
+    "coords": [
+      [
+        4126,
+        648
+      ],
+      [
+        4126,
+        920
+      ],
+      [
+        3950,
+        920
+      ],
+      [
+        3950,
+        648
+      ]
+    ]
+  },
+  "The Hammerstone Wastes": {
+    "place": "The Hammerstone Wastes",
+    "type": "Desert / Plain",
+    "region": "Yuntas-Mire",
+    "coords": [
+      [
+        2203,
+        3373
+      ],
+      [
+        2203,
+        3673
+      ],
+      [
+        1903,
+        3673
+      ],
+      [
+        1903,
+        3373
+      ]
+    ]
+  },
+  "Dire Forest": {
+    "place": "Dire Forest",
+    "type": "Forest",
+    "region": "Collective",
+    "leader": "Ecin Aveyry, 46",
+    "coords": [
+      [
+        2766,
+        2076
+      ],
+      [
+        2766,
+        2282
+      ],
+      [
+        2648,
+        2282
+      ],
+      [
+        2648,
+        2076
+      ]
+    ]
+  },
+  "Dreamseap Forests": {
+    "place": "Dreamseap Forests",
+    "type": "Forest",
+    "region": "Collective",
+    "leader": "Ethed Gelnne, 53",
+    "coords": [
+      [
+        2452,
+        2499
+      ],
+      [
+        2452,
+        2603
+      ],
+      [
+        2289,
+        2603
+      ],
+      [
+        2289,
+        2499
+      ]
+    ]
+  },
+  "Sycamores Hunt Grounds": {
+    "place": "Sycamores Hunt Grounds",
+    "type": "Forest",
+    "region": "Collective",
+    "coords": [
+      [
+        2216,
+        2454
+      ],
+      [
+        2216,
+        2529
+      ],
+      [
+        2117,
+        2529
+      ],
+      [
+        2117,
+        2454
+      ]
+    ]
+  },
+  "The Thicket": {
+    "place": "The Thicket",
+    "type": "Forest",
+    "region": "Collective",
+    "coords": [
+      [
+        2840,
+        1852
+      ],
+      [
+        2840,
+        2033
+      ],
+      [
+        2549,
+        2033
+      ],
+      [
+        2549,
+        1852
+      ]
+    ]
+  },
+  "Damned Forest": {
+    "place": "Damned Forest",
+    "type": "Forest",
+    "region": "Creatus",
+    "coords": [
+      [
+        4580,
+        4898
+      ],
+      [
+        4580,
+        5036
+      ],
+      [
+        4430,
+        5036
+      ],
+      [
+        4430,
+        4898
+      ]
+    ]
+  },
+  "Eprerre Woods": {
+    "place": "Eprerre Woods",
+    "type": "Forest",
+    "region": "Creatus",
+    "coords": [
+      [
+        4498,
+        6614
+      ],
+      [
+        4498,
+        6780
+      ],
+      [
+        4312,
+        6780
+      ],
+      [
+        4312,
+        6614
+      ]
+    ]
+  },
+  "Misty Bog": {
+    "place": "Misty Bog",
+    "type": "Forest",
+    "region": "Creatus",
+    "coords": [
+      [
+        4515,
+        4593
+      ],
+      [
+        4515,
+        4821
+      ],
+      [
+        4232,
+        4821
+      ],
+      [
+        4232,
+        4593
+      ]
+    ]
+  },
+  "Patola Woods": {
+    "place": "Patola Woods",
+    "type": "Forest",
+    "region": "Creatus",
+    "coords": [
+      [
+        4106,
+        4991
+      ],
+      [
+        4106,
+        5316
+      ],
+      [
+        3996,
+        5316
+      ],
+      [
+        3996,
+        4991
+      ]
+    ]
+  },
+  "Tawere Forest": {
+    "place": "Tawere Forest",
+    "type": "Forest",
+    "region": "Creatus",
+    "coords": [
+      [
+        5036,
+        6231
+      ],
+      [
+        5036,
+        6421
+      ],
+      [
+        4860,
+        6421
+      ],
+      [
+        4860,
+        6231
+      ]
+    ]
+  },
+  "The Covert": {
+    "place": "The Covert",
+    "type": "Forest",
+    "region": "Creatus",
+    "coords": [
+      [
+        4551,
+        6231
+      ],
+      [
+        4551,
+        6451
+      ],
+      [
+        4375,
+        6451
+      ],
+      [
+        4375,
+        6231
+      ]
+    ]
+  },
+  "The Deep Woodlands": {
+    "place": "The Deep Woodlands",
+    "type": "Forest",
+    "region": "Creatus",
+    "coords": [
+      [
+        4602,
+        5486
+      ],
+      [
+        4602,
+        5968
+      ],
+      [
+        4255,
+        5968
+      ],
+      [
+        4255,
+        5486
+      ]
+    ]
+  },
+  "Tiny Wood": {
+    "place": "Tiny Wood",
+    "type": "Forest",
+    "region": "Creatus",
+    "coords": [
+      [
+        4972,
+        5986
+      ],
+      [
+        4972,
+        6178
+      ],
+      [
+        4929,
+        6178
+      ],
+      [
+        4929,
+        5986
+      ]
+    ]
+  },
+  "Witch King Woodlands": {
+    "place": "Witch King Woodlands",
+    "type": "Forest",
+    "region": "Creatus",
+    "coords": [
+      [
+        5247,
+        5350
+      ],
+      [
+        5247,
+        5444
+      ],
+      [
+        4980,
+        5444
+      ],
+      [
+        4980,
+        5350
+      ]
+    ]
+  },
+  "Ikidian Jungle": {
+    "place": "Ikidian Jungle",
+    "type": "Forest",
+    "region": "Far Lands",
+    "coords": [
+      [
+        2345,
+        6937
+      ],
+      [
+        2345,
+        7271
+      ],
+      [
+        2016,
+        7271
+      ],
+      [
+        2016,
+        6937
+      ]
+    ]
+  },
+  "The Wildlands": {
+    "place": "The Wildlands",
+    "type": "Forest",
+    "region": "Far Lands",
+    "leader": "The forest is vast. It takes days to get across, through thick and thin, up, and down mountains and valleys within. There are pockets of gold ore bleeding through more and more mountain cracks, which are uncharacteristically dark and dreary. These areas are newly inhabited by an influx of hags who are coming to see or join the new world, and are in turn beginning to terrorise the space around for their own amusement and benefit. Large parts of the lowlands within the forest are flooded, creating a murky swampland. The lands are covered in collections of trees, and wide-open plains. Wild animals dominate the landscape and legend has it that Giants claim this land for their own; the only area believed to house them. There is rumor of a building army with a new leader, but no one has dared venture near enough to verify these claims.",
+    "coords": [
+      [
+        1142,
+        6778
+      ],
+      [
+        1142,
+        7200
+      ],
+      [
+        795,
+        7200
+      ],
+      [
+        795,
+        6778
+      ]
+    ]
+  },
+  "Aris Woods": {
+    "place": "Aris Woods",
+    "type": "Forest",
+    "region": "Morheim",
+    "coords": [
+      [
+        3351,
+        3771
+      ],
+      [
+        3351,
+        3851
+      ],
+      [
+        3271,
+        3851
+      ],
+      [
+        3271,
+        3771
+      ]
+    ]
+  },
+  "Arteron Woods": {
+    "place": "Arteron Woods",
+    "type": "Forest",
+    "region": "Morheim",
+    "coords": [
+      [
+        3724,
+        2740
+      ],
+      [
+        3724,
+        3000
+      ],
+      [
+        3464,
+        3000
+      ],
+      [
+        3464,
+        2740
+      ]
+    ]
+  },
+  "Astral Woodss": {
+    "place": "Astral Woodss",
+    "type": "Forest",
+    "region": "Morheim",
+    "coords": [
+      [
+        3126,
+        3210
+      ],
+      [
+        3126,
+        3280
+      ],
+      [
+        3056,
+        3280
+      ],
+      [
+        3056,
+        3210
+      ]
+    ]
+  },
+  "Deadgrowth Forest": {
+    "place": "Deadgrowth Forest",
+    "type": "Forest",
+    "region": "Morheim",
+    "coords": [
+      [
+        2435,
+        3761
+      ],
+      [
+        2435,
+        3980
+      ],
+      [
+        2328,
+        3980
+      ],
+      [
+        2328,
+        3761
+      ]
+    ]
+  },
+  "Grogwood wilds": {
+    "place": "Grogwood wilds",
+    "type": "Forest",
+    "region": "Morheim",
+    "coords": [
+      [
+        4086,
+        4648
+      ],
+      [
+        4086,
+        4844
+      ],
+      [
+        3989,
+        4844
+      ],
+      [
+        3989,
+        4648
+      ]
+    ]
+  },
+  "Hellcrawl Forest": {
+    "place": "Hellcrawl Forest",
+    "type": "Forest",
+    "region": "Morheim",
+    "coords": [
+      [
+        3444,
+        4820
+      ],
+      [
+        3444,
+        4940
+      ],
+      [
+        3324,
+        4940
+      ],
+      [
+        3324,
+        4820
+      ]
+    ]
+  },
+  "Joultou Grove": {
+    "place": "Joultou Grove",
+    "type": "Forest",
+    "region": "Morheim",
+    "coords": [
+      [
+        3488,
+        3912
+      ],
+      [
+        3488,
+        4077
+      ],
+      [
+        3412,
+        4077
+      ],
+      [
+        3412,
+        3912
+      ]
+    ]
+  },
+  "Korthal Forest": {
+    "place": "Korthal Forest",
+    "type": "Forest",
+    "region": "Morheim",
+    "leader": "One would be easily lost in the Kotharel Forest. And while the kingdom claims ownership over the land, any governance is severely lacking. The forest stretches for hundreds of kilometers and has few, hard to find trails that wind through parts of it. Rumors of the forest include portals to the Fey, ancient creatures and temples of old worship.",
+    "coords": [
+      [
+        3807,
+        3790
+      ],
+      [
+        3807,
+        3920
+      ],
+      [
+        3677,
+        3920
+      ],
+      [
+        3677,
+        3790
+      ]
+    ]
+  },
+  "Rage Hollow": {
+    "place": "Rage Hollow",
+    "type": "Forest",
+    "region": "Morheim",
+    "leader": "Split and broken by mountains, hills, rivers, and lakes, RageHollow forest is known for its dense and dark atmosphere. It's located south of the Dehum-Smit pathway. One river cut right through the forest from mountains in the north to the Continental River. An eerie fog penetrates the dark of the forest and masks the horrors inside. Howls and growls can be heard at night from nearby towns, spreading fear far and wide. Few would dare brave the brush, and only the insane would dare go in at night. The roof of the forest allows the occasional speck of light into the grounds but never much. The forest is always visible from the clear-cut path heading across the land, and is always on the south. Many locals call it the haunted forest, but there are no spirits here, only monsters. Who can really argue on the distinction though. Any local nearby would urge PC's not to venture off of the path, even to make camp. If anything, stay north.",
+    "coords": [
+      [
+        3053,
+        4685
+      ],
+      [
+        3053,
+        4825
+      ],
+      [
+        2913,
+        4825
+      ],
+      [
+        2913,
+        4685
+      ]
+    ]
+  },
+  "The Endless Forest": {
+    "place": "The Endless Forest",
+    "type": "Forest",
+    "region": "Morheim",
+    "leader": "A large forest in the central part of Morheim. The kingdom controls portions of the forest. Though not a common destination in itself, the forest's central location means that many must pass through it. Combined with its isolation, this makes the forest a nearly perfect environment for bandits.",
+    "coords": [
+      [
+        3909,
+        4233
+      ],
+      [
+        3909,
+        4533
+      ],
+      [
+        3609,
+        4533
+      ],
+      [
+        3609,
+        4233
+      ]
+    ]
+  },
+  "Velvin Thicket": {
+    "place": "Velvin Thicket",
+    "type": "Forest",
+    "region": "Morheim",
+    "leader": "Mainly used by the University as a special testing or hunting ground, the Velvin thicket is a special, dangerous forest. The Velvin thicket also grows special trees, Livewood, which is used for spellcasting and enchantment.",
+    "coords": [
+      [
+        2984,
+        3045
+      ],
+      [
+        2984,
+        3215
+      ],
+      [
+        2814,
+        3215
+      ],
+      [
+        2814,
+        3045
+      ]
+    ]
+  },
+  "Angel's Growth": {
+    "place": "Angel's Growth",
+    "type": "Forest",
+    "region": "OAR",
+    "coords": [
+      [
+        2584,
+        7009
+      ],
+      [
+        2584,
+        7224
+      ],
+      [
+        2434,
+        7224
+      ],
+      [
+        2434,
+        7009
+      ]
+    ]
+  },
+  "Evennfall Woods": {
+    "place": "Evennfall Woods",
+    "type": "Forest",
+    "region": "OAR",
+    "coords": [
+      [
+        4175,
+        6519
+      ],
+      [
+        4175,
+        6757
+      ],
+      [
+        4005,
+        6757
+      ],
+      [
+        4005,
+        6519
+      ]
+    ]
+  },
+  "Firelight Forest": {
+    "place": "Firelight Forest",
+    "type": "Forest",
+    "region": "OAR",
+    "coords": [
+      [
+        4052,
+        6136
+      ],
+      [
+        4052,
+        6464
+      ],
+      [
+        3909,
+        6464
+      ],
+      [
+        3909,
+        6136
+      ]
+    ]
+  },
+  "Ancient Woodlands of Xandor": {
+    "place": "Ancient Woodlands of Xandor",
+    "type": "Forest",
+    "region": "Xandor",
+    "coords": [
+      [
+        4377,
+        1964
+      ],
+      [
+        4377,
+        2883
+      ],
+      [
+        4182,
+        2883
+      ],
+      [
+        4182,
+        1964
+      ]
+    ]
+  },
+  "Feyrian Woods": {
+    "place": "Feyrian Woods",
+    "type": "Forest",
+    "region": "Xandor",
+    "coords": [
+      [
+        4187,
+        1681
+      ],
+      [
+        4187,
+        2054
+      ],
+      [
+        4079,
+        2054
+      ],
+      [
+        4079,
+        1681
+      ]
+    ]
+  },
+  "Esperian Woods": {
+    "place": "Esperian Woods",
+    "type": "Forest",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2587,
+        1111
+      ],
+      [
+        2587,
+        1363
+      ],
+      [
+        2490,
+        1363
+      ],
+      [
+        2490,
+        1111
+      ]
+    ]
+  },
+  "Hammercrag Growth": {
+    "place": "Hammercrag Growth",
+    "type": "Forest",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2083,
+        813
+      ],
+      [
+        2083,
+        1043
+      ],
+      [
+        1927,
+        1043
+      ],
+      [
+        1927,
+        813
+      ]
+    ]
+  },
+  "Old Growth of Elmonn": {
+    "place": "Old Growth of Elmonn",
+    "type": "Forest",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2443,
+        802
+      ],
+      [
+        2443,
+        951
+      ],
+      [
+        2200,
+        951
+      ],
+      [
+        2200,
+        802
+      ]
+    ]
+  },
+  "Stillwind Forest": {
+    "place": "Stillwind Forest",
+    "type": "Forest",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2535,
+        1524
+      ],
+      [
+        2535,
+        1641
+      ],
+      [
+        2247,
+        1641
+      ],
+      [
+        2247,
+        1524
+      ]
+    ]
+  },
+  "Winter Woods": {
+    "place": "Winter Woods",
+    "type": "Forest",
+    "region": "Xecuria",
+    "coords": [
+      [
+        3649,
+        818
+      ],
+      [
+        3649,
+        1049
+      ],
+      [
+        3437,
+        1049
+      ],
+      [
+        3437,
+        818
+      ]
+    ]
+  },
+  "Lake Shimmer": {
+    "place": "Lake Shimmer",
+    "type": "Lake",
+    "region": "Aurillis",
+    "coords": [
+      [
+        5471,
+        3049
+      ],
+      [
+        5471,
+        3282
+      ],
+      [
+        5421,
+        3282
+      ],
+      [
+        5421,
+        3049
+      ]
+    ]
+  },
+  "Lurker's Vale": {
+    "place": "Lurker's Vale",
+    "type": "Lake",
+    "region": "Aurillis",
+    "coords": [
+      [
+        5537,
+        2509
+      ],
+      [
+        5537,
+        2729
+      ],
+      [
+        5511,
+        2729
+      ],
+      [
+        5511,
+        2509
+      ]
+    ]
+  },
+  "Willow Basin": {
+    "place": "Willow Basin",
+    "type": "Lake",
+    "region": "Collective",
+    "coords": [
+      [
+        2587,
+        2060
+      ],
+      [
+        2587,
+        2153
+      ],
+      [
+        2524,
+        2153
+      ],
+      [
+        2524,
+        2060
+      ]
+    ]
+  },
+  "Atlashire Cove": {
+    "place": "Atlashire Cove",
+    "type": "Lake",
+    "region": "Creatus",
+    "coords": [
+      [
+        4886,
+        4733
+      ],
+      [
+        4886,
+        4835
+      ],
+      [
+        4832,
+        4835
+      ],
+      [
+        4832,
+        4733
+      ]
+    ]
+  },
+  "Carato Marshlands": {
+    "place": "Carato Marshlands",
+    "type": "Lake",
+    "region": "Creatus",
+    "coords": [
+      [
+        5178,
+        5490
+      ],
+      [
+        5178,
+        5771
+      ],
+      [
+        4998,
+        5771
+      ],
+      [
+        4998,
+        5490
+      ]
+    ]
+  },
+  "Casrath Lagoon": {
+    "place": "Casrath Lagoon",
+    "type": "Lake",
+    "region": "Creatus",
+    "coords": [
+      [
+        5278,
+        4906
+      ],
+      [
+        5278,
+        5029
+      ],
+      [
+        5218,
+        5029
+      ],
+      [
+        5218,
+        4906
+      ]
+    ]
+  },
+  "Firbolg Shallows": {
+    "place": "Firbolg Shallows",
+    "type": "Lake",
+    "region": "Creatus",
+    "coords": [
+      [
+        4988,
+        5735
+      ],
+      [
+        4988,
+        5836
+      ],
+      [
+        4929,
+        5836
+      ],
+      [
+        4929,
+        5735
+      ]
+    ]
+  },
+  "Orc Hunt Waters": {
+    "place": "Orc Hunt Waters",
+    "type": "Lake",
+    "region": "Creatus",
+    "coords": [
+      [
+        4320,
+        6359
+      ],
+      [
+        4320,
+        6449
+      ],
+      [
+        4230,
+        6449
+      ],
+      [
+        4230,
+        6359
+      ]
+    ]
+  },
+  "Patola Lake": {
+    "place": "Patola Lake",
+    "type": "Lake",
+    "region": "Creatus",
+    "coords": [
+      [
+        4301,
+        5282
+      ],
+      [
+        4301,
+        5400
+      ],
+      [
+        4194,
+        5400
+      ],
+      [
+        4194,
+        5282
+      ]
+    ]
+  },
+  "Tribal Depths": {
+    "place": "Tribal Depths",
+    "type": "Lake",
+    "region": "Creatus",
+    "coords": [
+      [
+        4729,
+        5457
+      ],
+      [
+        4729,
+        5582
+      ],
+      [
+        4680,
+        5582
+      ],
+      [
+        4680,
+        5457
+      ]
+    ]
+  },
+  "Lake Arcane": {
+    "place": "Lake Arcane",
+    "type": "Lake",
+    "region": "Morheim",
+    "coords": [
+      [
+        3275,
+        2992
+      ],
+      [
+        3275,
+        3192
+      ],
+      [
+        3075,
+        3192
+      ],
+      [
+        3075,
+        2992
+      ]
+    ]
+  },
+  "Lake Ene": {
+    "place": "Lake Ene",
+    "type": "Lake",
+    "region": "Morheim",
+    "coords": [
+      [
+        3637,
+        2116
+      ],
+      [
+        3637,
+        2216
+      ],
+      [
+        3537,
+        2216
+      ],
+      [
+        3537,
+        2116
+      ]
+    ]
+  },
+  "Lake Mithril": {
+    "place": "Lake Mithril",
+    "type": "Lake",
+    "region": "Morheim",
+    "coords": [
+      [
+        3070,
+        2202
+      ],
+      [
+        3070,
+        2310
+      ],
+      [
+        2993,
+        2310
+      ],
+      [
+        2993,
+        2202
+      ]
+    ]
+  },
+  "Tortle Lake": {
+    "place": "Tortle Lake",
+    "type": "Lake",
+    "region": "Morheim",
+    "coords": [
+      [
+        3402,
+        3933
+      ],
+      [
+        3402,
+        4213
+      ],
+      [
+        3122,
+        4213
+      ],
+      [
+        3122,
+        3933
+      ]
+    ]
+  },
+  "Lake Centhe": {
+    "place": "Lake Centhe",
+    "type": "Lake",
+    "region": "OAR",
+    "coords": [
+      [
+        3909,
+        5852
+      ],
+      [
+        3909,
+        5942
+      ],
+      [
+        3819,
+        5942
+      ],
+      [
+        3819,
+        5852
+      ]
+    ]
+  },
+  "Lake Harmony": {
+    "place": "Lake Harmony",
+    "type": "Lake",
+    "region": "Xecuria",
+    "coords": [
+      [
+        3622,
+        1435
+      ],
+      [
+        3622,
+        1435
+      ],
+      [
+        3622,
+        1435
+      ],
+      [
+        3622,
+        1435
+      ]
+    ]
+  },
+  "Lake Vari": {
+    "place": "Lake Vari",
+    "type": "Lake",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2898,
+        1562
+      ],
+      [
+        2898,
+        1592
+      ],
+      [
+        2868,
+        1592
+      ],
+      [
+        2868,
+        1562
+      ]
+    ]
+  },
+  "Loch Redwater": {
+    "place": "Loch Redwater",
+    "type": "Lake",
+    "region": "Xecuria",
+    "coords": [
+      [
+        3152,
+        1310
+      ],
+      [
+        3152,
+        1350
+      ],
+      [
+        3112,
+        1350
+      ],
+      [
+        3112,
+        1310
+      ]
+    ]
+  },
+  "The Great Mountain Lake": {
+    "place": "The Great Mountain Lake",
+    "type": "Lake",
+    "region": "Xecuria",
+    "coords": [
+      [
+        3507,
+        1594
+      ],
+      [
+        3507,
+        1894
+      ],
+      [
+        3207,
+        1894
+      ],
+      [
+        3207,
+        1594
+      ]
+    ]
+  },
+  "The Dead Lake": {
+    "place": "The Dead Lake",
+    "type": "Lake",
+    "region": "Yuntas-Mire",
+    "coords": [
+      [
+        2204,
+        3901
+      ],
+      [
+        2204,
+        3941
+      ],
+      [
+        2164,
+        3941
+      ],
+      [
+        2164,
+        3901
+      ]
+    ]
+  },
+  "Royal Mines of Morheim": {
+    "place": "Royal Mines of Morheim",
+    "type": "Mine",
+    "region": "Morheim",
+    "coords": [
+      [
+        4097,
+        3695
+      ],
+      [
+        4097,
+        3923
+      ],
+      [
+        3992,
+        3923
+      ],
+      [
+        3992,
+        3695
+      ]
+    ]
+  },
+  "Claw of the World": {
+    "place": "Claw of the World",
+    "type": "Mountain",
+    "region": "Collective",
+    "coords": [
+      [
+        2128,
+        2003
+      ],
+      [
+        2128,
+        2413
+      ],
+      [
+        1961,
+        2413
+      ],
+      [
+        1961,
+        2003
+      ]
+    ]
+  },
+  "Rage Mountain": {
+    "place": "Rage Mountain",
+    "type": "Mountain",
+    "region": "Collective",
+    "coords": [
+      [
+        2232,
+        1761
+      ],
+      [
+        2232,
+        1870
+      ],
+      [
+        2162,
+        1870
+      ],
+      [
+        2162,
+        1761
+      ]
+    ]
+  },
+  "Border Stones": {
+    "place": "Border Stones",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        4818,
+        5625
+      ],
+      [
+        4818,
+        5837
+      ],
+      [
+        4780,
+        5837
+      ],
+      [
+        4780,
+        5625
+      ]
+    ]
+  },
+  "Carato Mountains": {
+    "place": "Carato Mountains",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        5242,
+        5151
+      ],
+      [
+        5242,
+        5317
+      ],
+      [
+        5115,
+        5317
+      ],
+      [
+        5115,
+        5151
+      ]
+    ]
+  },
+  "Domain of the Gods": {
+    "place": "Domain of the Gods",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        5665,
+        4951
+      ],
+      [
+        5665,
+        5345
+      ],
+      [
+        5425,
+        5345
+      ],
+      [
+        5425,
+        4951
+      ]
+    ]
+  },
+  "Ekhis Hills": {
+    "place": "Ekhis Hills",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        5106,
+        4719
+      ],
+      [
+        5106,
+        4874
+      ],
+      [
+        4994,
+        4874
+      ],
+      [
+        4994,
+        4719
+      ]
+    ]
+  },
+  "Hand of The Gods": {
+    "place": "Hand of The Gods",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        5339,
+        5544
+      ],
+      [
+        5339,
+        5803
+      ],
+      [
+        5234,
+        5803
+      ],
+      [
+        5234,
+        5544
+      ]
+    ]
+  },
+  "Jusomaas Border Hills": {
+    "place": "Jusomaas Border Hills",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        4559,
+        6105
+      ],
+      [
+        4559,
+        6161
+      ],
+      [
+        4306,
+        6161
+      ],
+      [
+        4306,
+        6105
+      ]
+    ]
+  },
+  "Mt. Blackfuse": {
+    "place": "Mt. Blackfuse",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        4252,
+        3687
+      ],
+      [
+        4252,
+        3845
+      ],
+      [
+        4171,
+        3845
+      ],
+      [
+        4171,
+        3687
+      ]
+    ]
+  },
+  "Mt. Hellion": {
+    "place": "Mt. Hellion",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        4490,
+        5212
+      ],
+      [
+        4490,
+        5345
+      ],
+      [
+        4420,
+        5345
+      ],
+      [
+        4420,
+        5212
+      ]
+    ]
+  },
+  "Mt. Mer'Ehl": {
+    "place": "Mt. Mer'Ehl",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        4873,
+        6070
+      ],
+      [
+        4873,
+        6220
+      ],
+      [
+        4822,
+        6220
+      ],
+      [
+        4822,
+        6070
+      ]
+    ]
+  },
+  "Patola Mountain Range": {
+    "place": "Patola Mountain Range",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        4239,
+        4895
+      ],
+      [
+        4239,
+        5185
+      ],
+      [
+        4185,
+        5185
+      ],
+      [
+        4185,
+        4895
+      ]
+    ]
+  },
+  "The Lonely Peak": {
+    "place": "The Lonely Peak",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        4642,
+        5328
+      ],
+      [
+        4642,
+        5446
+      ],
+      [
+        4593,
+        5446
+      ],
+      [
+        4593,
+        5328
+      ]
+    ]
+  },
+  "Twillight Gates": {
+    "place": "Twillight Gates",
+    "type": "Mountain",
+    "region": "Creatus",
+    "coords": [
+      [
+        4237,
+        6125
+      ],
+      [
+        4237,
+        6392
+      ],
+      [
+        4161,
+        6392
+      ],
+      [
+        4161,
+        6125
+      ]
+    ]
+  },
+  "Mt. Harmony": {
+    "place": "Mt. Harmony",
+    "type": "Mountain",
+    "region": "Dwarven Kingdom",
+    "coords": [
+      [
+        3712,
+        1394
+      ],
+      [
+        3712,
+        1502
+      ],
+      [
+        3642,
+        1502
+      ],
+      [
+        3642,
+        1394
+      ]
+    ]
+  },
+  "Omega Peak": {
+    "place": "Omega Peak",
+    "type": "Mountain",
+    "region": "Dwarven Kingdom",
+    "coords": [
+      [
+        3724,
+        1727
+      ],
+      [
+        3724,
+        1849
+      ],
+      [
+        3631,
+        1849
+      ],
+      [
+        3631,
+        1727
+      ]
+    ]
+  },
+  "Arcarath Mountains": {
+    "place": "Arcarath Mountains",
+    "type": "Mountain",
+    "region": "Far Lands",
+    "coords": [
+      [
+        2159,
+        6710
+      ],
+      [
+        2159,
+        6879
+      ],
+      [
+        1673,
+        6879
+      ],
+      [
+        1673,
+        6710
+      ]
+    ]
+  },
+  "The Wildland Cliffs": {
+    "place": "The Wildland Cliffs",
+    "type": "Mountain",
+    "region": "Far Lands",
+    "coords": [
+      [
+        1347,
+        6414
+      ],
+      [
+        1347,
+        6621
+      ],
+      [
+        1242,
+        6621
+      ],
+      [
+        1242,
+        6414
+      ]
+    ]
+  },
+  "Adon's Rest": {
+    "place": "Adon's Rest",
+    "type": "Mountain",
+    "region": "Morheim",
+    "coords": [
+      [
+        3878,
+        2352
+      ],
+      [
+        3878,
+        2551
+      ],
+      [
+        3838,
+        2551
+      ],
+      [
+        3838,
+        2352
+      ]
+    ]
+  },
+  "Attium Hills": {
+    "place": "Attium Hills",
+    "type": "Mountain",
+    "region": "Morheim",
+    "coords": [
+      [
+        2762,
+        3948
+      ],
+      [
+        2762,
+        4116
+      ],
+      [
+        2698,
+        4116
+      ],
+      [
+        2698,
+        3948
+      ]
+    ]
+  },
+  "Capital Mountain Range": {
+    "place": "Capital Mountain Range",
+    "type": "Mountain",
+    "region": "Morheim",
+    "coords": [
+      [
+        4162,
+        2981
+      ],
+      [
+        4162,
+        3512
+      ],
+      [
+        4061,
+        3512
+      ],
+      [
+        4061,
+        2981
+      ]
+    ]
+  },
+  "Morheim Border Hills": {
+    "place": "Morheim Border Hills",
+    "type": "Mountain",
+    "region": "Morheim",
+    "coords": [
+      [
+        4144,
+        4180
+      ],
+      [
+        4144,
+        4557
+      ],
+      [
+        3988,
+        4557
+      ],
+      [
+        3988,
+        4180
+      ]
+    ]
+  },
+  "Smoulder Mountains": {
+    "place": "Smoulder Mountains",
+    "type": "Mountain",
+    "region": "Morheim",
+    "coords": [
+      [
+        3569,
+        2302
+      ],
+      [
+        3569,
+        2592
+      ],
+      [
+        3539,
+        2592
+      ],
+      [
+        3539,
+        2302
+      ]
+    ]
+  },
+  "Onyx Mountain": {
+    "place": "Onyx Mountain",
+    "type": "Mountain",
+    "region": "Nightgrove",
+    "coords": [
+      [
+        1769,
+        1896
+      ],
+      [
+        1769,
+        1984
+      ],
+      [
+        1688,
+        1984
+      ],
+      [
+        1688,
+        1896
+      ]
+    ]
+  },
+  "Guardian Mountains": {
+    "place": "Guardian Mountains",
+    "type": "Mountain",
+    "region": "OAR",
+    "coords": [
+      [
+        4119,
+        5636
+      ],
+      [
+        4119,
+        5957
+      ],
+      [
+        4067,
+        5957
+      ],
+      [
+        4067,
+        5636
+      ]
+    ]
+  },
+  "Stormcrest Mountains": {
+    "place": "Stormcrest Mountains",
+    "type": "Mountain",
+    "region": "OAR",
+    "coords": [
+      [
+        3774,
+        5957
+      ],
+      [
+        3774,
+        6145
+      ],
+      [
+        3517,
+        6145
+      ],
+      [
+        3517,
+        5957
+      ]
+    ]
+  },
+  "The Anvil of Stone": {
+    "place": "The Anvil of Stone",
+    "type": "Mountain",
+    "region": "OAR",
+    "coords": [
+      [
+        3925,
+        5279
+      ],
+      [
+        3925,
+        5395
+      ],
+      [
+        3866,
+        5395
+      ],
+      [
+        3866,
+        5279
+      ]
+    ]
+  },
+  "Auril Peak": {
+    "place": "Auril Peak",
+    "type": "Mountain",
+    "region": "Xandor",
+    "coords": [
+      [
+        4862,
+        2262
+      ],
+      [
+        4862,
+        2366
+      ],
+      [
+        4697,
+        2366
+      ],
+      [
+        4697,
+        2262
+      ]
+    ]
+  },
+  "Elantis Faehills": {
+    "place": "Elantis Faehills",
+    "type": "Mountain",
+    "region": "Xandor",
+    "coords": [
+      [
+        4647,
+        1995
+      ],
+      [
+        4647,
+        2180
+      ],
+      [
+        4464,
+        2180
+      ],
+      [
+        4464,
+        1995
+      ]
+    ]
+  },
+  "Hyrsasm Peaks": {
+    "place": "Hyrsasm Peaks",
+    "type": "Mountain",
+    "region": "Xandor",
+    "coords": [
+      [
+        4340,
+        1808
+      ],
+      [
+        4340,
+        1908
+      ],
+      [
+        4262,
+        1908
+      ],
+      [
+        4262,
+        1808
+      ]
+    ]
+  },
+  "Mourning Walls": {
+    "place": "Mourning Walls",
+    "type": "Mountain",
+    "region": "Xandor",
+    "coords": [
+      [
+        4302,
+        540
+      ],
+      [
+        4302,
+        828
+      ],
+      [
+        4252,
+        828
+      ],
+      [
+        4252,
+        540
+      ]
+    ]
+  },
+  "Mt. Feyr": {
+    "place": "Mt. Feyr",
+    "type": "Mountain",
+    "region": "Xandor",
+    "coords": [
+      [
+        4126,
+        2456
+      ],
+      [
+        4126,
+        2608
+      ],
+      [
+        3981,
+        2608
+      ],
+      [
+        3981,
+        2456
+      ]
+    ]
+  },
+  "Xandor Faehills": {
+    "place": "Xandor Faehills",
+    "type": "Mountain",
+    "region": "Xandor",
+    "coords": [
+      [
+        4505,
+        2431
+      ],
+      [
+        4505,
+        2687
+      ],
+      [
+        4479,
+        2687
+      ],
+      [
+        4479,
+        2431
+      ]
+    ]
+  },
+  "Blunder hills": {
+    "place": "Blunder hills",
+    "type": "Mountain",
+    "region": "Xecuria",
+    "coords": [
+      [
+        3459,
+        1036
+      ],
+      [
+        3459,
+        1146
+      ],
+      [
+        3377,
+        1146
+      ],
+      [
+        3377,
+        1036
+      ]
+    ]
+  },
+  "Dagger Peaks": {
+    "place": "Dagger Peaks",
+    "type": "Mountain",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2308,
+        1138
+      ],
+      [
+        2308,
+        1312
+      ],
+      [
+        2161,
+        1312
+      ],
+      [
+        2161,
+        1138
+      ]
+    ]
+  },
+  "Mourning Mountains": {
+    "place": "Mourning Mountains",
+    "type": "Mountain",
+    "region": "Xecuria",
+    "coords": [
+      [
+        4103,
+        1064
+      ],
+      [
+        4103,
+        1315
+      ],
+      [
+        3852,
+        1315
+      ],
+      [
+        3852,
+        1064
+      ]
+    ]
+  },
+  "Mt. Esper": {
+    "place": "Mt. Esper",
+    "type": "Mountain",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2455,
+        1190
+      ],
+      [
+        2455,
+        1340
+      ],
+      [
+        2410,
+        1340
+      ],
+      [
+        2410,
+        1190
+      ]
+    ]
+  },
+  "Mt. Winvern": {
+    "place": "Mt. Winvern",
+    "type": "Mountain",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2664,
+        1079
+      ],
+      [
+        2664,
+        1146
+      ],
+      [
+        2615,
+        1146
+      ],
+      [
+        2615,
+        1079
+      ]
+    ]
+  },
+  "Sickle Mountains": {
+    "place": "Sickle Mountains",
+    "type": "Mountain",
+    "region": "Yuntas-Mire",
+    "coords": [
+      [
+        1974,
+        3821
+      ],
+      [
+        1974,
+        4001
+      ],
+      [
+        1877,
+        4001
+      ],
+      [
+        1877,
+        3821
+      ]
+    ]
+  },
+  "The Shard Mountains": {
+    "place": "The Shard Mountains",
+    "type": "Mountain",
+    "region": "Yuntas-Mire",
+    "coords": [
+      [
+        1894,
+        3573
+      ],
+      [
+        1894,
+        3978
+      ],
+      [
+        1759,
+        3978
+      ],
+      [
+        1759,
+        3573
+      ]
+    ]
+  },
+  "Dreamshard Depths": {
+    "place": "Dreamshard Depths",
+    "type": "Ocean/Water",
+    "region": "Collective",
+    "leader": "Gunthur Eshlemen, 200",
+    "coords": [
+      [
+        2297,
+        2855
+      ],
+      [
+        2297,
+        3371
+      ],
+      [
+        1675,
+        3371
+      ],
+      [
+        1675,
+        2855
+      ]
+    ]
+  },
+  "Atlashire Inlet (Cove)": {
+    "place": "Atlashire Inlet (Cove)",
+    "type": "Ocean/Water",
+    "region": "Creatus",
+    "coords": [
+      [
+        4738,
+        4540
+      ],
+      [
+        4738,
+        4683
+      ],
+      [
+        4600,
+        4683
+      ],
+      [
+        4600,
+        4540
+      ]
+    ]
+  },
+  "The Sea of the Gods": {
+    "place": "The Sea of the Gods",
+    "type": "Ocean/Water",
+    "region": "Creatus",
+    "coords": [
+      [
+        6056,
+        3977
+      ],
+      [
+        6056,
+        4641
+      ],
+      [
+        4905,
+        4641
+      ],
+      [
+        4905,
+        3977
+      ]
+    ]
+  },
+  "Tortlewall Reef": {
+    "place": "Tortlewall Reef",
+    "type": "Ocean/Water",
+    "region": "Far Lands",
+    "coords": [
+      [
+        812,
+        6244
+      ],
+      [
+        812,
+        6878
+      ],
+      [
+        488,
+        6878
+      ],
+      [
+        488,
+        6244
+      ]
+    ]
+  },
+  "Angel's Route": {
+    "place": "Angel's Route",
+    "type": "Ocean/Water",
+    "region": "OAR",
+    "coords": [
+      [
+        2651,
+        6491
+      ],
+      [
+        2651,
+        6670
+      ],
+      [
+        2615,
+        6670
+      ],
+      [
+        2615,
+        6491
+      ]
+    ]
+  },
+  "The Meerilian Islands": {
+    "place": "The Meerilian Islands",
+    "type": "Ocean/Water",
+    "region": "OAR",
+    "coords": [
+      [
+        3632,
+        7052
+      ],
+      [
+        3632,
+        7632
+      ],
+      [
+        3052,
+        7632
+      ],
+      [
+        3052,
+        7052
+      ]
+    ]
+  },
+  "The Meerilian Ocean": {
+    "place": "The Meerilian Ocean",
+    "type": "Ocean/Water",
+    "region": "OAR",
+    "coords": [
+      [
+        3201,
+        6285
+      ],
+      [
+        3201,
+        6685
+      ],
+      [
+        2801,
+        6685
+      ],
+      [
+        2801,
+        6285
+      ]
+    ]
+  },
+  "Realm's Reach (South)": {
+    "place": "Realm's Reach (South)",
+    "type": "Ocean/Water",
+    "region": "Shattered Isles",
+    "coords": [
+      [
+        288,
+        63
+      ],
+      [
+        288,
+        8105
+      ],
+      [
+        69,
+        8105
+      ],
+      [
+        69,
+        63
+      ]
+    ]
+  },
+  "Aurillian Ocean": {
+    "place": "Aurillian Ocean",
+    "type": "Ocean/Water",
+    "region": "Xandor",
+    "coords": [
+      [
+        5301,
+        1123
+      ],
+      [
+        5301,
+        1923
+      ],
+      [
+        4409,
+        1923
+      ],
+      [
+        4409,
+        1123
+      ]
+    ]
+  },
+  "Domain of the Lurker": {
+    "place": "Domain of the Lurker",
+    "type": "Ocean/Water",
+    "region": "Xandor",
+    "coords": [
+      [
+        4898,
+        2774
+      ],
+      [
+        4898,
+        3380
+      ],
+      [
+        4654,
+        3380
+      ],
+      [
+        4654,
+        2774
+      ]
+    ]
+  },
+  "Nancy's Reef": {
+    "place": "Nancy's Reef",
+    "type": "Ocean/Water",
+    "region": "Xandor",
+    "coords": [
+      [
+        5069,
+        6926
+      ],
+      [
+        5069,
+        7232
+      ],
+      [
+        4333,
+        7232
+      ],
+      [
+        4333,
+        6926
+      ]
+    ]
+  },
+  "Reef of Captain Leadhand": {
+    "place": "Reef of Captain Leadhand",
+    "type": "Ocean/Water",
+    "region": "Xandor",
+    "coords": [
+      [
+        5836,
+        5691
+      ],
+      [
+        5836,
+        6463
+      ],
+      [
+        5332,
+        6463
+      ],
+      [
+        5332,
+        5691
+      ]
+    ]
+  },
+  "Spirit Bay": {
+    "place": "Spirit Bay",
+    "type": "Ocean/Water",
+    "region": "Xandor",
+    "coords": [
+      [
+        4423,
+        1222
+      ],
+      [
+        4423,
+        1705
+      ],
+      [
+        4109,
+        1705
+      ],
+      [
+        4109,
+        1222
+      ]
+    ]
+  },
+  "White Bay": {
+    "place": "White Bay",
+    "type": "Ocean/Water",
+    "region": "Xandor",
+    "coords": [
+      [
+        2548,
+        3654
+      ],
+      [
+        2548,
+        3744
+      ],
+      [
+        2458,
+        3744
+      ],
+      [
+        2458,
+        3654
+      ]
+    ]
+  },
+  "Oberon Reef": {
+    "place": "Oberon Reef",
+    "type": "Ocean/Water",
+    "region": "Xecuria",
+    "coords": [
+      [
+        1968,
+        437
+      ],
+      [
+        1968,
+        662
+      ],
+      [
+        1706,
+        662
+      ],
+      [
+        1706,
+        437
+      ]
+    ]
+  },
+  "Yuntas Sea": {
+    "place": "Yuntas Sea",
+    "type": "Ocean/Water",
+    "region": "Yuntas-Mire",
+    "coords": [
+      [
+        2187,
+        4802
+      ],
+      [
+        2187,
+        5702
+      ],
+      [
+        1287,
+        5702
+      ],
+      [
+        1287,
+        4802
+      ]
+    ]
+  },
+  "The Great Stone Road": {
+    "place": "The Great Stone Road",
+    "type": "Point of Interest",
+    "region": "Morheim",
+    "coords": [
+      [
+        3547,
+        3958
+      ],
+      [
+        3547,
+        4168
+      ],
+      [
+        3498,
+        4168
+      ],
+      [
+        3498,
+        3958
+      ]
+    ]
+  },
+  "The Great Stone Road (2)": {
+    "place": "The Great Stone Road",
+    "type": "Point of Interest",
+    "region": "Morheim",
+    "coords": [
+      [
+        3507,
+        4649
+      ],
+      [
+        3507,
+        4860
+      ],
+      [
+        3467,
+        4860
+      ],
+      [
+        3467,
+        4649
+      ]
+    ]
+  },
+  "The Great Stone Road (3)": {
+    "place": "The Great Stone Road",
+    "type": "Point of Interest",
+    "region": "Morheim",
+    "coords": [
+      [
+        3476,
+        5235
+      ],
+      [
+        3476,
+        5558
+      ],
+      [
+        3420,
+        5558
+      ],
+      [
+        3420,
+        5235
+      ]
+    ]
+  },
+  "The Twin Hills (GreatGaunt + Arden)": {
+    "place": "The Twin Hills (GreatGaunt + Arden)",
+    "type": "Point of Interest",
+    "region": "Morheim",
+    "coords": [
+      [
+        3745,
+        5203
+      ],
+      [
+        3745,
+        5453
+      ],
+      [
+        3495,
+        5453
+      ],
+      [
+        3495,
+        5203
+      ]
+    ]
+  },
+  "The Trail of Bridges": {
+    "place": "The Trail of Bridges",
+    "type": "Point of Interest",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2774,
+        1482
+      ],
+      [
+        2774,
+        1533
+      ],
+      [
+        2658,
+        1533
+      ],
+      [
+        2658,
+        1482
+      ]
+    ]
+  },
+  "The Guarded Coast": {
+    "place": "The Guarded Coast",
+    "type": "Shores/Coasts",
+    "region": "Collective",
+    "coords": [
+      [
+        2354,
+        2714
+      ],
+      [
+        2354,
+        2834
+      ],
+      [
+        2234,
+        2834
+      ],
+      [
+        2234,
+        2714
+      ]
+    ]
+  },
+  "The Dead Coast": {
+    "place": "The Dead Coast",
+    "type": "Shores/Coasts",
+    "region": "Far Lands",
+    "coords": [
+      [
+        2138,
+        5874
+      ],
+      [
+        2138,
+        6126
+      ],
+      [
+        1873,
+        6126
+      ],
+      [
+        1873,
+        5874
+      ]
+    ]
+  },
+  "Capital Channel": {
+    "place": "Capital Channel",
+    "type": "Shores/Coasts",
+    "region": "Morheim",
+    "coords": [
+      [
+        2884,
+        4398
+      ],
+      [
+        2884,
+        4692
+      ],
+      [
+        2774,
+        4692
+      ],
+      [
+        2774,
+        4398
+      ]
+    ]
+  },
+  "Capital Inlet": {
+    "place": "Capital Inlet",
+    "type": "Shores/Coasts",
+    "region": "Morheim",
+    "coords": [
+      [
+        3867,
+        3485
+      ],
+      [
+        3867,
+        3670
+      ],
+      [
+        3075,
+        3670
+      ],
+      [
+        3075,
+        3485
+      ]
+    ]
+  },
+  "Citizen's Path": {
+    "place": "Citizen's Path",
+    "type": "Shores/Coasts",
+    "region": "Morheim",
+    "coords": [
+      [
+        3731,
+        3060
+      ],
+      [
+        3731,
+        3200
+      ],
+      [
+        3591,
+        3200
+      ],
+      [
+        3591,
+        3060
+      ]
+    ]
+  },
+  "Serpent's Pass": {
+    "place": "Serpent's Pass",
+    "type": "Shores/Coasts",
+    "region": "Morheim",
+    "coords": [
+      [
+        3557,
+        3369
+      ],
+      [
+        3557,
+        3469
+      ],
+      [
+        3457,
+        3469
+      ],
+      [
+        3457,
+        3369
+      ]
+    ]
+  },
+  "The Forgotten Shores": {
+    "place": "The Forgotten Shores",
+    "type": "Shores/Coasts",
+    "region": "Nightgrove",
+    "coords": [
+      [
+        878,
+        2223
+      ],
+      [
+        878,
+        2804
+      ],
+      [
+        588,
+        2804
+      ],
+      [
+        588,
+        2223
+      ]
+    ]
+  },
+  "Cemetery of the Forgotten": {
+    "place": "Cemetery of the Forgotten",
+    "type": "Shores/Coasts",
+    "region": "OAR",
+    "coords": [
+      [
+        3413,
+        6208
+      ],
+      [
+        3413,
+        6408
+      ],
+      [
+        3213,
+        6408
+      ],
+      [
+        3213,
+        6208
+      ]
+    ]
+  },
+  "Shimmerian Coast": {
+    "place": "Shimmerian Coast",
+    "type": "Shores/Coasts",
+    "region": "OAR",
+    "coords": [
+      [
+        3284,
+        5497
+      ],
+      [
+        3284,
+        5810
+      ],
+      [
+        3192,
+        5810
+      ],
+      [
+        3192,
+        5497
+      ]
+    ]
+  },
+  "The Andalin Coast": {
+    "place": "The Andalin Coast",
+    "type": "Shores/Coasts",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2875,
+        519
+      ],
+      [
+        2875,
+        679
+      ],
+      [
+        2715,
+        679
+      ],
+      [
+        2715,
+        519
+      ]
+    ]
+  },
+  "The Shores of Zirconia": {
+    "place": "The Shores of Zirconia",
+    "type": "Shores/Coasts",
+    "region": "Xecuria",
+    "coords": [
+      [
+        1950,
+        627
+      ],
+      [
+        1950,
+        907
+      ],
+      [
+        1670,
+        907
+      ],
+      [
+        1670,
+        627
+      ]
+    ]
+  },
+  "The Free Coast": {
+    "place": "The Free Coast",
+    "type": "Shores/Coasts",
+    "region": "Yuntas-Mire",
+    "coords": [
+      [
+        2634,
+        4970
+      ],
+      [
+        2634,
+        5036
+      ],
+      [
+        2345,
+        5036
+      ],
+      [
+        2345,
+        4970
+      ]
+    ]
+  },
+  "The Yuntas Coast": {
+    "place": "The Yuntas Coast",
+    "type": "Shores/Coasts",
+    "region": "Yuntas-Mire",
+    "coords": [
+      [
+        1895,
+        4259
+      ],
+      [
+        1895,
+        4568
+      ],
+      [
+        1798,
+        4568
+      ],
+      [
+        1798,
+        4259
+      ]
+    ]
+  },
+  "The Great Falls of Azam": {
+    "place": "The Great Falls of Azam",
+    "type": "Waterfall",
+    "region": "Creatus",
+    "coords": [
+      [
+        4172,
+        5129
+      ],
+      [
+        4172,
+        5169
+      ],
+      [
+        4132,
+        5169
+      ],
+      [
+        4132,
+        5129
+      ]
+    ]
+  },
+  "The Everfalls": {
+    "place": "The Everfalls",
+    "type": "Waterfall",
+    "region": "Morheim",
+    "coords": [
+      [
+        3996,
+        5012
+      ],
+      [
+        3996,
+        5032
+      ],
+      [
+        3976,
+        5032
+      ],
+      [
+        3976,
+        5012
+      ]
+    ]
+  },
+  "Esper Falls": {
+    "place": "Esper Falls",
+    "type": "Waterfall",
+    "region": "Xecuria",
+    "coords": [
+      [
+        2375,
+        1237
+      ],
+      [
+        2375,
+        1257
+      ],
+      [
+        2355,
+        1257
+      ],
+      [
+        2355,
+        1237
+      ]
+    ]
+  },
+  "Tremmor Falls": {
+    "place": "Tremmor Falls",
+    "type": "Waterfall",
+    "region": "Yuntas-Mire",
+    "coords": [
+      [
+        2683,
+        4331
+      ],
+      [
+        2683,
+        4361
+      ],
+      [
+        2653,
+        4361
+      ],
+      [
+        2653,
+        4331
+      ]
+    ]
+  }
 }
