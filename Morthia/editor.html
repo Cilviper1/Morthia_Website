@@ -31,7 +31,7 @@
   </div>
 </header>
 
-<div class="workspace">
+<main class="workspace">
   <!-- Sidebar -->
   <div class="sidebar">
     <div class="sidebar-tabs">
@@ -105,7 +105,7 @@
       </div>
 
       <div class="form-actions">
-        <button class="btn btn-primary" id="saveBtn" style="flex:1;">Save Place</button>
+        <button type="button" class="btn btn-primary" id="saveBtn" style="flex:1;">Save Place</button>
         <button class="btn btn-secondary" id="clearFormBtn">Clear</button>
       </div>
     </div>
@@ -118,7 +118,7 @@
       <div class="list-count" id="listCount">Load a places.json to begin</div>
       <div class="places-list" id="placesList"></div>
     </div>
-  </div>
+  </Main>
 
   <!-- Map -->
     <div class="container">
@@ -127,7 +127,6 @@
 
 <div class="toast" id="toast"></div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
 <script src="../renderMap.js"></script>  
 
@@ -150,6 +149,7 @@
   });
 
   const bounds = [[0,0],[MAP_HEIGHT, MAP_WIDTH]];
+  const IMG_PATH = '../images/Morthia-Web-Official.jpg';
   const image = L.imageOverlay(IMG_PATH, bounds).addTo(map);
   map.fitBounds(bounds);
   image.getElement().style.boxSizing = 'border-box';
@@ -321,7 +321,7 @@
     if (!drawnPolygon){ toast('Please draw a shape on the map first', 'error'); return; }
 
     const coords = drawnPolygon.getLatLngs()[0].map(ll => [ll.lat, ll.lng]);
-    const key    = editingKey || name;
+    const key = (editingKey || name).toLowerCase();;
     const entry  = { place: name, coords };
 
     const type   = document.getElementById('fieldType').value.trim();
@@ -341,7 +341,10 @@
       if (allLayers[editingKey]) { map.removeLayer(allLayers[editingKey]); delete allLayers[editingKey]; }
     }
 
-    placesData[key] = entry;
+    if (!editingKey && placesData[key]) {
+  toast('A place with this name already exists', 'error');
+  return;
+};
     editingKey = key;
 
     if (allLayers[key]) { map.removeLayer(allLayers[key]); }
