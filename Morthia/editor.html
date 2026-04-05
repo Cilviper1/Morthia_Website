@@ -133,6 +133,7 @@
   <script>
   const MAP_HEIGHT = 6144
   const MAP_WIDTH = 8192
+    renderMap('../images/Morthia-Web-Official.jpg', MAP_HEIGHT, MAP_WIDTH)
 
   let placesData   = {};
   let editingKey   = null;
@@ -149,10 +150,10 @@
 
   const bounds = [[0,0],[MAP_HEIGHT, MAP_WIDTH]];
   const IMG_PATH = '../images/Morthia-Web-Official.jpg';
-  const image = L.imageOverlay(IMG_PATH, bounds).addTo(map);
+ /* const image = L.imageOverlay(IMG_PATH, bounds).addTo(map);
   map.fitBounds(bounds);
   image.getElement().style.boxSizing = 'border-box';
-
+*/
   const drawnItems = new L.FeatureGroup().addTo(map);
 
   const drawControl = new L.Control.Draw({
