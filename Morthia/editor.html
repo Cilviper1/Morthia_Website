@@ -8,9 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Metamorphous&family=Overlock&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
-  <!-- Make sure you put this AFTER Leaflet's CSS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <link rel="stylesheet" href="./editor.css" />
 </head>
 <body>
@@ -31,7 +28,7 @@
   </div>
 </header>
 
-<main class="workspace">
+<div class="workspace">
   <!-- Sidebar -->
   <div class="sidebar">
     <div class="sidebar-tabs">
@@ -105,7 +102,7 @@
       </div>
 
       <div class="form-actions">
-        <button type="button" class="btn btn-primary" id="saveBtn" style="flex:1;">Save Place</button>
+        <button class="btn btn-primary" id="saveBtn" style="flex:1;">Save Place</button>
         <button class="btn btn-secondary" id="clearFormBtn">Clear</button>
       </div>
     </div>
@@ -118,22 +115,20 @@
       <div class="list-count" id="listCount">Load a places.json to begin</div>
       <div class="places-list" id="placesList"></div>
     </div>
-  </Main>
+  </div>
 
   <!-- Map -->
-    <div class="container">
-      <div id="map"></div>
-    </div>
+  <div id="map"></div>
+</div>
 
 <div class="toast" id="toast"></div>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
-<script src="../renderMap.js"></script>  
-
-  <script>
-  const MAP_HEIGHT = 6144
-  const MAP_WIDTH = 8192
-    renderMap('../images/Morthia-Web-Official.jpg', MAP_HEIGHT, MAP_WIDTH)
+<script>
+  const MAP_HEIGHT = 6144;
+  const MAP_WIDTH  = 8192;
+  const IMG_PATH   = './images/Morthia-Web-Official.jpg';
 
   let placesData   = {};
   let editingKey   = null;
@@ -149,11 +144,10 @@
   });
 
   const bounds = [[0,0],[MAP_HEIGHT, MAP_WIDTH]];
-  const IMG_PATH = '../images/Morthia-Web-Official.jpg';
- /* const image = L.imageOverlay(IMG_PATH, bounds).addTo(map);
+  const image = L.imageOverlay(IMG_PATH, bounds).addTo(map);
   map.fitBounds(bounds);
   image.getElement().style.boxSizing = 'border-box';
-*/
+
   const drawnItems = new L.FeatureGroup().addTo(map);
 
   const drawControl = new L.Control.Draw({
@@ -321,7 +315,7 @@
     if (!drawnPolygon){ toast('Please draw a shape on the map first', 'error'); return; }
 
     const coords = drawnPolygon.getLatLngs()[0].map(ll => [ll.lat, ll.lng]);
-    const key = (editingKey || name).toLowerCase();;
+    const key    = editingKey || name;
     const entry  = { place: name, coords };
 
     const type   = document.getElementById('fieldType').value.trim();
@@ -341,10 +335,7 @@
       if (allLayers[editingKey]) { map.removeLayer(allLayers[editingKey]); delete allLayers[editingKey]; }
     }
 
-    if (!editingKey && placesData[key]) {
-  toast('A place with this name already exists', 'error');
-  return;
-};
+    placesData[key] = entry;
     editingKey = key;
 
     if (allLayers[key]) { map.removeLayer(allLayers[key]); }
