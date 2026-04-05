@@ -129,10 +129,12 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
-<script>
-  const MAP_HEIGHT = 6144;
-  const MAP_WIDTH  = 8192;
-  const IMG_PATH   = './images/Morthia-Web-Official.jpg';
+<script src="../renderMap.js"></script>  
+
+  <script>
+  const MAP_HEIGHT = 6144
+  const MAP_WIDTH = 8192
+  renderMap('../images/Morthia-Web-Official.jpg', MAP_HEIGHT, MAP_WIDTH)
 
   let placesData   = {};
   let editingKey   = null;
