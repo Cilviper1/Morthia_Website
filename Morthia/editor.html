@@ -490,7 +490,7 @@ if (redrawMode && editingKey) {
 window.addEventListener('DOMContentLoaded', loadDefaultPlaces);
 
 function loadDefaultPlaces() {
-  fetch('../places.json')
+  fetch('../Morthia/places.json')
     .then(res => {
       if (!res.ok) throw new Error('places.json not found');
       return res.json();
