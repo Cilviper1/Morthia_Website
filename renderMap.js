@@ -5,7 +5,7 @@ const sidebarContent = document.querySelector(".sidebar-content");
 const wrapper = document.querySelector(".wrapper-home");
 
 async function loadPlaceInfo() {
-  const res = await fetch('./places.json')
+  const res = await fetch('../Morthia/places.json')
   return res.json()
 }
 
