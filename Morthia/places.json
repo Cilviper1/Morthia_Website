@@ -2522,48 +2522,72 @@
     "place": "Repository of Records",
     "coords": [
       [
-        2267,
-        6532
+        2238,
+        6501.5
       ],
       [
-        2258,
-        6708.5
+        2224,
+        6522.5
       ],
       [
-        2222,
-        6708
-      ],
-      [
-        2224.5,
-        6722
-      ],
-      [
-        2212.5,
-        6731
+        2213,
+        6542
       ],
       [
         2198.5,
-        6727.5
+        6563.5
       ],
       [
-        2192.5,
-        6615.5
+        2194,
+        6594
       ],
       [
-        2195.5,
-        6589
+        2186,
+        6618
       ],
       [
-        2197.5,
-        6553.5
+        2179,
+        6662
       ],
       [
-        2209.5,
-        6535.5
+        2183,
+        6698
       ],
       [
-        2227.5,
-        6496.5
+        2189,
+        6726
+      ],
+      [
+        2201.5,
+        6743.5
+      ],
+      [
+        2253.5,
+        6714
+      ],
+      [
+        2266.5,
+        6710
+      ],
+      [
+        2273,
+        6668
+      ],
+      [
+        2274,
+        6554.5
+      ],
+      [
+        2273,
+        6515.5
+      ],
+      [
+        2263,
+        6475.5
+      ],
+      [
+        2255,
+        6454
       ]
     ],
     "type": "City/Settlement",
@@ -17117,7 +17141,7 @@
     ],
     "type": "Forest",
     "region": "Morheim",
-    "leader": "Mainly used by the University as a special testing or hunting ground, the Velvin thicket is a special, dangerous forest. The Velvin thicket also grows special trees, Livewood, which is used for spellcasting and enchantment."
+    "description": "Mainly used by the University as a special testing or hunting ground, the Velvin thicket is a special, dangerous forest. The Velvin thicket also grows special trees, Livewood, which is used for spell casting and enchantment."
   },
   "Angel's Growth": {
     "place": "Angel's Growth",
